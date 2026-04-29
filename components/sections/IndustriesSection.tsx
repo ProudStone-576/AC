@@ -6,12 +6,12 @@ import { FadeIn } from "@/components/ui/FadeIn"
 import { industries } from "@/lib/constants/company"
 
 const INDUSTRY_PHOTOS: Record<string, string> = {
-  landmark: "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=3840&q=100",
-  activity: "https://images.unsplash.com/photo-1559757175-5700dde675bc?w=3840&q=100",
-  settings: "https://images.unsplash.com/photo-1485827404703-89b55fcc595e?w=3840&q=100",
-  "shopping-bag": "https://images.unsplash.com/photo-1472851294608-062f824d29cc?w=3840&q=100",
-  building: "https://images.unsplash.com/photo-1477959858617-67f85cf4f1df?w=3840&q=100",
-  zap: "https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?w=3840&q=100",
+  landmark: "https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?w=3840&q=100",
+  activity: "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=3840&q=100",
+  settings: "https://images.unsplash.com/photo-1565043666905-07ea197ae3da?w=3840&q=100",
+  "shopping-bag": "https://images.unsplash.com/photo-1441986300917-64674bd600d8?w=3840&q=100",
+  building: "https://images.unsplash.com/photo-1529107386315-e1a2ed48a620?w=3840&q=100",
+  zap: "https://images.unsplash.com/photo-1466611653911-95081537e5b7?w=3840&q=100",
 }
 
 const iconMap: Record<string, React.ComponentType<{ className?: string }>> = {

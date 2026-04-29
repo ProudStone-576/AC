@@ -15,8 +15,8 @@ const featured = [
     outcome: "Our policy-first control plane enforces jurisdiction-specific rules at the governance layer — not the architecture layer. One deployment model adapts by policy. Compliance scales without duplicating infrastructure.",
     href: "/case-studies/financial-multi-jurisdiction",
     accentClass: "from-blue/50 to-blue/15",
-    image: "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=3840&q=100",
-    imageAlt: "Financial district glass office towers",
+    image: "https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?w=3840&q=100",
+    imageAlt: "Financial trading screens and market data",
   },
   {
     client: "Healthcare",
@@ -25,8 +25,8 @@ const featured = [
     outcome: "We implement Zero Trust from the network layer up: no implicit trust, continuous verification, and encrypted data paths throughout. Security becomes an architectural property, not a policy document.",
     href: "/case-studies/healthcare-zero-trust",
     accentClass: "from-emerald-500/50 to-emerald-500/15",
-    image: "https://images.unsplash.com/photo-1555949963-aa79dcee981c?w=3840&q=100",
-    imageAlt: "Cybersecurity network operations",
+    image: "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=3840&q=100",
+    imageAlt: "Modern healthcare technology environment",
   },
 ]
 
