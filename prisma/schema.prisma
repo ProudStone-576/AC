@@ -1,0 +1,90 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+// ⚠️  BEFORE DEPLOYING TO PRODUCTION:
+//   1. Change provider from "sqlite" to "postgresql"
+//   2. Set DATABASE_URL in your hosting env vars to your PostgreSQL connection string
+//   3. Run: npx prisma migrate deploy
+datasource db {
+  provider = "sqlite"
+  url      = env("DATABASE_URL")
+}
+
+model ContactSubmission {
+  id          String   @id @default(cuid())
+  firstName   String
+  lastName    String
+  email       String
+  company     String?
+  jobTitle    String?
+  inquiryType String?
+  message     String
+  createdAt   DateTime @default(now())
+
+  @@map("contact_submissions")
+}
+
+model BlogPost {
+  id          String    @id @default(cuid())
+  title       String
+  slug        String    @unique
+  excerpt     String?
+  content     String
+  coverImage  String?
+  tags        String    @default("[]")
+  status      String    @default("draft")
+  publishedAt DateTime?
+  createdAt   DateTime  @default(now())
+  updatedAt   DateTime  @updatedAt
+
+  @@map("blog_posts")
+}
+
+model Project {
+  id          String    @id @default(cuid())
+  title       String
+  slug        String    @unique
+  description String
+  content     String?
+  coverImage  String?
+  tags        String    @default("[]")
+  client      String?
+  industry    String?
+  featured    Boolean   @default(false)
+  status      String    @default("draft")
+  publishedAt DateTime?
+  createdAt   DateTime  @default(now())
+  updatedAt   DateTime  @updatedAt
+
+  @@map("projects")
+}
+
+model SystemHealth {
+  id            String   @id @default(cuid())
+  status        String   @default("healthy")
+  uptimePercent Float    @default(100)
+  slaPercent    Float    @default(99.99)
+  cpuPercent    Float?
+  ramPercent    Float?
+  diskPercent   Float?
+  bandwidthMbps Float?
+  updatedAt     DateTime @updatedAt
+
+  @@map("system_health")
+}
+
+model Incident {
+  id             String    @id @default(cuid())
+  title          String
+  description    String
+  severity       String    @default("medium")
+  status         String    @default("active")
+  detectedAt     DateTime  @default(now())
+  resolvedAt     DateTime?
+  affectedAssets String    @default("[]")
+  createdAt      DateTime  @default(now())
+  updatedAt      DateTime  @updatedAt
+
+  @@map("incidents")
+}

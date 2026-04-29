@@ -29,7 +29,14 @@ yarn-error.log*
 pnpm-debug.log*
 
 # env files
+.env
 .env*.local
+
+# local database
+dev.db
+dev.db-journal
+dev.db-shm
+dev.db-wal
 
 # typescript
 *.tsbuildinfo
