@@ -1,3 +1,4 @@
+import { JsonLd } from "@/components/ui/JsonLd"
 import type { Metadata } from "next"
 import Link from "next/link"
 import { ArrowRight, BarChart2, CheckCircle2, Layers, RefreshCw, Tag, Target, TrendingDown } from "lucide-react"
@@ -40,9 +41,25 @@ const faqs = [
 ]
 
 export const metadata: Metadata = {
-  title: "FinOps & Cloud Cost Management - Services",
-  description:
-    "We help teams understand cloud spend, reduce waste, and build clearer ownership around cost decisions.",
+  title: "FinOps Services Canada | Cloud Cost Optimization | Aethon Core",
+  description: "FinOps and cloud cost optimization for Canadian enterprises. Cloud spend visibility, cost allocation, rightsizing, and reserved capacity planning across AWS, Azure, and GCP. Toronto & national.",
+  keywords: [
+    "FinOps Canada",
+    "cloud cost optimization Canada",
+    "cloud cost management Canada",
+    "cloud spend Canada",
+    "AWS cost optimization Canada",
+    "Azure cost optimization Canada",
+    "FinOps Toronto",
+    "cloud financial management Canada",
+  ],
+  alternates: { canonical: "https://aethoncore.com/services/finops" },
+  openGraph: {
+    type: "website", locale: "en_CA", url: "https://aethoncore.com/services/finops",
+    siteName: "Aethon Core",
+    title: "FinOps Services Canada | Cloud Cost Optimization | Aethon Core",
+    description: "FinOps and cloud cost optimization for Canadian enterprises. Cloud spend visibility, cost allocation, rightsizing, and reserved capacity planning across AWS, Azure, and GCP. Toronto & national.",
+  },
 }
 
 const outcomes = [
@@ -192,6 +209,7 @@ const walkthroughItems = [
 export default function FinOpsPage() {
   return (
     <>
+      <JsonLd schema={[{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://aethoncore.com"},{"@type":"ListItem","position":2,"name":"Services","item":"https://aethoncore.com/services"},{"@type":"ListItem","position":3,"name":"FinOps","item":"https://aethoncore.com/services/finops"}]},{"@context":"https://schema.org","@type":"Service","name":"FinOps","url":"https://aethoncore.com/services/finops","provider":{"@type":"Organization","name":"Aethon Core Inc.","url":"https://aethoncore.com"},"areaServed":[{"@type":"Country","name":"Canada"},{"@type":"Country","name":"United States"}],"serviceType":"FinOps"}]} />
       <PageHero
         breadcrumbs={[{ label: "Services", href: "/services" }, { label: "FinOps & Cloud Cost Management" }]}
         eyebrow="Specialized"

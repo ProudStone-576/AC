@@ -1,3 +1,4 @@
+import { JsonLd } from "@/components/ui/JsonLd"
 import type { Metadata } from "next"
 import Link from "next/link"
 import {
@@ -8,9 +9,26 @@ import { PageHero } from "@/components/ui/PageHero"
 import { CTASection } from "@/components/sections/CTASection"
 
 export const metadata: Metadata = {
-  title: "Retail & Commerce — Industries",
-  description:
-    "Infrastructure that handles 40x peak traffic surges, sub-100ms storefront response times, and omnichannel data integration for modern retail.",
+  title: "Retail IT Services Canada | PCI DSS & Omnichannel Infrastructure | Aethon Core",
+  description: "Managed IT services for Canadian retailers. PCI DSS compliance, omnichannel platform operations, high-availability commerce infrastructure, and peak load engineering for Black Friday and beyond.",
+  keywords: [
+    "retail IT services Canada",
+    "ecommerce infrastructure Canada",
+    "PCI DSS retail Canada",
+    "omnichannel IT Canada",
+    "retail managed services Canada",
+    "commerce infrastructure Canada",
+    "retail cybersecurity Canada",
+    "high availability ecommerce Canada",
+    "retail technology Canada",
+  ],
+  alternates: { canonical: "https://aethoncore.com/industries/retail" },
+  openGraph: {
+    type: "website", locale: "en_CA", url: "https://aethoncore.com/industries/retail",
+    siteName: "Aethon Core",
+    title: "Retail IT Services Canada | PCI DSS & Omnichannel Infrastructure | Aethon Core",
+    description: "Managed IT services for Canadian retailers. PCI DSS compliance, omnichannel platform operations, high-availability commerce infrastructure, and peak load engineering for Black Friday and beyond.",
+  },
 }
 
 const challenges = [
@@ -100,6 +118,7 @@ const stats = [
 export default function RetailPage() {
   return (
     <>
+      <JsonLd schema={[{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://aethoncore.com"},{"@type":"ListItem","position":2,"name":"Industries","item":"https://aethoncore.com/industries"},{"@type":"ListItem","position":3,"name":"Retail & Commerce","item":"https://aethoncore.com/industries/retail"}]}]} />
       <PageHero
         breadcrumbs={[{ label: "Industries", href: "/industries" }, { label: "Retail & Commerce" }]}
         eyebrow="Retail & Commerce"

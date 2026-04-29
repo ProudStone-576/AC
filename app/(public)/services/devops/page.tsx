@@ -1,3 +1,4 @@
+import { JsonLd } from "@/components/ui/JsonLd"
 import type { Metadata } from "next"
 import Link from "next/link"
 import { ArrowRight, CheckCircle2, Code2, GitBranch, Layers, RefreshCw, Shield, Terminal } from "lucide-react"
@@ -40,9 +41,26 @@ const faqs = [
 ]
 
 export const metadata: Metadata = {
-  title: "DevOps & Platform Engineering - Services",
-  description:
-    "We help teams ship changes faster, with less manual work and less stress, using simpler and safer delivery systems.",
+  title: "DevOps Services Canada | CI/CD & Platform Engineering | Aethon Core",
+  description: "Enterprise DevOps, CI/CD pipelines, and platform engineering for Canadian organizations. Kubernetes, Terraform, GitOps, and automation that ships software faster and more reliably.",
+  keywords: [
+    "DevOps services Canada",
+    "CI/CD services Canada",
+    "platform engineering Canada",
+    "Kubernetes Canada",
+    "Terraform services Canada",
+    "GitOps Canada",
+    "DevOps consulting Toronto",
+    "infrastructure as code Canada",
+    "DevSecOps Canada",
+  ],
+  alternates: { canonical: "https://aethoncore.com/services/devops" },
+  openGraph: {
+    type: "website", locale: "en_CA", url: "https://aethoncore.com/services/devops",
+    siteName: "Aethon Core",
+    title: "DevOps Services Canada | CI/CD & Platform Engineering | Aethon Core",
+    description: "Enterprise DevOps, CI/CD pipelines, and platform engineering for Canadian organizations. Kubernetes, Terraform, GitOps, and automation that ships software faster and more reliably.",
+  },
 }
 
 const outcomes = [
@@ -196,6 +214,7 @@ const walkthroughItems = [
 export default function DevOpsPage() {
   return (
     <>
+      <JsonLd schema={[{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://aethoncore.com"},{"@type":"ListItem","position":2,"name":"Services","item":"https://aethoncore.com/services"},{"@type":"ListItem","position":3,"name":"DevOps & Platform Engineering","item":"https://aethoncore.com/services/devops"}]},{"@context":"https://schema.org","@type":"Service","name":"DevOps & Platform Engineering","url":"https://aethoncore.com/services/devops","provider":{"@type":"Organization","name":"Aethon Core Inc.","url":"https://aethoncore.com"},"areaServed":[{"@type":"Country","name":"Canada"},{"@type":"Country","name":"United States"}],"serviceType":"DevOps & Platform Engineering"}]} />
       <PageHero
         breadcrumbs={[{ label: "Services", href: "/services" }, { label: "DevOps & Platform Engineering" }]}
         eyebrow="Delivery"

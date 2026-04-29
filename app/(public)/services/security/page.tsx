@@ -1,3 +1,4 @@
+import { JsonLd } from "@/components/ui/JsonLd"
 import type { Metadata } from "next"
 import Link from "next/link"
 import {
@@ -45,9 +46,28 @@ const faqs = [
 ]
 
 export const metadata: Metadata = {
-  title: "Cybersecurity - Services",
-  description:
-    "We help you reduce real security risk, explain it clearly, and build protection that works for everyday teams.",
+  title: "Managed Cybersecurity Services Canada | MDR & Zero Trust | Aethon Core",
+  description: "Enterprise cybersecurity and managed detection & response for Canadian organizations. Zero Trust architecture, 24/7 SOC, threat intelligence, and compliance-grade security controls. Toronto & national.",
+  keywords: [
+    "managed cybersecurity services Canada",
+    "MDR Canada",
+    "managed detection response Canada",
+    "cybersecurity company Toronto",
+    "SOC as a service Canada",
+    "Zero Trust security Canada",
+    "cybersecurity services Ontario",
+    "enterprise security Canada",
+    "24/7 SOC Canada",
+    "SIEM managed services Canada",
+    "cybersecurity company Canada",
+  ],
+  alternates: { canonical: "https://aethoncore.com/services/security" },
+  openGraph: {
+    type: "website", locale: "en_CA", url: "https://aethoncore.com/services/security",
+    siteName: "Aethon Core",
+    title: "Managed Cybersecurity Services Canada | MDR & Zero Trust | Aethon Core",
+    description: "Enterprise cybersecurity and managed detection & response for Canadian organizations. Zero Trust architecture, 24/7 SOC, threat intelligence, and compliance-grade security controls. Toronto & national.",
+  },
 }
 
 const outcomes = [
@@ -155,6 +175,7 @@ const walkthroughItems = [
 export default function CybersecurityPage() {
   return (
     <>
+      <JsonLd schema={[{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://aethoncore.com"},{"@type":"ListItem","position":2,"name":"Services","item":"https://aethoncore.com/services"},{"@type":"ListItem","position":3,"name":"Cybersecurity & MDR","item":"https://aethoncore.com/services/security"}]},{"@context":"https://schema.org","@type":"Service","name":"Cybersecurity & MDR","url":"https://aethoncore.com/services/security","provider":{"@type":"Organization","name":"Aethon Core Inc.","url":"https://aethoncore.com"},"areaServed":[{"@type":"Country","name":"Canada"},{"@type":"Country","name":"United States"}],"serviceType":"Cybersecurity & MDR"}]} />
       <PageHero
         breadcrumbs={[{ label: "Services", href: "/services" }, { label: "Cybersecurity" }]}
         eyebrow="Specialized"

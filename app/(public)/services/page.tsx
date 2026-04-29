@@ -6,9 +6,26 @@ import { CTASection } from "@/components/sections/CTASection"
 import { cn } from "@/lib/utils"
 
 export const metadata: Metadata = {
-  title: "Services",
-  description:
-    "From cloud and security to data and AI — Aethon Core manages the full range of technology services your business needs, with one team responsible for all of it.",
+  title: "Enterprise IT Services Canada | Cloud, Security, Network & Data | Aethon Core",
+  description: "Full spectrum enterprise IT services: managed IT, cloud infrastructure, cybersecurity, network, data, AI, compliance, and digital transformation. Delivered with contractual accountability across Canada.",
+  keywords: [
+    "enterprise IT services Canada",
+    "IT services Canada",
+    "managed IT services Canada",
+    "cloud services Canada",
+    "cybersecurity services Canada",
+    "IT services Toronto",
+    "enterprise technology services Canada",
+    "IT company Canada",
+    "full managed services Canada",
+  ],
+  alternates: { canonical: "https://aethoncore.com/services" },
+  openGraph: {
+    type: "website", locale: "en_CA", url: "https://aethoncore.com/services",
+    siteName: "Aethon Core",
+    title: "Enterprise IT Services Canada | Cloud, Security, Network & Data | Aethon Core",
+    description: "Full spectrum enterprise IT services: managed IT, cloud infrastructure, cybersecurity, network, data, AI, compliance, and digital transformation. Delivered with contractual accountability across Canada.",
+  },
 }
 
 const serviceCategories = [

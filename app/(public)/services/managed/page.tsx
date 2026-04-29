@@ -1,3 +1,4 @@
+import { JsonLd } from "@/components/ui/JsonLd"
 import type { Metadata } from "next"
 import Link from "next/link"
 import {
@@ -64,9 +65,29 @@ const faqs = [
 ]
 
 export const metadata: Metadata = {
-  title: "Managed Services - Services",
-  description:
-    "We keep your systems running, fix issues fast, and give your team a clear support model without extra complexity.",
+  title: "Managed IT Services Canada | 24/7 NOC & Help Desk | Aethon Core",
+  description: "Enterprise managed IT services across Canada. 24/7 NOC monitoring, help desk, patch management, and incident response under a single contractual SLA. Toronto, Ontario, and across North America.",
+  keywords: [
+    "managed IT services Canada",
+    "managed IT services Toronto",
+    "managed service provider Canada",
+    "managed service provider Toronto",
+    "outsourced IT Canada",
+    "IT outsourcing Toronto",
+    "NOC services Canada",
+    "24/7 IT support Canada",
+    "managed help desk Canada",
+    "enterprise IT management Canada",
+    "IT managed services Ontario",
+    "fully managed IT services",
+  ],
+  alternates: { canonical: "https://aethoncore.com/services/managed" },
+  openGraph: {
+    type: "website", locale: "en_CA", url: "https://aethoncore.com/services/managed",
+    siteName: "Aethon Core",
+    title: "Managed IT Services Canada | 24/7 NOC & Help Desk | Aethon Core",
+    description: "Enterprise managed IT services across Canada. 24/7 NOC monitoring, help desk, patch management, and incident response under a single contractual SLA. Toronto, Ontario, and across North America.",
+  },
 }
 
 const outcomes = [
@@ -197,6 +218,7 @@ const walkthroughItems = [
 export default function ManagedServicesPage() {
   return (
     <>
+      <JsonLd schema={[{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://aethoncore.com"},{"@type":"ListItem","position":2,"name":"Services","item":"https://aethoncore.com/services"},{"@type":"ListItem","position":3,"name":"Managed IT Services","item":"https://aethoncore.com/services/managed"}]},{"@context":"https://schema.org","@type":"Service","name":"Managed IT Services","url":"https://aethoncore.com/services/managed","provider":{"@type":"Organization","name":"Aethon Core Inc.","url":"https://aethoncore.com"},"areaServed":[{"@type":"Country","name":"Canada"},{"@type":"Country","name":"United States"}],"serviceType":"Managed IT Services"}]} />
       <PageHero
         breadcrumbs={[{ label: "Services", href: "/services" }, { label: "Managed Services" }]}
         eyebrow="Delivery"

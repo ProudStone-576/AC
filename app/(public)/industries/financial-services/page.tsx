@@ -1,3 +1,4 @@
+import { JsonLd } from "@/components/ui/JsonLd"
 import type { Metadata } from "next"
 import Link from "next/link"
 import {
@@ -7,9 +8,27 @@ import { PageHero } from "@/components/ui/PageHero"
 import { CTASection } from "@/components/sections/CTASection"
 
 export const metadata: Metadata = {
-  title: "Financial Services — Industries",
-  description:
-    "SOX, PCI-DSS, DORA, and GDPR-compliant infrastructure for banks, insurers, and capital markets firms that cannot afford downtime or breaches.",
+  title: "Financial Services IT Infrastructure Canada | SOX, PCI DSS, OSFI | Aethon Core",
+  description: "Managed IT services for Canadian banks, insurers, and capital markets firms. SOX, PCI DSS, OSFI, and DORA compliance built into every layer. 24/7 operations, Zero Trust security, and contractual SLAs.",
+  keywords: [
+    "financial services IT Canada",
+    "banking IT services Canada",
+    "financial services cybersecurity Canada",
+    "SOX compliance Canada",
+    "PCI DSS Canada",
+    "OSFI compliance Canada",
+    "fintech infrastructure Canada",
+    "capital markets IT Canada",
+    "financial services managed services Canada",
+    "bank IT services Toronto",
+  ],
+  alternates: { canonical: "https://aethoncore.com/industries/financial-services" },
+  openGraph: {
+    type: "website", locale: "en_CA", url: "https://aethoncore.com/industries/financial-services",
+    siteName: "Aethon Core",
+    title: "Financial Services IT Infrastructure Canada | SOX, PCI DSS, OSFI | Aethon Core",
+    description: "Managed IT services for Canadian banks, insurers, and capital markets firms. SOX, PCI DSS, OSFI, and DORA compliance built into every layer. 24/7 operations, Zero Trust security, and contractual SLAs.",
+  },
 }
 
 const challenges = [
@@ -99,6 +118,7 @@ const stats = [
 export default function FinancialServicesPage() {
   return (
     <>
+      <JsonLd schema={[{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://aethoncore.com"},{"@type":"ListItem","position":2,"name":"Industries","item":"https://aethoncore.com/industries"},{"@type":"ListItem","position":3,"name":"Financial Services","item":"https://aethoncore.com/industries/financial-services"}]}]} />
       <PageHero
         breadcrumbs={[{ label: "Industries", href: "/industries" }, { label: "Financial Services" }]}
         eyebrow="Financial Services"

@@ -1,3 +1,4 @@
+import { JsonLd } from "@/components/ui/JsonLd"
 import type { Metadata } from "next"
 import Link from "next/link"
 import {
@@ -51,9 +52,27 @@ const faqs: { q: string; a: string }[] = [
 ]
 
 export const metadata: Metadata = {
-  title: "Network & Connectivity — Services",
-  description:
-    "Private WAN, SD-WAN, and global connectivity for distributed enterprises. Secure, high-availability networking designed around your workloads — not the other way around.",
+  title: "Enterprise Network Services Canada | SD-WAN & Private WAN | Aethon Core",
+  description: "Enterprise network services across Canada. Private WAN, SD-WAN, SASE, and managed connectivity for distributed organizations. High-availability design, 24/7 operations, and SLA-backed uptime.",
+  keywords: [
+    "enterprise network services Canada",
+    "SD-WAN Canada",
+    "private WAN Canada",
+    "network managed services Canada",
+    "SASE Canada",
+    "managed network services Toronto",
+    "enterprise WAN Canada",
+    "network infrastructure Canada",
+    "managed connectivity Canada",
+    "business network services Canada",
+  ],
+  alternates: { canonical: "https://aethoncore.com/services/network" },
+  openGraph: {
+    type: "website", locale: "en_CA", url: "https://aethoncore.com/services/network",
+    siteName: "Aethon Core",
+    title: "Enterprise Network Services Canada | SD-WAN & Private WAN | Aethon Core",
+    description: "Enterprise network services across Canada. Private WAN, SD-WAN, SASE, and managed connectivity for distributed organizations. High-availability design, 24/7 operations, and SLA-backed uptime.",
+  },
 }
 
 const capabilities = [
@@ -138,6 +157,7 @@ const complianceFrameworks = [
 export default function NetworkConnectivityPage() {
   return (
     <>
+      <JsonLd schema={[{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://aethoncore.com"},{"@type":"ListItem","position":2,"name":"Services","item":"https://aethoncore.com/services"},{"@type":"ListItem","position":3,"name":"Network & Connectivity","item":"https://aethoncore.com/services/network"}]},{"@context":"https://schema.org","@type":"Service","name":"Network & Connectivity","url":"https://aethoncore.com/services/network","provider":{"@type":"Organization","name":"Aethon Core Inc.","url":"https://aethoncore.com"},"areaServed":[{"@type":"Country","name":"Canada"},{"@type":"Country","name":"United States"}],"serviceType":"Network & Connectivity"}]} />
       <PageHero
         breadcrumbs={[{ label: "Services", href: "/services" }, { label: "Network & Connectivity" }]}
         eyebrow="Services — Network & Connectivity"

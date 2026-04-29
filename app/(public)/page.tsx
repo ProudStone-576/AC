@@ -22,10 +22,31 @@ import {
 } from "@/components/ui/SpatialNarrativeEngine"
 
 export const metadata: Metadata = {
-  title: "Aethon Core Inc. — Enterprise Infrastructure & Managed Services | Canada",
-  description:
-    "Canadian enterprise infrastructure company. We build and manage cloud, network, security, and data infrastructure for organizations that cannot afford downtime, breaches, or vendor lock-in. Serving enterprises across Canada and North America.",
+  title: "Managed IT Services Canada | Enterprise Infrastructure | Aethon Core",
+  description: "Aethon Core delivers managed IT services, cloud infrastructure, cybersecurity, and network operations to enterprises across Canada. 24/7 NOC/SOC, contractual SLAs, Zero Trust security. Toronto-based, nationally deployed.",
+  keywords: [
+    "managed IT services Canada",
+    "managed IT services Toronto",
+    "enterprise infrastructure Canada",
+    "cloud infrastructure Canada",
+    "cybersecurity company Canada",
+    "managed service provider Canada",
+    "IT company Toronto",
+    "enterprise IT services Canada",
+    "managed cloud services Canada",
+    "NOC services Canada",
+    "SOC services Canada",
+    "Zero Trust Canada",
+    "IT outsourcing Canada",
+    "managed services provider Ontario",
+  ],
   alternates: { canonical: "https://aethoncore.com" },
+  openGraph: {
+    type: "website", locale: "en_CA", url: "https://aethoncore.com",
+    siteName: "Aethon Core",
+    title: "Managed IT Services Canada | Enterprise Infrastructure | Aethon Core",
+    description: "Aethon Core delivers managed IT services, cloud infrastructure, cybersecurity, and network operations to enterprises across Canada. 24/7 NOC/SOC, contractual SLAs, Zero Trust security. Toronto-based, nationally deployed.",
+  },
 }
 
 const CHAPTERS: NarrativeChapter[] = [

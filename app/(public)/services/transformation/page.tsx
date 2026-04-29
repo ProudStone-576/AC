@@ -1,3 +1,4 @@
+import { JsonLd } from "@/components/ui/JsonLd"
 import type { Metadata } from "next"
 import Link from "next/link"
 import {
@@ -50,9 +51,24 @@ const faqs: { q: string; a: string }[] = [
 ]
 
 export const metadata: Metadata = {
-  title: "Digital Transformation — Services",
-  description:
-    "Structured technology transformation programs for enterprises. We design and execute changes that your organization can actually absorb — without disrupting the operations that keep the business running.",
+  title: "Digital Transformation Services Canada | IT Modernization | Aethon Core",
+  description: "Digital transformation and IT modernization for Canadian enterprises. Legacy system modernization, cloud adoption, operating model redesign, and technology roadmaps with measurable milestones.",
+  keywords: [
+    "digital transformation Canada",
+    "IT modernization Canada",
+    "digital transformation Toronto",
+    "legacy system modernization Canada",
+    "cloud adoption Canada",
+    "enterprise transformation Canada",
+    "IT transformation services Canada",
+  ],
+  alternates: { canonical: "https://aethoncore.com/services/transformation" },
+  openGraph: {
+    type: "website", locale: "en_CA", url: "https://aethoncore.com/services/transformation",
+    siteName: "Aethon Core",
+    title: "Digital Transformation Services Canada | IT Modernization | Aethon Core",
+    description: "Digital transformation and IT modernization for Canadian enterprises. Legacy system modernization, cloud adoption, operating model redesign, and technology roadmaps with measurable milestones.",
+  },
 }
 
 const capabilities = [
@@ -187,6 +203,7 @@ const useCases = [
 export default function TransformationPage() {
   return (
     <>
+      <JsonLd schema={[{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://aethoncore.com"},{"@type":"ListItem","position":2,"name":"Services","item":"https://aethoncore.com/services"},{"@type":"ListItem","position":3,"name":"Digital Transformation","item":"https://aethoncore.com/services/transformation"}]},{"@context":"https://schema.org","@type":"Service","name":"Digital Transformation","url":"https://aethoncore.com/services/transformation","provider":{"@type":"Organization","name":"Aethon Core Inc.","url":"https://aethoncore.com"},"areaServed":[{"@type":"Country","name":"Canada"},{"@type":"Country","name":"United States"}],"serviceType":"Digital Transformation"}]} />
       <PageHero
         breadcrumbs={[{ label: "Services", href: "/services" }, { label: "Digital Transformation" }]}
         eyebrow="Advisory"

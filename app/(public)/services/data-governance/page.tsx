@@ -1,3 +1,4 @@
+import { JsonLd } from "@/components/ui/JsonLd"
 import type { Metadata } from "next"
 import Link from "next/link"
 import {
@@ -47,9 +48,25 @@ const faqs: { q: string; a: string }[] = [
 ]
 
 export const metadata: Metadata = {
-  title: "Data Governance & Privacy — Services",
-  description:
-    "Data cataloguing, lineage, retention policy, and privacy compliance for enterprises where data quality and regulatory accountability are not optional.",
+  title: "Data Governance Services Canada | Data Management & Quality | Aethon Core",
+  description: "Enterprise data governance and data management for Canadian organizations. Data catalog, lineage, quality, stewardship, and compliance-grade data controls. Toronto & national.",
+  keywords: [
+    "data governance services Canada",
+    "data management Canada",
+    "data quality Canada",
+    "data catalog Canada",
+    "data stewardship Canada",
+    "enterprise data governance Toronto",
+    "data lineage Canada",
+    "GDPR data governance Canada",
+  ],
+  alternates: { canonical: "https://aethoncore.com/services/data-governance" },
+  openGraph: {
+    type: "website", locale: "en_CA", url: "https://aethoncore.com/services/data-governance",
+    siteName: "Aethon Core",
+    title: "Data Governance Services Canada | Data Management & Quality | Aethon Core",
+    description: "Enterprise data governance and data management for Canadian organizations. Data catalog, lineage, quality, stewardship, and compliance-grade data controls. Toronto & national.",
+  },
 }
 
 const capabilities = [
@@ -168,6 +185,7 @@ const useCases = [
 export default function DataGovernancePage() {
   return (
     <>
+      <JsonLd schema={[{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://aethoncore.com"},{"@type":"ListItem","position":2,"name":"Services","item":"https://aethoncore.com/services"},{"@type":"ListItem","position":3,"name":"Data Governance","item":"https://aethoncore.com/services/data-governance"}]},{"@context":"https://schema.org","@type":"Service","name":"Data Governance","url":"https://aethoncore.com/services/data-governance","provider":{"@type":"Organization","name":"Aethon Core Inc.","url":"https://aethoncore.com"},"areaServed":[{"@type":"Country","name":"Canada"},{"@type":"Country","name":"United States"}],"serviceType":"Data Governance"}]} />
       <PageHero
         breadcrumbs={[{ label: "Services", href: "/services" }, { label: "Data Governance & Privacy" }]}
         eyebrow="Specialized"

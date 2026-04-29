@@ -1,3 +1,4 @@
+import { JsonLd } from "@/components/ui/JsonLd"
 import type { Metadata } from "next"
 import Link from "next/link"
 import {
@@ -54,9 +55,25 @@ const faqs: { q: string; a: string }[] = [
 ]
 
 export const metadata: Metadata = {
-  title: "Application Development — Services",
-  description:
-    "Full-stack web, mobile, and API development for enterprises that need software engineered to their requirements — deployed on the same infrastructure we operate.",
+  title: "Enterprise Application Services Canada | Custom Software & APIs | Aethon Core",
+  description: "Custom enterprise application development, API integration, and legacy modernization for Canadian organizations. Full-stack development, microservices, and enterprise integrations. Toronto & national.",
+  keywords: [
+    "enterprise application development Canada",
+    "custom software development Canada",
+    "API integration Canada",
+    "application modernization Canada",
+    "enterprise software Toronto",
+    "legacy modernization Canada",
+    "microservices Canada",
+    "full stack development Canada",
+  ],
+  alternates: { canonical: "https://aethoncore.com/services/apps" },
+  openGraph: {
+    type: "website", locale: "en_CA", url: "https://aethoncore.com/services/apps",
+    siteName: "Aethon Core",
+    title: "Enterprise Application Services Canada | Custom Software & APIs | Aethon Core",
+    description: "Custom enterprise application development, API integration, and legacy modernization for Canadian organizations. Full-stack development, microservices, and enterprise integrations. Toronto & national.",
+  },
 }
 
 const capabilities = [
@@ -164,6 +181,7 @@ const useCases = [
 export default function AppsPage() {
   return (
     <>
+      <JsonLd schema={[{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://aethoncore.com"},{"@type":"ListItem","position":2,"name":"Services","item":"https://aethoncore.com/services"},{"@type":"ListItem","position":3,"name":"Enterprise Application Services","item":"https://aethoncore.com/services/apps"}]},{"@context":"https://schema.org","@type":"Service","name":"Enterprise Application Services","url":"https://aethoncore.com/services/apps","provider":{"@type":"Organization","name":"Aethon Core Inc.","url":"https://aethoncore.com"},"areaServed":[{"@type":"Country","name":"Canada"},{"@type":"Country","name":"United States"}],"serviceType":"Enterprise Application Services"}]} />
       <PageHero
         breadcrumbs={[{ label: "Services", href: "/services" }, { label: "Application Development" }]}
         eyebrow="Specialized"

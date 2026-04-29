@@ -1,3 +1,4 @@
+import { JsonLd } from "@/components/ui/JsonLd"
 import type { Metadata } from "next"
 import Link from "next/link"
 import { AlertTriangle, ArrowRight, BookOpen, CheckCircle2, ClipboardList, FileText, Search, Shield } from "lucide-react"
@@ -40,9 +41,27 @@ const faqs = [
 ]
 
 export const metadata: Metadata = {
-  title: "Compliance & Audit Readiness - Services",
-  description:
-    "We help teams get ready for audits with clearer controls, clearer evidence, and simpler explanations of what matters most.",
+  title: "IT Compliance Services Canada | SOC 2, HIPAA, PCI DSS | Aethon Core",
+  description: "IT compliance and audit readiness for Canadian enterprises. SOC 2, HIPAA, PCI DSS, PIPEDA, OSFI, and ISO 27001 compliance programs. Evidence collection, control mapping, and audit preparation.",
+  keywords: [
+    "IT compliance services Canada",
+    "SOC 2 compliance Canada",
+    "HIPAA compliance Canada",
+    "PCI DSS compliance Canada",
+    "PIPEDA compliance Canada",
+    "ISO 27001 Canada",
+    "compliance managed services Canada",
+    "audit readiness Canada",
+    "OSFI compliance Canada",
+    "GRC services Canada",
+  ],
+  alternates: { canonical: "https://aethoncore.com/services/compliance" },
+  openGraph: {
+    type: "website", locale: "en_CA", url: "https://aethoncore.com/services/compliance",
+    siteName: "Aethon Core",
+    title: "IT Compliance Services Canada | SOC 2, HIPAA, PCI DSS | Aethon Core",
+    description: "IT compliance and audit readiness for Canadian enterprises. SOC 2, HIPAA, PCI DSS, PIPEDA, OSFI, and ISO 27001 compliance programs. Evidence collection, control mapping, and audit preparation.",
+  },
 }
 
 const outcomes = [
@@ -202,6 +221,7 @@ const walkthroughItems = [
 export default function CompliancePage() {
   return (
     <>
+      <JsonLd schema={[{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://aethoncore.com"},{"@type":"ListItem","position":2,"name":"Services","item":"https://aethoncore.com/services"},{"@type":"ListItem","position":3,"name":"Compliance & Audit Readiness","item":"https://aethoncore.com/services/compliance"}]},{"@context":"https://schema.org","@type":"Service","name":"Compliance & Audit Readiness","url":"https://aethoncore.com/services/compliance","provider":{"@type":"Organization","name":"Aethon Core Inc.","url":"https://aethoncore.com"},"areaServed":[{"@type":"Country","name":"Canada"},{"@type":"Country","name":"United States"}],"serviceType":"Compliance & Audit Readiness"}]} />
       <PageHero
         breadcrumbs={[{ label: "Services", href: "/services" }, { label: "Compliance & Audit Readiness" }]}
         eyebrow="Specialized"

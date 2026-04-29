@@ -1,3 +1,4 @@
+import { JsonLd } from "@/components/ui/JsonLd"
 import type { Metadata } from "next"
 import Link from "next/link"
 import {
@@ -8,9 +9,27 @@ import { PageHero } from "@/components/ui/PageHero"
 import { CTASection } from "@/components/sections/CTASection"
 
 export const metadata: Metadata = {
-  title: "Healthcare — Industries",
-  description:
-    "HIPAA and HITRUST certified infrastructure for health systems and life sciences organizations where data breaches and downtime both cost patients.",
+  title: "Healthcare IT Services Canada | HIPAA, PIPEDA, PHIPA Compliant | Aethon Core",
+  description: "Managed IT services for Canadian hospitals, health systems, and digital health companies. HIPAA, PIPEDA, and PHIPA-compliant infrastructure. Clinical and administrative workloads — 24/7 operations.",
+  keywords: [
+    "healthcare IT services Canada",
+    "hospital IT services Canada",
+    "HIPAA compliant IT Canada",
+    "PIPEDA compliance healthcare Canada",
+    "PHIPA compliance Canada",
+    "healthcare cybersecurity Canada",
+    "digital health infrastructure Canada",
+    "healthcare managed services Canada",
+    "clinical IT Canada",
+    "healthcare IT Toronto",
+  ],
+  alternates: { canonical: "https://aethoncore.com/industries/healthcare" },
+  openGraph: {
+    type: "website", locale: "en_CA", url: "https://aethoncore.com/industries/healthcare",
+    siteName: "Aethon Core",
+    title: "Healthcare IT Services Canada | HIPAA, PIPEDA, PHIPA Compliant | Aethon Core",
+    description: "Managed IT services for Canadian hospitals, health systems, and digital health companies. HIPAA, PIPEDA, and PHIPA-compliant infrastructure. Clinical and administrative workloads — 24/7 operations.",
+  },
 }
 
 const challenges = [
@@ -100,6 +119,7 @@ const stats = [
 export default function HealthcarePage() {
   return (
     <>
+      <JsonLd schema={[{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://aethoncore.com"},{"@type":"ListItem","position":2,"name":"Industries","item":"https://aethoncore.com/industries"},{"@type":"ListItem","position":3,"name":"Healthcare","item":"https://aethoncore.com/industries/healthcare"}]}]} />
       <PageHero
         breadcrumbs={[{ label: "Industries", href: "/industries" }, { label: "Healthcare" }]}
         eyebrow="Healthcare"

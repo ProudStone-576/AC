@@ -7,9 +7,22 @@ import { db } from "@/lib/db"
 import { CaseStudyList } from "./_components/CaseStudyList"
 
 export const metadata: Metadata = {
-  title: "Use Cases",
-  description:
-    "Real technology challenges follow recognizable patterns. See how Aethon Core approaches the tough problems in financial services, healthcare, manufacturing, and more.",
+  title: "Enterprise IT Case Studies Canada | Aethon Core Client Results",
+  description: "See how Aethon Core solves enterprise IT challenges across financial services, healthcare, manufacturing, energy, and government sectors. Real outcomes, real accountability.",
+  keywords: [
+    "IT case studies Canada",
+    "managed IT case studies",
+    "enterprise IT success stories Canada",
+    "cloud migration case study Canada",
+    "cybersecurity case study Canada",
+  ],
+  alternates: { canonical: "https://aethoncore.com/case-studies" },
+  openGraph: {
+    type: "website", locale: "en_CA", url: "https://aethoncore.com/case-studies",
+    siteName: "Aethon Core",
+    title: "Enterprise IT Case Studies Canada | Aethon Core Client Results",
+    description: "See how Aethon Core solves enterprise IT challenges across financial services, healthcare, manufacturing, energy, and government sectors. Real outcomes, real accountability.",
+  },
 }
 
 const featuredCaseStudy = {

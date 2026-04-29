@@ -1,3 +1,4 @@
+import { JsonLd } from "@/components/ui/JsonLd"
 import type { Metadata } from "next"
 import Link from "next/link"
 import {
@@ -50,9 +51,26 @@ const faqs = [
 ]
 
 export const metadata: Metadata = {
-  title: "Strategy Consulting — Services",
-  description:
-    "Technology strategy engagements for enterprise leadership teams. We help you build a roadmap that reflects your actual business — not generic best practices.",
+  title: "IT Consulting Services Canada | Technology Strategy & Advisory | Aethon Core",
+  description: "Enterprise IT consulting and technology advisory for Canadian organizations. CIO advisory, vendor selection, IT roadmap, architecture review, and IT financial management. Toronto & national.",
+  keywords: [
+    "IT consulting Canada",
+    "IT consulting Toronto",
+    "technology consulting Canada",
+    "CIO advisory Canada",
+    "IT strategy Canada",
+    "enterprise IT advisory Canada",
+    "technology advisory Canada",
+    "IT roadmap Canada",
+    "vendor selection Canada",
+  ],
+  alternates: { canonical: "https://aethoncore.com/services/consulting" },
+  openGraph: {
+    type: "website", locale: "en_CA", url: "https://aethoncore.com/services/consulting",
+    siteName: "Aethon Core",
+    title: "IT Consulting Services Canada | Technology Strategy & Advisory | Aethon Core",
+    description: "Enterprise IT consulting and technology advisory for Canadian organizations. CIO advisory, vendor selection, IT roadmap, architecture review, and IT financial management. Toronto & national.",
+  },
 }
 
 const capabilities = [
@@ -153,6 +171,7 @@ const useCases = [
 export default function ConsultingPage() {
   return (
     <>
+      <JsonLd schema={[{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://aethoncore.com"},{"@type":"ListItem","position":2,"name":"Services","item":"https://aethoncore.com/services"},{"@type":"ListItem","position":3,"name":"IT Consulting & Advisory","item":"https://aethoncore.com/services/consulting"}]},{"@context":"https://schema.org","@type":"Service","name":"IT Consulting & Advisory","url":"https://aethoncore.com/services/consulting","provider":{"@type":"Organization","name":"Aethon Core Inc.","url":"https://aethoncore.com"},"areaServed":[{"@type":"Country","name":"Canada"},{"@type":"Country","name":"United States"}],"serviceType":"IT Consulting & Advisory"}]} />
       <PageHero
         breadcrumbs={[{ label: "Services", href: "/services" }, { label: "Strategy Consulting" }]}
         eyebrow="Advisory"

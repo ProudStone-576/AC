@@ -1,3 +1,4 @@
+import { JsonLd } from "@/components/ui/JsonLd"
 import type { Metadata } from "next"
 import Link from "next/link"
 import {
@@ -51,9 +52,26 @@ const faqs: { q: string; a: string }[] = [
 ]
 
 export const metadata: Metadata = {
-  title: "Data & Analytics — Services",
-  description:
-    "End-to-end data infrastructure for enterprises. We build data estates that the people who make decisions can actually use — not just environments that satisfy the data engineering team.",
+  title: "Enterprise Data & Analytics Services Canada | Data Platform | Aethon Core",
+  description: "Enterprise data platform and analytics services for Canadian organizations. Data lake, warehouse, real-time pipelines, and executive dashboards. AWS, Azure, Snowflake, and Databricks. Toronto & national.",
+  keywords: [
+    "enterprise data services Canada",
+    "data analytics services Canada",
+    "data platform Canada",
+    "data engineering services Canada",
+    "analytics services Toronto",
+    "business intelligence Canada",
+    "data warehouse services Canada",
+    "Snowflake services Canada",
+    "data infrastructure Canada",
+  ],
+  alternates: { canonical: "https://aethoncore.com/services/analytics" },
+  openGraph: {
+    type: "website", locale: "en_CA", url: "https://aethoncore.com/services/analytics",
+    siteName: "Aethon Core",
+    title: "Enterprise Data & Analytics Services Canada | Data Platform | Aethon Core",
+    description: "Enterprise data platform and analytics services for Canadian organizations. Data lake, warehouse, real-time pipelines, and executive dashboards. AWS, Azure, Snowflake, and Databricks. Toronto & national.",
+  },
 }
 
 const capabilities = [
@@ -170,6 +188,7 @@ const useCases = [
 export default function AnalyticsPage() {
   return (
     <>
+      <JsonLd schema={[{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://aethoncore.com"},{"@type":"ListItem","position":2,"name":"Services","item":"https://aethoncore.com/services"},{"@type":"ListItem","position":3,"name":"Data & Analytics","item":"https://aethoncore.com/services/analytics"}]},{"@context":"https://schema.org","@type":"Service","name":"Data & Analytics","url":"https://aethoncore.com/services/analytics","provider":{"@type":"Organization","name":"Aethon Core Inc.","url":"https://aethoncore.com"},"areaServed":[{"@type":"Country","name":"Canada"},{"@type":"Country","name":"United States"}],"serviceType":"Data & Analytics"}]} />
       <PageHero
         breadcrumbs={[{ label: "Services", href: "/services" }, { label: "Data & Analytics" }]}
         eyebrow="Specialized"

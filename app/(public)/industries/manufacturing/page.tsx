@@ -1,3 +1,4 @@
+import { JsonLd } from "@/components/ui/JsonLd"
 import type { Metadata } from "next"
 import Link from "next/link"
 import {
@@ -8,9 +9,27 @@ import { PageHero } from "@/components/ui/PageHero"
 import { CTASection } from "@/components/sections/CTASection"
 
 export const metadata: Metadata = {
-  title: "Manufacturing — Industries",
-  description:
-    "We connect factory floor systems to business technology, predict equipment failures before they happen, and secure industrial networks — without disrupting production.",
+  title: "Manufacturing IT Services Canada | OT/IT Convergence & ICS Security | Aethon Core",
+  description: "Managed IT and OT services for Canadian manufacturers. OT/IT convergence, ICS/SCADA security, predictive maintenance infrastructure, and supply chain visibility. Nationwide coverage.",
+  keywords: [
+    "manufacturing IT services Canada",
+    "OT IT convergence Canada",
+    "ICS security Canada",
+    "SCADA security Canada",
+    "industrial cybersecurity Canada",
+    "manufacturing managed services Canada",
+    "predictive maintenance IT Canada",
+    "factory IT Canada",
+    "OT security Canada",
+    "manufacturing technology Canada",
+  ],
+  alternates: { canonical: "https://aethoncore.com/industries/manufacturing" },
+  openGraph: {
+    type: "website", locale: "en_CA", url: "https://aethoncore.com/industries/manufacturing",
+    siteName: "Aethon Core",
+    title: "Manufacturing IT Services Canada | OT/IT Convergence & ICS Security | Aethon Core",
+    description: "Managed IT and OT services for Canadian manufacturers. OT/IT convergence, ICS/SCADA security, predictive maintenance infrastructure, and supply chain visibility. Nationwide coverage.",
+  },
 }
 
 const challenges = [
@@ -100,6 +119,7 @@ const stats = [
 export default function ManufacturingPage() {
   return (
     <>
+      <JsonLd schema={[{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://aethoncore.com"},{"@type":"ListItem","position":2,"name":"Industries","item":"https://aethoncore.com/industries"},{"@type":"ListItem","position":3,"name":"Manufacturing","item":"https://aethoncore.com/industries/manufacturing"}]}]} />
       <PageHero
         breadcrumbs={[{ label: "Industries", href: "/industries" }, { label: "Manufacturing" }]}
         eyebrow="Manufacturing"

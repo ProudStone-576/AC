@@ -1,3 +1,4 @@
+import { JsonLd } from "@/components/ui/JsonLd"
 import type { Metadata } from "next"
 import Link from "next/link"
 import {
@@ -51,9 +52,26 @@ const faqs: { q: string; a: string }[] = [
 ]
 
 export const metadata: Metadata = {
-  title: "Identity & Access Management — Services",
-  description:
-    "Enterprise IAM programs: SSO, directory services, privileged access management, and Zero Trust identity architecture for organizations where access control is a security-critical function.",
+  title: "Identity & Access Management Canada | Zero Trust IAM | Aethon Core",
+  description: "Enterprise IAM services in Canada. SSO, MFA, PAM, Zero Trust identity architecture, and directory services for organizations where access control is mission-critical. Toronto & national.",
+  keywords: [
+    "identity access management Canada",
+    "IAM services Canada",
+    "Zero Trust IAM Canada",
+    "PAM Canada",
+    "privileged access management Canada",
+    "SSO implementation Canada",
+    "MFA deployment Canada",
+    "identity security Canada",
+    "enterprise IAM Toronto",
+  ],
+  alternates: { canonical: "https://aethoncore.com/services/iam" },
+  openGraph: {
+    type: "website", locale: "en_CA", url: "https://aethoncore.com/services/iam",
+    siteName: "Aethon Core",
+    title: "Identity & Access Management Canada | Zero Trust IAM | Aethon Core",
+    description: "Enterprise IAM services in Canada. SSO, MFA, PAM, Zero Trust identity architecture, and directory services for organizations where access control is mission-critical. Toronto & national.",
+  },
 }
 
 const capabilities = [
@@ -170,6 +188,7 @@ const useCases = [
 export default function IAMPage() {
   return (
     <>
+      <JsonLd schema={[{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://aethoncore.com"},{"@type":"ListItem","position":2,"name":"Services","item":"https://aethoncore.com/services"},{"@type":"ListItem","position":3,"name":"Identity & Access Management","item":"https://aethoncore.com/services/iam"}]},{"@context":"https://schema.org","@type":"Service","name":"Identity & Access Management","url":"https://aethoncore.com/services/iam","provider":{"@type":"Organization","name":"Aethon Core Inc.","url":"https://aethoncore.com"},"areaServed":[{"@type":"Country","name":"Canada"},{"@type":"Country","name":"United States"}],"serviceType":"Identity & Access Management"}]} />
       <PageHero
         breadcrumbs={[{ label: "Services", href: "/services" }, { label: "Identity & Access Management" }]}
         eyebrow="Specialized"

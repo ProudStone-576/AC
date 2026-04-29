@@ -1,3 +1,4 @@
+import { JsonLd } from "@/components/ui/JsonLd"
 import type { Metadata } from "next"
 import Link from "next/link"
 import {
@@ -51,9 +52,26 @@ const faqs: { q: string; a: string }[] = [
 ]
 
 export const metadata: Metadata = {
-  title: "Disaster Recovery & Business Continuity — Services",
-  description:
-    "DR and BCP programs built around tested recovery procedures, not documented ones. RTO/RPO commitments that survive contact with a real failure event.",
+  title: "Disaster Recovery Services Canada | DRaaS & Business Continuity | Aethon Core",
+  description: "Disaster recovery and business continuity for Canadian enterprises. DRaaS, tested RTO/RPO commitments, failover infrastructure, and DR runbooks. Toronto & national coverage.",
+  keywords: [
+    "disaster recovery services Canada",
+    "DRaaS Canada",
+    "business continuity planning Canada",
+    "disaster recovery Toronto",
+    "IT disaster recovery Canada",
+    "RTO RPO Canada",
+    "failover services Canada",
+    "backup disaster recovery Canada",
+    "enterprise DR Canada",
+  ],
+  alternates: { canonical: "https://aethoncore.com/services/disaster-recovery" },
+  openGraph: {
+    type: "website", locale: "en_CA", url: "https://aethoncore.com/services/disaster-recovery",
+    siteName: "Aethon Core",
+    title: "Disaster Recovery Services Canada | DRaaS & Business Continuity | Aethon Core",
+    description: "Disaster recovery and business continuity for Canadian enterprises. DRaaS, tested RTO/RPO commitments, failover infrastructure, and DR runbooks. Toronto & national coverage.",
+  },
 }
 
 const capabilities = [
@@ -168,6 +186,7 @@ const useCases = [
 export default function DisasterRecoveryPage() {
   return (
     <>
+      <JsonLd schema={[{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://aethoncore.com"},{"@type":"ListItem","position":2,"name":"Services","item":"https://aethoncore.com/services"},{"@type":"ListItem","position":3,"name":"Disaster Recovery","item":"https://aethoncore.com/services/disaster-recovery"}]},{"@context":"https://schema.org","@type":"Service","name":"Disaster Recovery","url":"https://aethoncore.com/services/disaster-recovery","provider":{"@type":"Organization","name":"Aethon Core Inc.","url":"https://aethoncore.com"},"areaServed":[{"@type":"Country","name":"Canada"},{"@type":"Country","name":"United States"}],"serviceType":"Disaster Recovery"}]} />
       <PageHero
         breadcrumbs={[{ label: "Services", href: "/services" }, { label: "Disaster Recovery & BCP" }]}
         eyebrow="Delivery"

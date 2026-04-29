@@ -1,3 +1,4 @@
+import { JsonLd } from "@/components/ui/JsonLd"
 import type { Metadata } from "next"
 import Link from "next/link"
 import {
@@ -8,9 +9,26 @@ import { PageHero } from "@/components/ui/PageHero"
 import { CTASection } from "@/components/sections/CTASection"
 
 export const metadata: Metadata = {
-  title: "Energy & Utilities — Industries",
-  description:
-    "NERC CIP compliant OT security and grid modernization for energy and utility companies operating critical national infrastructure.",
+  title: "Energy & Utilities IT Services Canada | NERC CIP, OT Security | Aethon Core",
+  description: "Managed IT and OT services for Canadian energy and utilities organizations. NERC CIP-compliant operations, critical infrastructure security, and OT environment modernization without disrupting operations.",
+  keywords: [
+    "energy IT services Canada",
+    "utilities IT Canada",
+    "NERC CIP compliance Canada",
+    "critical infrastructure security Canada",
+    "OT security energy Canada",
+    "power grid cybersecurity Canada",
+    "energy managed services Canada",
+    "utilities cybersecurity Canada",
+    "ICS security energy Canada",
+  ],
+  alternates: { canonical: "https://aethoncore.com/industries/energy" },
+  openGraph: {
+    type: "website", locale: "en_CA", url: "https://aethoncore.com/industries/energy",
+    siteName: "Aethon Core",
+    title: "Energy & Utilities IT Services Canada | NERC CIP, OT Security | Aethon Core",
+    description: "Managed IT and OT services for Canadian energy and utilities organizations. NERC CIP-compliant operations, critical infrastructure security, and OT environment modernization without disrupting operations.",
+  },
 }
 
 const challenges = [
@@ -100,6 +118,7 @@ const stats = [
 export default function EnergyPage() {
   return (
     <>
+      <JsonLd schema={[{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://aethoncore.com"},{"@type":"ListItem","position":2,"name":"Industries","item":"https://aethoncore.com/industries"},{"@type":"ListItem","position":3,"name":"Energy & Utilities","item":"https://aethoncore.com/industries/energy"}]}]} />
       <PageHero
         breadcrumbs={[{ label: "Industries", href: "/industries" }, { label: "Energy & Utilities" }]}
         eyebrow="Energy & Utilities"

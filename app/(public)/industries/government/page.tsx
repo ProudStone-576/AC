@@ -1,3 +1,4 @@
+import { JsonLd } from "@/components/ui/JsonLd"
 import type { Metadata } from "next"
 import {
    Building, ShieldCheck, Lock,
@@ -7,9 +8,27 @@ import { PageHero } from "@/components/ui/PageHero"
 import { CTASection } from "@/components/sections/CTASection"
 
 export const metadata: Metadata = {
-  title: "Government & Public Sector — Industries",
-  description:
-    "FedRAMP Authorized, StateRAMP compliant, and ITAR-capable infrastructure for federal, state, and local government agencies.",
+  title: "Government IT Services Canada | PBMM, Protected B, FedRAMP | Aethon Core",
+  description: "Managed IT services for Canadian federal, provincial, and municipal organizations. PBMM, Protected B, and FedRAMP-grade managed services. We hold the clearances and operate the controls your mandates require.",
+  keywords: [
+    "government IT services Canada",
+    "public sector IT Canada",
+    "PBMM compliance Canada",
+    "Protected B IT Canada",
+    "federal IT services Canada",
+    "provincial IT services Canada",
+    "municipal IT Canada",
+    "government cybersecurity Canada",
+    "GC Cloud Canada",
+    "government managed services Canada",
+  ],
+  alternates: { canonical: "https://aethoncore.com/industries/government" },
+  openGraph: {
+    type: "website", locale: "en_CA", url: "https://aethoncore.com/industries/government",
+    siteName: "Aethon Core",
+    title: "Government IT Services Canada | PBMM, Protected B, FedRAMP | Aethon Core",
+    description: "Managed IT services for Canadian federal, provincial, and municipal organizations. PBMM, Protected B, and FedRAMP-grade managed services. We hold the clearances and operate the controls your mandates require.",
+  },
 }
 
 const challenges = [
@@ -99,6 +118,7 @@ const stats = [
 export default function GovernmentPage() {
   return (
     <>
+      <JsonLd schema={[{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://aethoncore.com"},{"@type":"ListItem","position":2,"name":"Industries","item":"https://aethoncore.com/industries"},{"@type":"ListItem","position":3,"name":"Government & Public Sector","item":"https://aethoncore.com/industries/government"}]}]} />
       <PageHero
         breadcrumbs={[{ label: "Industries", href: "/industries" }, { label: "Government & Public Sector" }]}
         eyebrow="Government & Public Sector"

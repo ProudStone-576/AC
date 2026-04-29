@@ -1,3 +1,4 @@
+import { JsonLd } from "@/components/ui/JsonLd"
 import type { Metadata } from "next"
 import {
   Cloud,
@@ -28,9 +29,29 @@ const faqs = [
 ]
 
 export const metadata: Metadata = {
-  title: "Cloud Infrastructure - Services",
-  description:
-    "We design, improve, and manage cloud environments so they are reliable, secure, and easier for teams to understand.",
+  title: "Cloud Infrastructure Services Canada | AWS & Azure Managed | Aethon Core",
+  description: "Managed cloud infrastructure for enterprises across Canada. AWS, Azure, and Google Cloud design, migration, and operations. Multi-cloud, hybrid, and on-premises — managed as one platform. Toronto & national.",
+  keywords: [
+    "cloud infrastructure services Canada",
+    "AWS managed services Canada",
+    "Azure managed services Canada",
+    "Google Cloud managed services Canada",
+    "cloud migration services Canada",
+    "managed cloud services Canada",
+    "multi-cloud management Canada",
+    "hybrid cloud services Canada",
+    "cloud infrastructure company Toronto",
+    "enterprise cloud Canada",
+    "FinOps Canada",
+    "cloud cost management Canada",
+  ],
+  alternates: { canonical: "https://aethoncore.com/services/cloud" },
+  openGraph: {
+    type: "website", locale: "en_CA", url: "https://aethoncore.com/services/cloud",
+    siteName: "Aethon Core",
+    title: "Cloud Infrastructure Services Canada | AWS & Azure Managed | Aethon Core",
+    description: "Managed cloud infrastructure for enterprises across Canada. AWS, Azure, and Google Cloud design, migration, and operations. Multi-cloud, hybrid, and on-premises — managed as one platform. Toronto & national.",
+  },
 }
 
 const outcomes = [
@@ -85,6 +106,7 @@ const walkthroughItems = [
 export default function CloudPage() {
   return (
     <>
+      <JsonLd schema={[{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://aethoncore.com"},{"@type":"ListItem","position":2,"name":"Services","item":"https://aethoncore.com/services"},{"@type":"ListItem","position":3,"name":"Cloud Infrastructure","item":"https://aethoncore.com/services/cloud"}]},{"@context":"https://schema.org","@type":"Service","name":"Cloud Infrastructure","url":"https://aethoncore.com/services/cloud","provider":{"@type":"Organization","name":"Aethon Core Inc.","url":"https://aethoncore.com"},"areaServed":[{"@type":"Country","name":"Canada"},{"@type":"Country","name":"United States"}],"serviceType":"Cloud Infrastructure"}]} />
       <PageHero
         breadcrumbs={[{ label: "Services", href: "/services" }, { label: "Cloud Infrastructure" }]}
         eyebrow="Specialized"

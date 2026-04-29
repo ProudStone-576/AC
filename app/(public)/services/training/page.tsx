@@ -1,3 +1,4 @@
+import { JsonLd } from "@/components/ui/JsonLd"
 import type { Metadata } from "next"
 import Link from "next/link"
 import {
@@ -192,6 +193,7 @@ const useCases = [
 export default function TrainingPage() {
   return (
     <>
+      <JsonLd schema={[{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://aethoncore.com"},{"@type":"ListItem","position":2,"name":"Services","item":"https://aethoncore.com/services"},{"@type":"ListItem","position":3,"name":"Training & Enablement","item":"https://aethoncore.com/services/training"}]},{"@context":"https://schema.org","@type":"Service","name":"Training & Enablement","url":"https://aethoncore.com/services/training","provider":{"@type":"Organization","name":"Aethon Core Inc.","url":"https://aethoncore.com"},"areaServed":[{"@type":"Country","name":"Canada"},{"@type":"Country","name":"United States"}],"serviceType":"Training & Enablement"}]} />
       <PageHero
         breadcrumbs={[{ label: "Services", href: "/services" }, { label: "Training & Enablement" }]}
         eyebrow="Advisory"

@@ -1,3 +1,4 @@
+import { JsonLd } from "@/components/ui/JsonLd"
 import type { Metadata } from "next"
 import Link from "next/link"
 import {
@@ -51,9 +52,27 @@ const faqs: { q: string; a: string }[] = [
 ]
 
 export const metadata: Metadata = {
-  title: "Enterprise AI — Services",
-  description:
-    "We build AI that actually works in your business — not just demos. Data infrastructure, model deployment, and responsible AI governance for organizations at scale.",
+  title: "Enterprise AI Services Canada | AI Infrastructure & MLOps | Aethon Core",
+  description: "Enterprise AI infrastructure and MLOps for Canadian organizations. Model deployment, data pipelines, AI governance, and production-ready AI systems. Move from pilot to production with accountability.",
+  keywords: [
+    "enterprise AI services Canada",
+    "AI infrastructure Canada",
+    "MLOps Canada",
+    "AI consulting Canada",
+    "machine learning services Canada",
+    "AI implementation Canada",
+    "LLM deployment Canada",
+    "generative AI enterprise Canada",
+    "AI governance Canada",
+    "enterprise AI Toronto",
+  ],
+  alternates: { canonical: "https://aethoncore.com/services/ai" },
+  openGraph: {
+    type: "website", locale: "en_CA", url: "https://aethoncore.com/services/ai",
+    siteName: "Aethon Core",
+    title: "Enterprise AI Services Canada | AI Infrastructure & MLOps | Aethon Core",
+    description: "Enterprise AI infrastructure and MLOps for Canadian organizations. Model deployment, data pipelines, AI governance, and production-ready AI systems. Move from pilot to production with accountability.",
+  },
 }
 
 const capabilities = [
@@ -194,6 +213,7 @@ const useCases = [
 export default function EnterpriseAIPage() {
   return (
     <>
+      <JsonLd schema={[{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://aethoncore.com"},{"@type":"ListItem","position":2,"name":"Services","item":"https://aethoncore.com/services"},{"@type":"ListItem","position":3,"name":"Enterprise AI","item":"https://aethoncore.com/services/ai"}]},{"@context":"https://schema.org","@type":"Service","name":"Enterprise AI","url":"https://aethoncore.com/services/ai","provider":{"@type":"Organization","name":"Aethon Core Inc.","url":"https://aethoncore.com"},"areaServed":[{"@type":"Country","name":"Canada"},{"@type":"Country","name":"United States"}],"serviceType":"Enterprise AI"}]} />
       <PageHero
         breadcrumbs={[{ label: "Services", href: "/services" }, { label: "Enterprise AI" }]}
         eyebrow="Specialized"

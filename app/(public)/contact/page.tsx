@@ -6,9 +6,22 @@ import { FadeIn } from "@/components/ui/FadeIn"
 import { company } from "@/lib/constants/company"
 
 export const metadata: Metadata = {
-  title: "Contact",
-  description:
-    "Talk to Aethon Core about your technology needs — cloud, security, network, data, or anything else your business runs on.",
+  title: "Contact Aethon Core | Enterprise IT Services Canada | Get a Proposal",
+  description: "Contact Aethon Core to discuss managed IT services, cloud infrastructure, cybersecurity, or network operations. We respond within one business day. Toronto-based, serving organizations across Canada.",
+  keywords: [
+    "contact IT services Canada",
+    "managed IT services consultation Canada",
+    "IT services Toronto contact",
+    "enterprise IT services quote Canada",
+    "managed services proposal Canada",
+  ],
+  alternates: { canonical: "https://aethoncore.com/contact" },
+  openGraph: {
+    type: "website", locale: "en_CA", url: "https://aethoncore.com/contact",
+    siteName: "Aethon Core",
+    title: "Contact Aethon Core | Enterprise IT Services Canada | Get a Proposal",
+    description: "Contact Aethon Core to discuss managed IT services, cloud infrastructure, cybersecurity, or network operations. We respond within one business day. Toronto-based, serving organizations across Canada.",
+  },
 }
 
 export default function ContactPage() {

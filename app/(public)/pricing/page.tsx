@@ -1,4 +1,5 @@
 import React from "react"
+import { JsonLd } from "@/components/ui/JsonLd"
 import type { Metadata } from "next"
 import Link from "next/link"
 import { ArrowRight, CheckCircle2, Minus } from "lucide-react"
@@ -8,9 +9,24 @@ import { FadeIn } from "@/components/ui/FadeIn"
 import { FaqAccordion } from "./_components/FaqAccordion"
 
 export const metadata: Metadata = {
-  title: "Pricing — Aethon Core",
-  description:
-    "All pricing in one place. Monthly software plans from $2,700/mo. One-time projects from $5,900. Ongoing management from $1,700/mo. No hidden fees.",
+  title: "IT Services Pricing Canada | Managed IT, Cloud & Security Plans | Aethon Core",
+  description: "Transparent pricing for enterprise managed IT services. Monthly plans from $2,700/mo, one-time projects from $5,900, ongoing management from $1,700/mo. No hidden fees. Toronto & national.",
+  keywords: [
+    "IT services pricing Canada",
+    "managed IT services cost Canada",
+    "managed service provider pricing Canada",
+    "cloud services pricing Canada",
+    "IT outsourcing cost Canada",
+    "enterprise IT pricing",
+    "managed security pricing Canada",
+  ],
+  alternates: { canonical: "https://aethoncore.com/pricing" },
+  openGraph: {
+    type: "website", locale: "en_CA", url: "https://aethoncore.com/pricing",
+    siteName: "Aethon Core",
+    title: "IT Services Pricing Canada | Managed IT, Cloud & Security Plans | Aethon Core",
+    description: "Transparent pricing for enterprise managed IT services. Monthly plans from $2,700/mo, one-time projects from $5,900, ongoing management from $1,700/mo. No hidden fees. Toronto & national.",
+  },
 }
 
 /* ─── Monthly subscription plans ─────────────────────────────────────────── */
@@ -328,6 +344,7 @@ function Cell({ value }: { value: string | boolean | undefined }) {
 export default function PricingPage() {
   return (
     <>
+      <JsonLd schema={[{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://aethoncore.com"},{"@type":"ListItem","position":2,"name":"Pricing","item":"https://aethoncore.com/pricing"}]},{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Are prices in US dollars or Canadian?","acceptedAnswer":{"@type":"Answer","text":"All prices listed are in USD. If you are a Canadian client and prefer a quote in CAD, just ask — we can do that."}},{"@type":"Question","name":"Can we start on a smaller plan and move up later?","acceptedAnswer":{"@type":"Answer","text":"Yes — and it is seamless. No migration, no new setup. Most clients on Professional move up to Enterprise within 18 months as they grow."}},{"@type":"Question","name":"Are there any setup fees?","acceptedAnswer":{"@type":"Answer","text":"Enterprise and Enterprise Plus plans include full onboarding at no extra charge. Foundation and Professional plans have a one-time $2,500 onboarding fee covering setup, connecting your tools, and a handover session."}},{"@type":"Question","name":"How long is the contract?","acceptedAnswer":{"@type":"Answer","text":"Software plans are annual. Sign a 2-year deal and get 8% off. Sign a 3-year deal and get 14% off. Management services are month-to-month after an initial 3-month term."}},{"@type":"Question","name":"Do you have discounts for non-profits or government?","acceptedAnswer":{"@type":"Answer","text":"Yes. Registered non-profits and Canadian public sector organisations get 20% off software plans."}},{"@type":"Question","name":"What does uptime guarantee actually mean?","acceptedAnswer":{"@type":"Answer","text":"If we fail to meet the uptime percentage, you get money back. It is written into your contract with defined remedies — not just a marketing promise."}}]}]} />
       <PageHero
         breadcrumbs={[{ label: "Pricing" }]}
         eyebrow="Pricing"
