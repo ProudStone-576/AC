@@ -14,18 +14,26 @@ export const metadata: Metadata = {
   description:
     "Aethon Core Inc. is a Canadian enterprise infrastructure company providing managed cloud, network, security, and data services to organizations that cannot afford downtime, breaches, or vendor lock-in.",
   keywords: [
+    "managed IT services Canada",
+    "managed IT services Toronto",
     "enterprise infrastructure Canada",
     "managed infrastructure services Canada",
     "cloud infrastructure company Canada",
-    "managed IT services Canada",
     "enterprise managed services",
+    "managed service provider Canada",
+    "IT outsourcing Canada",
     "Canadian infrastructure company",
     "cloud security Canada",
+    "cybersecurity company Canada",
     "data infrastructure Canada",
     "enterprise network Canada",
     "managed cloud services",
     "Aethon Core",
     "infrastructure managed services Ontario",
+    "enterprise IT services Toronto",
+    "managed services provider Toronto",
+    "cloud managed services Canada",
+    "IT company Toronto",
   ],
   authors: [{ name: "Aethon Core Inc." }],
   creator: "Aethon Core Inc.",
@@ -83,12 +91,18 @@ export default function RootLayout({
             __html: JSON.stringify([
               {
                 "@context": "https://schema.org",
-                "@type": "Organization",
+                "@type": ["Organization", "ProfessionalService"],
                 "name": "Aethon Core Inc.",
-                "alternateName": "Aethon Core",
+                "alternateName": ["Aethon Core", "AethonCore"],
                 "url": "https://aethoncore.com",
-                "logo": "https://aethoncore.com/logo.png",
-                "description": "Canadian enterprise infrastructure company providing managed cloud, network, security, and data services.",
+                "logo": {
+                  "@type": "ImageObject",
+                  "url": "https://aethoncore.com/logo.png",
+                  "width": 512,
+                  "height": 512
+                },
+                "image": "https://aethoncore.com/opengraph-image",
+                "description": "Canadian enterprise infrastructure company. Managed IT services, cloud infrastructure, cybersecurity, and network operations for organizations across Canada and North America. 24/7 NOC/SOC, contractual SLAs, zero vendor lock-in.",
                 "foundingDate": "2024",
                 "address": {
                   "@type": "PostalAddress",
@@ -98,19 +112,24 @@ export default function RootLayout({
                   "postalCode": "M5X 1A9",
                   "addressCountry": "CA"
                 },
+                "geo": {
+                  "@type": "GeoCoordinates",
+                  "latitude": 43.6481,
+                  "longitude": -79.3826
+                },
                 "contactPoint": [
                   {
                     "@type": "ContactPoint",
-                    "telephone": "+1-800-238-4667",
+                    "email": "hello@aethoncore.com",
                     "contactType": "customer service",
-                    "areaServed": "CA",
+                    "areaServed": ["CA", "US"],
                     "availableLanguage": "English"
                   },
                   {
                     "@type": "ContactPoint",
-                    "telephone": "+1-800-238-4667",
+                    "email": "hello@aethoncore.com",
                     "contactType": "sales",
-                    "areaServed": ["CA", "US", "GB"],
+                    "areaServed": ["CA", "US"],
                     "availableLanguage": "English"
                   }
                 ],
@@ -118,9 +137,34 @@ export default function RootLayout({
                   "https://linkedin.com/company/aethoncore",
                   "https://twitter.com/aethoncore"
                 ],
-                "areaServed": {
-                  "@type": "Country",
-                  "name": "Canada"
+                "areaServed": [
+                  { "@type": "Country", "name": "Canada"        },
+                  { "@type": "Country", "name": "United States" }
+                ],
+                "knowsAbout": [
+                  "Managed IT Services",
+                  "Cloud Infrastructure",
+                  "Cybersecurity",
+                  "Network Operations",
+                  "Data Infrastructure",
+                  "Zero Trust Security",
+                  "Disaster Recovery",
+                  "Compliance Management",
+                  "DevOps",
+                  "AI Infrastructure"
+                ],
+                "hasOfferCatalog": {
+                  "@type": "OfferCatalog",
+                  "name": "Enterprise IT Services",
+                  "itemListElement": [
+                    { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Managed IT Services" } },
+                    { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Cloud Infrastructure" } },
+                    { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Cybersecurity & MDR" } },
+                    { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Network & Connectivity" } },
+                    { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Data & AI Infrastructure" } },
+                    { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Disaster Recovery" } },
+                    { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Compliance Management" } }
+                  ]
                 }
               },
               {
@@ -128,10 +172,12 @@ export default function RootLayout({
                 "@type": "WebSite",
                 "name": "Aethon Core",
                 "url": "https://aethoncore.com",
-                "description": "Enterprise infrastructure managed services — cloud, security, network, and data.",
-                "publisher": {
-                  "@type": "Organization",
-                  "name": "Aethon Core Inc."
+                "description": "Enterprise managed IT services — cloud, security, network, and data. Serving Canada and North America.",
+                "publisher": { "@type": "Organization", "name": "Aethon Core Inc." },
+                "potentialAction": {
+                  "@type": "SearchAction",
+                  "target": { "@type": "EntryPoint", "urlTemplate": "https://aethoncore.com/search?q={search_term_string}" },
+                  "query-input": "required name=search_term_string"
                 }
               }
             ])
