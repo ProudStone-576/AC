@@ -1,7 +1,7 @@
 "use client"
 
 import Link from "next/link"
-import { ArrowRight, Mail, Phone } from "lucide-react"
+import { ArrowRight, Mail } from "lucide-react"
 import { company } from "@/lib/constants/company"
 import { LiveDot } from "@/components/ui/LiveDot"
 import { useIntersection } from "@/hooks/use-intersection"
@@ -118,13 +118,6 @@ export function FinalCTA() {
             >
               <Mail className="h-4 w-4" />
               {company.email}
-            </a>
-            <a
-              href="tel:+18002384667"
-              className="flex items-center gap-2 text-sm text-canvas-muted transition-colors hover:text-canvas-foreground"
-            >
-              <Phone className="h-4 w-4" />
-              {company.phone}
             </a>
           </div>
 

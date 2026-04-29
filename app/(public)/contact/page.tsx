@@ -1,5 +1,5 @@
 import type { Metadata } from "next"
-import { Mail, Phone, Clock, MessageSquare } from "lucide-react"
+import { Mail, Clock, MessageSquare } from "lucide-react"
 import { PageHero } from "@/components/ui/PageHero"
 import { ContactForm } from "@/components/contact/ContactForm"
 import { FadeIn } from "@/components/ui/FadeIn"
@@ -53,21 +53,6 @@ export default function ContactPage() {
                     </div>
                   </div>
 
-                  <div className="flex items-start gap-3">
-                    <div className="flex h-8 w-8 shrink-0 items-center justify-center rounded-md bg-blue-light">
-                      <Phone className="h-4 w-4 text-blue" />
-                    </div>
-                    <div>
-                      <p className="text-sm font-medium text-foreground">Phone</p>
-                      <a
-                        href={`tel:+18002384667`}
-                        className="text-sm text-muted-foreground transition-colors hover:text-blue"
-                      >
-                        {company.phone}
-                      </a>
-                      <p className="mt-0.5 text-xs text-muted-foreground/70">Mon–Fri, 9am–5pm ET</p>
-                    </div>
-                  </div>
                 </div>
 
                 <div className="my-6 border-t border-border" />

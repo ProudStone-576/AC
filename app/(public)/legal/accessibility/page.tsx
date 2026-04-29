@@ -143,12 +143,6 @@ function ProseContent() {
               aethoncore.com/contact
             </Link>
           </li>
-          <li>
-            <span className="font-medium text-foreground">Phone: </span>
-            <a href="tel:+18002384667" className="text-blue underline underline-offset-2 hover:no-underline">
-              +1 (800) 238-4667
-            </a>
-          </li>
         </ul>
         <p className="mt-4">
           We aim to respond to accessibility feedback within <strong className="text-foreground">2 business days</strong> and to resolve accessibility barriers within a reasonable timeframe based on complexity.

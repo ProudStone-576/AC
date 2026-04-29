@@ -8,7 +8,6 @@ export const company = {
     "Aethon Core delivers end-to-end managed IT services, digital transformation, and consulting to enterprises across Canada and North America. We operate, secure, and modernize your technology stack with contractual accountability and 24/7 engineering coverage.",
   founded: "2024",
   email: "hello@aethoncore.com",
-  phone: "+1 (800) 238-4667",
   address: {
     street: "100 King Street West",
     city: "Toronto",
