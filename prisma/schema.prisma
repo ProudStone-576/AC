@@ -2,12 +2,8 @@ generator client {
   provider = "prisma-client-js"
 }
 
-// ⚠️  BEFORE DEPLOYING TO PRODUCTION:
-//   1. Change provider from "sqlite" to "postgresql"
-//   2. Set DATABASE_URL in your hosting env vars to your PostgreSQL connection string
-//   3. Run: npx prisma migrate deploy
 datasource db {
-  provider = "sqlite"
+  provider = "postgresql"
   url      = env("DATABASE_URL")
 }
 
