@@ -5,7 +5,8 @@
   "private": true,
   "scripts": {
     "dev": "next dev --turbopack",
-    "build": "prisma migrate deploy && next build",
+    "build": "next build",
+    "migrate": "prisma migrate deploy",
     "start": "next start",
     "lint": "eslint",
     "format": "prettier --write \"**/*.{ts,tsx}\"",
