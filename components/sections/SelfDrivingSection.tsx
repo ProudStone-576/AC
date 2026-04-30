@@ -384,18 +384,18 @@ function DashboardMockup() {
 const cards = [
   {
     Icon: CubeWireframe,
-    label: "Unified visibility across your IT estate",
-    desc: "Every asset, every change, every incident tracked from one control plane — cloud, on-premise, and edge, correlated in real time.",
+    label: "See everything in one place",
+    desc: "Every server, device, and system you own — tracked in one dashboard, updated in real time.",
   },
   {
     Icon: HexWireframe,
-    label: "AIOps-powered anomaly detection",
-    desc: "Continuous correlation across 200+ data sources surfaces anomalies before they become incidents — and recommendations before they become decisions.",
+    label: "Problems caught before they happen",
+    desc: "We watch signals from over 200 sources. When something looks wrong, we flag it before it turns into an outage.",
   },
   {
     Icon: DiamondWireframe,
-    label: "Automated remediation, not just alerting",
-    desc: "When a threshold is breached, the platform acts — automated runbooks execute, engineers are notified only when human judgment is required.",
+    label: "We fix it, not just flag it",
+    desc: "When something goes wrong, the system fixes it automatically. An engineer steps in only if the situation needs a human decision.",
   },
 ]
 
@@ -482,9 +482,9 @@ export function SelfDrivingSection() {
               className="text-3xl font-bold leading-tight tracking-tight sm:text-4xl"
               style={{ color: "#f5f5f5" }}
             >
-              Proactive operations.
+              We fix problems
               <br />
-              <span style={{ color: "#f5f5f5" }}>Before you feel the impact.</span>
+              <span style={{ color: "#f5f5f5" }}>before you notice them.</span>
             </h2>
           </div>
 
@@ -494,14 +494,14 @@ export function SelfDrivingSection() {
             style={{ transitionDelay: "100ms" }}
           >
             <p className="text-base leading-relaxed" style={{ color: "#777" }}>
-              The Aethon Core Platform continuously correlates signals from infrastructure, applications, and business systems. It surfaces what matters, acts on what is defined, and escalates only what requires human judgment — so your operations team focuses on outcomes, not tickets.
+              Our platform watches your systems around the clock. It filters out noise, handles routine issues automatically, and only calls your team when something truly needs attention.
             </p>
             <a
               href="/products/platform"
               className="mt-5 inline-flex items-center gap-1.5 text-sm font-medium transition-colors hover:opacity-80"
               style={{ color: "#aaa" }}
             >
-              Explore the platform
+              See how the platform works
               <ArrowRight className="h-4 w-4" />
             </a>
           </div>

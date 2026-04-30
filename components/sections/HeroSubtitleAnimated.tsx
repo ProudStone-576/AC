@@ -2,9 +2,9 @@
 
 import { useEffect, useState } from "react"
 
-const SERVICES = ["Managed IT.", "Cloud.", "Security & MDR.", "Network.", "Data.", "Transformation.", "All under one SLA."]
+const SERVICES = ["Managed IT.", "Cloud.", "Security.", "Network.", "Data.", "Apps.", "All under one agreement."]
 const REST =
-  "Aethon Core operates your full technology stack — with named engineers, written SLAs, and accountability for every outcome."
+  "Aethon Core manages all your IT — real engineers, a written guarantee, and full responsibility for every outcome."
 
 export function HeroSubtitleAnimated() {
   const [visible, setVisible] = useState<boolean[]>(() =>

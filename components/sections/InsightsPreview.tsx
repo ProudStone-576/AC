@@ -46,7 +46,7 @@ export function InsightsPreview() {
           <div className="mb-12 flex flex-col gap-8 sm:flex-row sm:items-end sm:justify-between">
             <SectionHeader
               eyebrow="Insights"
-              title="Practical thinking on technology from people who build it"
+              title="Straight talk on technology from people who run it"
             />
             <Link
               href="/insights"

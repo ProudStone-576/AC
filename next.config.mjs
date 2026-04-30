@@ -2,6 +2,7 @@ import { fileURLToPath } from "url"
 import path from "path"
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url))
+const isDev = process.env.NODE_ENV !== "production"
 
 // ─── Content Security Policy ──────────────────────────────────────────────────
 // 'unsafe-inline' in script-src is required because Next.js injects inline
@@ -10,11 +11,11 @@ const __dirname = path.dirname(fileURLToPath(import.meta.url))
 const ContentSecurityPolicy = [
   "default-src 'self'",
 
-  "script-src 'self' 'unsafe-inline' https://plausible.io",
+  `script-src 'self' 'unsafe-inline'${isDev ? " 'unsafe-eval'" : ""} https://plausible.io`,
   "style-src 'self' 'unsafe-inline' https://fonts.googleapis.com",
   "font-src 'self' https://fonts.gstatic.com",
   "img-src 'self' data: blob: https:",
-  "connect-src 'self' https://plausible.io",
+  `connect-src 'self'${isDev ? " ws: wss:" : ""} https://plausible.io`,
   "media-src 'self' blob:",
   "object-src 'none'",
   "frame-src https://www.youtube-nocookie.com https://www.youtube.com",

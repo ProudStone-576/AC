@@ -76,15 +76,15 @@ export function FinalCTA() {
             className={cn("text-4xl font-semibold leading-tight tracking-tight text-white sm:text-5xl animate-fade-up", isVisible && "is-visible")}
             style={{ transitionDelay: "80ms" }}
           >
-            Ready to see what end-to-end managed IT
-            actually looks like?
+            Ready to hand your IT to a team
+            that actually owns it?
           </h2>
 
           <p
             className={cn("mt-6 text-lg text-canvas-muted animate-fade-up", isVisible && "is-visible")}
             style={{ transitionDelay: "180ms" }}
           >
-            Talk to an Aethon Core engineer about your environment. We&apos;ll be direct about whether our engagement model is the right fit — and what it would look like in practice.
+            Speak with one of our engineers. We&apos;ll tell you honestly if we&apos;re a good fit — and what working with us would look like.
           </p>
 
           {/* CTAs */}

@@ -87,7 +87,7 @@ export function HeroSection() {
             >
               <LiveDot />
               <span className="font-mono text-xs text-canvas-muted">
-                24/7 NOC &amp; SOC — now onboarding enterprise clients
+                Our team is online 24/7 — now taking on new clients
               </span>
             </div>
 
@@ -144,7 +144,7 @@ export function HeroSection() {
                   willChange: "filter, transform",
                 }}
               >
-                with contractual accountability.
+                and we put it in writing.
               </span>
             </h1>
 
@@ -199,9 +199,9 @@ export function HeroSection() {
           style={{ animation: "word-blur-up 0.7s cubic-bezier(0.16,1,0.3,1) both 780ms" }}
         >
           {[
-            { value: "99.99%", label: "Uptime SLA", note: "contractual — not aspirational" },
-            { value: "≤ 15 min", label: "P1 incident response", note: "24/7/365, named engineers" },
-            { value: "24/7", label: "NOC & SOC coverage", note: "no on-call gaps, ever" },
+            { value: "99.99%", label: "Uptime guarantee", note: "written into your contract" },
+            { value: "≤ 15 min", label: "Response to critical issues", note: "real engineers, any time" },
+            { value: "24/7", label: "Monitoring & security", note: "no gaps, ever" },
             { value: "Zero Trust", label: "Security architecture", note: "built in, not bolted on" },
           ].map((s) => (
             <div key={s.label} className="flex flex-col gap-1 bg-white/[0.03] px-5 py-4">

@@ -3,9 +3,9 @@ import type { MetricItem, ServiceItem, SolutionItem, IndustryItem, TestimonialIt
 export const company = {
   name: "Aethon Core",
   fullName: "Aethon Core Inc.",
-  tagline: "Technology managed end-to-end — so your organization can focus on what matters.",
+  tagline: "We manage your technology end-to-end — so your team can focus on your business.",
   description:
-    "Aethon Core delivers end-to-end managed IT services, digital transformation, and consulting to enterprises across Canada and North America. We operate, secure, and modernize your technology stack with contractual accountability and 24/7 engineering coverage.",
+    "Aethon Core manages IT for businesses across Canada and North America. We run your cloud, protect your security, and keep everything working — with real engineers, written guarantees, and 24/7 coverage.",
   founded: "2024",
   email: "contact@aethoncore.com",
   social: {
@@ -26,56 +26,56 @@ export const services: ServiceItem[] = [
   {
     title: "Managed IT Services",
     description:
-      "Full lifecycle management of your IT environment — monitoring, patching, incident response, and a dedicated service desk — under a single contractual SLA. We own the outcome, not just the ticket.",
+      "We watch, patch, and manage your entire IT environment. One team, one contract, full responsibility for every outcome — not just logging the ticket.",
     href: "/services/managed",
     icon: "headphones",
   },
   {
     title: "Cloud Infrastructure",
     description:
-      "Design, migration, and ongoing operations of multi-cloud and hybrid environments. AWS, Azure, and Google Cloud managed as a single coherent platform with unified governance and cost controls.",
+      "We design, move, and run your cloud environments across AWS, Azure, and Google Cloud. All three managed as one platform, with clear cost controls and accountability.",
     href: "/services/cloud",
     icon: "server",
   },
   {
     title: "Cybersecurity & MDR",
     description:
-      "24/7 Security Operations Centre with managed detection and response, Zero Trust architecture implementation, threat intelligence, and compliance-grade audit trails for regulated industries.",
+      "A real team watching your security 24/7 — not automated alerts with no follow-through. We detect threats, respond fast, and keep your environment clean.",
     href: "/services/security",
     icon: "shield",
   },
   {
     title: "Network & Connectivity",
     description:
-      "Enterprise WAN, SD-WAN, SASE, and private connectivity designed for high availability. We engineer, deploy, and operate the fabric that connects your offices, data centres, and remote workforce.",
+      "Private, fast, reliable connections between your offices, data centers, and remote teams. We build it, monitor it, and keep it running at all times.",
     href: "/services/network",
     icon: "network",
   },
   {
     title: "Data & Intelligent Automation",
     description:
-      "End-to-end data platforms, real-time analytics, and AI-powered automation. From ingestion pipelines to executive dashboards — built to operate in production, not just in demos.",
+      "We build data systems that actually get used — real-time dashboards, automated workflows, and AI tools that run in production, not just in a demo.",
     href: "/services/analytics",
     icon: "database",
   },
   {
     title: "Digital Transformation",
     description:
-      "Strategy to execution. We help enterprises define technology roadmaps, modernize legacy systems, and embed new operating models — with dedicated transformation managers and measurable milestones.",
+      "We help you update old systems, adopt new ones, and build a technology plan that matches where your business is going — with real milestones, not just a roadmap slide.",
     href: "/services/transformation",
     icon: "zap",
   },
   {
     title: "Application Services",
     description:
-      "Custom application development, legacy modernization, and API integration. We design, build, and maintain enterprise applications that connect your core systems and enable your teams.",
+      "Custom apps built to your spec, old systems brought up to date, and everything connected so your teams can actually use it.",
     href: "/services/apps",
     icon: "code-2",
   },
   {
     title: "Consulting & Advisory",
     description:
-      "Technology strategy, architecture review, vendor selection, and IT financial management. Independent advisory delivered by senior practitioners — not junior consultants with a slide template.",
+      "Honest, senior advice on technology strategy, vendor selection, and IT spending — from people who have done this, not consultants with a standard slide deck.",
     href: "/services/consulting",
     icon: "compass",
   },
@@ -84,29 +84,29 @@ export const services: ServiceItem[] = [
 export const solutions: SolutionItem[] = [
   {
     eyebrow: "Aethon Core Platform",
-    title: "A single control plane across your entire IT estate",
+    title: "One dashboard for all of your IT",
     description:
-      "The Aethon Core Platform unifies visibility, automation, and governance across cloud, on-premises, and edge environments. Every asset, every change, every incident — tracked, audited, and acted upon from one place. Purpose-built for enterprises that cannot afford blind spots.",
+      "The Aethon Core Platform gives you a single place to see, manage, and act on everything in your IT environment — cloud, on-premises, and remote systems. Every change is tracked. Every issue is caught. Nothing falls through the gaps.",
     features: [
-      "Unified asset and configuration management across all environments",
-      "Policy-as-code governance with full change audit history",
-      "Automated remediation tied to contractual SLA thresholds",
-      "Native integrations with ServiceNow, Splunk, Microsoft 365, AWS, and Azure",
-      "Role-based dashboards for operations, finance, and executive leadership",
+      "All your systems and settings tracked in one place",
+      "Rules and policies enforced automatically, with a full history of changes",
+      "Automated fixes tied to the guarantees in your contract",
+      "Connects to ServiceNow, Splunk, Microsoft 365, AWS, and Azure",
+      "Dashboards built for operations teams, finance, and leadership",
     ],
     href: "/products/platform",
   },
   {
     eyebrow: "Core Intelligence Suite",
-    title: "Operational intelligence and AI-powered decision support",
+    title: "See problems coming before they affect your business",
     description:
-      "Core Intelligence combines observability, AIOps, and business analytics into a single platform layer. It continuously correlates signals from infrastructure, applications, and business systems — surfacing anomalies before they become incidents and recommendations before they become decisions.",
+      "Core Intelligence watches your infrastructure, applications, and business systems around the clock. It spots unusual patterns before they become outages, and surfaces the right information before you have to ask for it.",
     features: [
-      "AIOps-powered anomaly detection across 200+ integrated data sources",
-      "Predictive capacity planning with 90-day infrastructure forecasting",
-      "Automated root-cause analysis for P1 and P2 incidents",
-      "FinOps dashboards with cloud cost attribution by team, project, and service",
-      "Executive reporting suite with configurable KPI scorecards",
+      "Anomaly detection across 200+ connected data sources",
+      "90-day capacity forecasting to plan ahead, not react",
+      "Automatic root-cause analysis for your most critical issues",
+      "Cloud cost dashboards broken down by team, project, and service",
+      "Executive reports with the numbers that actually matter",
     ],
     href: "/products/analytics",
   },
@@ -116,42 +116,42 @@ export const industries: IndustryItem[] = [
   {
     title: "Financial Services",
     description:
-      "Regulatory-grade infrastructure and operations for banks, insurers, and capital markets firms. SOX, PCI-DSS, OSFI, and DORA compliance built into every layer — not bolted on after the fact.",
+      "Secure, compliant IT for banks, insurers, and investment firms. We meet the rules you're held to — SOX, PCI-DSS, OSFI, and DORA — built into how we operate, not added at the end.",
     href: "/industries/financial-services",
     icon: "landmark",
   },
   {
     title: "Healthcare",
     description:
-      "HIPAA, PIPEDA, and PHIPA-compliant environments for hospitals, health systems, and digital health companies. We manage clinical and administrative workloads with the security controls that regulators require.",
+      "IT management for hospitals and health companies that must protect patient data. We meet HIPAA, PIPEDA, and PHIPA requirements and handle both clinical and admin systems securely.",
     href: "/industries/healthcare",
     icon: "activity",
   },
   {
     title: "Manufacturing",
     description:
-      "OT/IT convergence, predictive maintenance, and supply chain visibility for complex manufacturing environments. We connect the factory floor to the boardroom without compromising operational resilience.",
+      "We connect factory systems to business systems — without breaking production. Real-time visibility, predictive maintenance, and supply chain tracking, all managed end-to-end.",
     href: "/industries/manufacturing",
     icon: "settings",
   },
   {
     title: "Retail & Commerce",
     description:
-      "High-availability commerce infrastructure engineered for peak load — Black Friday, product launches, and global expansion. PCI-DSS compliance and omnichannel platform operations included.",
+      "Infrastructure that stays up during your busiest days — Black Friday, product launches, international expansion. We keep your stores and your data compliant and always available.",
     href: "/industries/retail",
     icon: "shopping-bag",
   },
   {
     title: "Government & Public Sector",
     description:
-      "FedRAMP, StateRAMP, PBMM, and Protected B-grade managed services for federal, provincial, and municipal organizations. We hold the clearances and operate the controls your mandates require.",
+      "Managed IT for federal, provincial, and municipal organizations. We meet the clearance levels and security requirements your mandate demands — FedRAMP, PBMM, Protected B, and more.",
     href: "/industries/government",
     icon: "building",
   },
   {
     title: "Energy & Utilities",
     description:
-      "NERC CIP-compliant operations for electricity generation, transmission, and distribution organizations. We secure critical infrastructure and modernize OT environments without disrupting operations.",
+      "We protect and modernize the IT systems that power grids and utilities depend on. NERC CIP compliant, with no disruption to operations during the work.",
     href: "/industries/energy",
     icon: "zap",
   },
@@ -160,21 +160,21 @@ export const industries: IndustryItem[] = [
 export const testimonials: TestimonialItem[] = [
   {
     quote:
-      "Enterprises don't fail because they lack technology — they fail because the technology they have isn't operated with enough discipline. We provide the discipline.",
+      "Companies don't fail because of bad technology — they fail because no one is properly running what they have. We are the team that runs it right.",
     author: "Aethon Core",
     role: "Founding principle",
     company: "",
   },
   {
     quote:
-      "A managed service that doesn't include contractual accountability for outcomes is just a help desk with a fancier name. Every engagement we run is backed by written SLAs with real remedies.",
+      "A managed IT service that doesn't guarantee outcomes is just a fancy help desk. Every client we work with gets a written contract with real consequences if we fall short.",
     author: "Aethon Core",
     role: "On service accountability",
     company: "",
   },
   {
     quote:
-      "The organizations that outperform their peers in the next decade will be the ones that treat technology operations as a strategic function — not a cost centre. We build for those organizations.",
+      "The businesses that win in the next decade will be the ones that treat their technology as something that must work — not something to cut costs on. We build for those businesses.",
     author: "Aethon Core",
     role: "On strategic IT",
     company: "",
@@ -184,9 +184,9 @@ export const testimonials: TestimonialItem[] = [
 export const insights: InsightItem[] = [
   {
     category: "Managed Services",
-    title: "Why most managed service agreements fail to deliver — and how to structure one that does",
+    title: "Why most IT service contracts don't deliver — and how to write one that does",
     excerpt:
-      "The gap between what organizations expect from managed services and what they actually receive is one of the most persistent problems in enterprise IT. The root cause is almost always in how the contract is written — not how the service is delivered.",
+      "The gap between what businesses expect from managed IT and what they actually receive comes down to one thing: the contract. Most agreements promise a fast response. Almost none guarantee that the problem gets solved. Here is how to tell the difference.",
     date: "April 2026",
     readTime: "10 min read",
     href: "/insights/managed-service-contracts",
@@ -194,9 +194,9 @@ export const insights: InsightItem[] = [
   },
   {
     category: "Security",
-    title: "Zero Trust is not a product — it is an operating model. Here is what implementation actually looks like.",
+    title: "Zero Trust is not a product — it is a way of running security. Here is what it actually takes.",
     excerpt:
-      "Most organizations that claim Zero Trust maturity have deployed an identity solution and called it done. Real Zero Trust requires re-engineering network access, application permissions, device trust, and data classification simultaneously. This is what that looks like in practice.",
+      "Most companies that say they have Zero Trust have bought a login tool and stopped there. True Zero Trust means rethinking how your network, apps, devices, and data all work together. This is what that actually looks like.",
     date: "March 2026",
     readTime: "13 min read",
     href: "/insights/zero-trust-implementation",
@@ -204,9 +204,9 @@ export const insights: InsightItem[] = [
   },
   {
     category: "AI & Automation",
-    title: "The enterprise AI adoption gap: why most AI investments fail to reach production",
+    title: "Why most AI projects never leave the pilot stage — and what the ones that do have in common",
     excerpt:
-      "Analysts report that over 85% of enterprise AI projects never make it to production. The failure point is almost never the model. It is the data pipeline, the integration layer, and the absence of an operational team equipped to run AI in a production environment.",
+      "More than 85% of business AI projects never make it into real use. The problem is almost never the AI itself. It is the data, the connections to existing systems, and the absence of a team that knows how to run AI day-to-day.",
     date: "March 2026",
     readTime: "11 min read",
     href: "/insights/enterprise-ai-production",

@@ -25,18 +25,18 @@ function useCountUp(target: number, active: boolean, duration = 1300) {
 const problems = [
   {
     number: "01",
-    title: "Your managed services vendor owns the ticket, not the outcome",
-    body: "Most MSP agreements define response times — not resolution ownership. When something breaks at 2am, you get an acknowledgment. What you need is an engineer who knows your environment and works the problem until it is resolved.",
+    title: "Your IT provider closes the ticket. Your problem stays open.",
+    body: "Most IT contracts promise a fast reply — not a fix. When something breaks at 2am, you get an email saying they saw it. We send an engineer who knows your system and stays until it is fixed.",
   },
   {
     number: "02",
-    title: "Compliance certifications and operational security are not the same thing",
-    body: "Organizations that pass SOC 2 and PCI audits still suffer breaches. Certification documents what your controls say they do — not whether they are actually operating. We manage both, and we write the difference into your contract.",
+    title: "Passing a security audit doesn't mean you're safe.",
+    body: "Many companies pass security certifications and still get hacked. A certificate shows what your security is supposed to do — not whether it actually works. We make sure it works, and we put that in your contract.",
   },
   {
     number: "03",
-    title: "Your IT estate has grown faster than your ability to govern it",
-    body: "Multi-cloud sprawl, shadow IT, acquired infrastructure, and legacy systems create blind spots that no single tool can see. Without a unified control plane and a team accountable for the whole, the estate runs you.",
+    title: "Your IT has gotten too complex for anyone to see all of it.",
+    body: "Multiple cloud services, old systems, tools from different vendors — they all add up to blind spots. Without one team watching everything, things break in ways nobody expects.",
   },
 ]
 
@@ -95,7 +95,7 @@ export function ProblemSection() {
             </p>
 
             <p className="mt-3 text-sm text-gray-600 dark:text-gray-400">
-              of enterprise IT failures trace back to operational gaps — not technology choices. The tools were fine. The operations weren&apos;t.
+              of IT problems happen because of poor management — not bad technology. The tools work fine. Nobody was watching.
             </p>
 
             <p className="mt-2 text-[11px] text-gray-400">
@@ -109,11 +109,11 @@ export function ProblemSection() {
             style={{ transitionDelay: "150ms" }}
           >
             <p className="text-2xl font-semibold leading-snug tracking-tight text-gray-900 dark:text-white lg:text-3xl">
-              The gap between what enterprises expect from managed IT and what they actually receive is one of the most persistent problems in enterprise technology.
+              Most businesses expect their IT provider to solve problems. Most providers just log the ticket.
             </p>
 
             <p className="mt-6 text-base leading-relaxed text-gray-600 dark:text-gray-400">
-              Aethon Core was built to close that gap — with named engineers, contractual SLAs that have real remedies, and an operating model that treats technology as a strategic function rather than a cost to be managed down.
+              Aethon Core is built differently. You get real engineers, a written guarantee with actual consequences, and a team that treats your technology as something that must work — not something to cut costs on.
             </p>
           </div>
         </div>

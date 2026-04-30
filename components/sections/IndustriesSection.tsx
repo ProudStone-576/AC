@@ -59,8 +59,8 @@ export function IndustriesSection() {
           <div className="mb-14 flex flex-col gap-6 sm:flex-row sm:items-end sm:justify-between">
             <SectionHeader
               eyebrow="Industries"
-              title="Built for the sectors that run the world"
-              subtitle="Deep domain knowledge meets enterprise-grade engineering across every industry we serve."
+              title="Built for the businesses that can't afford downtime"
+              subtitle="We work in industries where technology problems have real consequences. We know the rules, the risks, and what's at stake."
             />
             <Link
               href="/industries"

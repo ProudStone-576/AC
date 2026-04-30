@@ -11,8 +11,8 @@ const featured = [
   {
     client: "Financial Services",
     industry: "Multi-Jurisdiction Compliance",
-    challenge: "A financial institution expanding across regulatory borders accumulates a separate infrastructure stack per jurisdiction. Compliance overhead grows with every new market, and the engineering team spends more time managing environments than building products.",
-    outcome: "Our policy-first control plane enforces jurisdiction-specific rules at the governance layer — not the architecture layer. One deployment model adapts by policy. Compliance scales without duplicating infrastructure.",
+    challenge: "A financial company growing into new countries was building a separate IT system for each one. Every new market added more compliance work, and the engineering team spent most of their time managing environments instead of building the product.",
+    outcome: "We built one system that adjusts its rules based on where it is running. Instead of duplicating infrastructure for every country, the same setup adapts by policy. Compliance grows with the business, not against it.",
     href: "/case-studies/financial-multi-jurisdiction",
     accentClass: "from-blue/50 to-blue/15",
     image: "https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?w=3840&q=100",
@@ -20,9 +20,9 @@ const featured = [
   },
   {
     client: "Healthcare",
-    industry: "Zero Trust Architecture",
-    challenge: "A large health network operates with a security posture built around perimeter defense and audit checkboxes. The actual attack surface — lateral movement, credential exposure, unencrypted data paths — remains unaddressed by compliance exercises.",
-    outcome: "We implement Zero Trust from the network layer up: no implicit trust, continuous verification, and encrypted data paths throughout. Security becomes an architectural property, not a policy document.",
+    industry: "Zero Trust Security",
+    challenge: "A large hospital network had passed all its security audits, but the real risks — users accessing too much, data sent without encryption, attackers moving freely once inside — were never addressed by the compliance process.",
+    outcome: "We rebuilt their security from the ground up. No one gets access they haven't earned. Every connection is verified. All data is encrypted. Security became part of how the system works, not a report on a shelf.",
     href: "/case-studies/healthcare-zero-trust",
     accentClass: "from-emerald-500/50 to-emerald-500/15",
     image: "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=3840&q=100",
@@ -39,7 +39,7 @@ export function FeaturedCaseStudies() {
             <SectionHeader
               eyebrow="How We Think"
               title="How we approach real problems"
-              subtitle="Enterprise infrastructure challenges follow recognizable patterns. Here's our honest thinking on the hard ones."
+              subtitle="Real IT challenges follow familiar patterns. Here is how we think through the hard ones."
             />
             <Link
               href="/case-studies"
