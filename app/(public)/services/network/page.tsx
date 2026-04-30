@@ -60,7 +60,7 @@ export const metadata: Metadata = {
     "private WAN Canada",
     "network managed services Canada",
     "SASE Canada",
-    "managed network services Toronto",
+    "managed network services British Columbia",
     "enterprise WAN Canada",
     "network infrastructure Canada",
     "managed connectivity Canada",

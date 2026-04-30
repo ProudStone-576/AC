@@ -14,7 +14,7 @@ export const metadata: Metadata = {
     "managed IT services Canada",
     "cloud services Canada",
     "cybersecurity services Canada",
-    "IT services Toronto",
+    "IT services British Columbia",
     "enterprise technology services Canada",
     "IT company Canada",
     "full managed services Canada",

@@ -50,7 +50,7 @@ export const metadata: Metadata = {
     "Kubernetes Canada",
     "Terraform services Canada",
     "GitOps Canada",
-    "DevOps consulting Toronto",
+    "DevOps consulting British Columbia",
     "infrastructure as code Canada",
     "DevSecOps Canada",
   ],

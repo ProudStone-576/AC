@@ -20,7 +20,7 @@ export const metadata: Metadata = {
     "fintech infrastructure Canada",
     "capital markets IT Canada",
     "financial services managed services Canada",
-    "bank IT services Toronto",
+    "bank IT services British Columbia",
   ],
   alternates: { canonical: "https://aethoncore.com/industries/financial-services" },
   openGraph: {

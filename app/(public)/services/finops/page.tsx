@@ -42,7 +42,7 @@ const faqs = [
 
 export const metadata: Metadata = {
   title: "FinOps Services Canada | Cloud Cost Optimization | Aethon Core",
-  description: "FinOps and cloud cost optimization for Canadian enterprises. Cloud spend visibility, cost allocation, rightsizing, and reserved capacity planning across AWS, Azure, and GCP. Toronto & national.",
+  description: "FinOps and cloud cost optimization for Canadian enterprises. Cloud spend visibility, cost allocation, rightsizing, and reserved capacity planning across AWS, Azure, and GCP. British Columbia & national.",
   keywords: [
     "FinOps Canada",
     "cloud cost optimization Canada",
@@ -50,7 +50,7 @@ export const metadata: Metadata = {
     "cloud spend Canada",
     "AWS cost optimization Canada",
     "Azure cost optimization Canada",
-    "FinOps Toronto",
+    "FinOps British Columbia",
     "cloud financial management Canada",
   ],
   alternates: { canonical: "https://aethoncore.com/services/finops" },
@@ -58,7 +58,7 @@ export const metadata: Metadata = {
     type: "website", locale: "en_CA", url: "https://aethoncore.com/services/finops",
     siteName: "Aethon Core",
     title: "FinOps Services Canada | Cloud Cost Optimization | Aethon Core",
-    description: "FinOps and cloud cost optimization for Canadian enterprises. Cloud spend visibility, cost allocation, rightsizing, and reserved capacity planning across AWS, Azure, and GCP. Toronto & national.",
+    description: "FinOps and cloud cost optimization for Canadian enterprises. Cloud spend visibility, cost allocation, rightsizing, and reserved capacity planning across AWS, Azure, and GCP. British Columbia & national.",
   },
 }
 

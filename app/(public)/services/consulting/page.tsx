@@ -52,10 +52,10 @@ const faqs = [
 
 export const metadata: Metadata = {
   title: "IT Consulting Services Canada | Technology Strategy & Advisory | Aethon Core",
-  description: "Enterprise IT consulting and technology advisory for Canadian organizations. CIO advisory, vendor selection, IT roadmap, architecture review, and IT financial management. Toronto & national.",
+  description: "Enterprise IT consulting and technology advisory for Canadian organizations. CIO advisory, vendor selection, IT roadmap, architecture review, and IT financial management. British Columbia & national.",
   keywords: [
     "IT consulting Canada",
-    "IT consulting Toronto",
+    "IT consulting British Columbia",
     "technology consulting Canada",
     "CIO advisory Canada",
     "IT strategy Canada",
@@ -69,7 +69,7 @@ export const metadata: Metadata = {
     type: "website", locale: "en_CA", url: "https://aethoncore.com/services/consulting",
     siteName: "Aethon Core",
     title: "IT Consulting Services Canada | Technology Strategy & Advisory | Aethon Core",
-    description: "Enterprise IT consulting and technology advisory for Canadian organizations. CIO advisory, vendor selection, IT roadmap, architecture review, and IT financial management. Toronto & national.",
+    description: "Enterprise IT consulting and technology advisory for Canadian organizations. CIO advisory, vendor selection, IT roadmap, architecture review, and IT financial management. British Columbia & national.",
   },
 }
 

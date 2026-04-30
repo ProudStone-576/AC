@@ -9,22 +9,22 @@ import { CTASection } from "@/components/sections/CTASection"
 import { MetricsSection } from "@/components/sections/MetricsSection"
 
 export const metadata: Metadata = {
-  title: "About Aethon Core | Canadian Enterprise IT Company | Toronto",
-  description: "Aethon Core is a Toronto-based enterprise IT company delivering managed infrastructure, cloud, security, and network services across Canada. Founded in 2024 on the principle that technology operations must be contractually accountable.",
+  title: "About Aethon Core | Canadian Enterprise IT Company | British Columbia",
+  description: "Aethon Core is a British Columbia-based enterprise IT company delivering managed infrastructure, cloud, security, and network services across Canada. Founded in 2024 on the principle that technology operations must be contractually accountable.",
   keywords: [
     "Aethon Core about",
     "Canadian IT company",
-    "enterprise IT company Toronto",
+    "enterprise IT company British Columbia",
     "managed services company Canada",
-    "IT company Toronto",
+    "IT company British Columbia",
     "infrastructure company Canada",
   ],
   alternates: { canonical: "https://aethoncore.com/about" },
   openGraph: {
     type: "website", locale: "en_CA", url: "https://aethoncore.com/about",
     siteName: "Aethon Core",
-    title: "About Aethon Core | Canadian Enterprise IT Company | Toronto",
-    description: "Aethon Core is a Toronto-based enterprise IT company delivering managed infrastructure, cloud, security, and network services across Canada. Founded in 2024 on the principle that technology operations must be contractually accountable.",
+    title: "About Aethon Core | Canadian Enterprise IT Company | British Columbia",
+    description: "Aethon Core is a British Columbia-based enterprise IT company delivering managed infrastructure, cloud, security, and network services across Canada. Founded in 2024 on the principle that technology operations must be contractually accountable.",
   },
 }
 

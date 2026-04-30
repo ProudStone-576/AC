@@ -56,13 +56,13 @@ const faqs: { q: string; a: string }[] = [
 
 export const metadata: Metadata = {
   title: "Enterprise Application Services Canada | Custom Software & APIs | Aethon Core",
-  description: "Custom enterprise application development, API integration, and legacy modernization for Canadian organizations. Full-stack development, microservices, and enterprise integrations. Toronto & national.",
+  description: "Custom enterprise application development, API integration, and legacy modernization for Canadian organizations. Full-stack development, microservices, and enterprise integrations. British Columbia & national.",
   keywords: [
     "enterprise application development Canada",
     "custom software development Canada",
     "API integration Canada",
     "application modernization Canada",
-    "enterprise software Toronto",
+    "enterprise software British Columbia",
     "legacy modernization Canada",
     "microservices Canada",
     "full stack development Canada",
@@ -72,7 +72,7 @@ export const metadata: Metadata = {
     type: "website", locale: "en_CA", url: "https://aethoncore.com/services/apps",
     siteName: "Aethon Core",
     title: "Enterprise Application Services Canada | Custom Software & APIs | Aethon Core",
-    description: "Custom enterprise application development, API integration, and legacy modernization for Canadian organizations. Full-stack development, microservices, and enterprise integrations. Toronto & national.",
+    description: "Custom enterprise application development, API integration, and legacy modernization for Canadian organizations. Full-stack development, microservices, and enterprise integrations. British Columbia & national.",
   },
 }
 

@@ -53,13 +53,13 @@ const faqs: { q: string; a: string }[] = [
 
 export const metadata: Metadata = {
   title: "Enterprise Data & Analytics Services Canada | Data Platform | Aethon Core",
-  description: "Enterprise data platform and analytics services for Canadian organizations. Data lake, warehouse, real-time pipelines, and executive dashboards. AWS, Azure, Snowflake, and Databricks. Toronto & national.",
+  description: "Enterprise data platform and analytics services for Canadian organizations. Data lake, warehouse, real-time pipelines, and executive dashboards. AWS, Azure, Snowflake, and Databricks. British Columbia & national.",
   keywords: [
     "enterprise data services Canada",
     "data analytics services Canada",
     "data platform Canada",
     "data engineering services Canada",
-    "analytics services Toronto",
+    "analytics services British Columbia",
     "business intelligence Canada",
     "data warehouse services Canada",
     "Snowflake services Canada",
@@ -70,7 +70,7 @@ export const metadata: Metadata = {
     type: "website", locale: "en_CA", url: "https://aethoncore.com/services/analytics",
     siteName: "Aethon Core",
     title: "Enterprise Data & Analytics Services Canada | Data Platform | Aethon Core",
-    description: "Enterprise data platform and analytics services for Canadian organizations. Data lake, warehouse, real-time pipelines, and executive dashboards. AWS, Azure, Snowflake, and Databricks. Toronto & national.",
+    description: "Enterprise data platform and analytics services for Canadian organizations. Data lake, warehouse, real-time pipelines, and executive dashboards. AWS, Azure, Snowflake, and Databricks. British Columbia & national.",
   },
 }
 

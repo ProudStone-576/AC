@@ -7,11 +7,11 @@ import { company } from "@/lib/constants/company"
 
 export const metadata: Metadata = {
   title: "Contact Aethon Core | Enterprise IT Services Canada | Get a Proposal",
-  description: "Contact Aethon Core to discuss managed IT services, cloud infrastructure, cybersecurity, or network operations. We respond within one business day. Toronto-based, serving organizations across Canada.",
+  description: "Contact Aethon Core to discuss managed IT services, cloud infrastructure, cybersecurity, or network operations. We respond within one business day. British Columbia-based, serving organizations across Canada.",
   keywords: [
     "contact IT services Canada",
     "managed IT services consultation Canada",
-    "IT services Toronto contact",
+    "IT services British Columbia contact",
     "enterprise IT services quote Canada",
     "managed services proposal Canada",
   ],
@@ -20,7 +20,7 @@ export const metadata: Metadata = {
     type: "website", locale: "en_CA", url: "https://aethoncore.com/contact",
     siteName: "Aethon Core",
     title: "Contact Aethon Core | Enterprise IT Services Canada | Get a Proposal",
-    description: "Contact Aethon Core to discuss managed IT services, cloud infrastructure, cybersecurity, or network operations. We respond within one business day. Toronto-based, serving organizations across Canada.",
+    description: "Contact Aethon Core to discuss managed IT services, cloud infrastructure, cybersecurity, or network operations. We respond within one business day. British Columbia-based, serving organizations across Canada.",
   },
 }
 

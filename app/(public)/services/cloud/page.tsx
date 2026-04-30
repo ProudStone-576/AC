@@ -30,7 +30,7 @@ const faqs = [
 
 export const metadata: Metadata = {
   title: "Cloud Infrastructure Services Canada | AWS & Azure Managed | Aethon Core",
-  description: "Managed cloud infrastructure for enterprises across Canada. AWS, Azure, and Google Cloud design, migration, and operations. Multi-cloud, hybrid, and on-premises — managed as one platform. Toronto & national.",
+  description: "Managed cloud infrastructure for enterprises across Canada. AWS, Azure, and Google Cloud design, migration, and operations. Multi-cloud, hybrid, and on-premises — managed as one platform. British Columbia & national.",
   keywords: [
     "cloud infrastructure services Canada",
     "AWS managed services Canada",
@@ -40,7 +40,7 @@ export const metadata: Metadata = {
     "managed cloud services Canada",
     "multi-cloud management Canada",
     "hybrid cloud services Canada",
-    "cloud infrastructure company Toronto",
+    "cloud infrastructure company British Columbia",
     "enterprise cloud Canada",
     "FinOps Canada",
     "cloud cost management Canada",
@@ -50,7 +50,7 @@ export const metadata: Metadata = {
     type: "website", locale: "en_CA", url: "https://aethoncore.com/services/cloud",
     siteName: "Aethon Core",
     title: "Cloud Infrastructure Services Canada | AWS & Azure Managed | Aethon Core",
-    description: "Managed cloud infrastructure for enterprises across Canada. AWS, Azure, and Google Cloud design, migration, and operations. Multi-cloud, hybrid, and on-premises — managed as one platform. Toronto & national.",
+    description: "Managed cloud infrastructure for enterprises across Canada. AWS, Azure, and Google Cloud design, migration, and operations. Multi-cloud, hybrid, and on-premises — managed as one platform. British Columbia & national.",
   },
 }
 

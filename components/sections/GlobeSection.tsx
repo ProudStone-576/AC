@@ -8,7 +8,7 @@ import { FadeIn } from "@/components/ui/FadeIn"
 
 const NODES = [
   // North America
-  { name: "Toronto",     lat:  43.65, lng:  -79.38, region: "NA",   tier: 1 },
+  { name: "Vancouver",   lat:  49.24, lng: -123.12, region: "NA",   tier: 1 },
   { name: "Montréal",    lat:  45.50, lng:  -73.57, region: "NA",   tier: 2 },
   { name: "New York",    lat:  40.71, lng:  -74.01, region: "NA",   tier: 1 },
   { name: "Chicago",     lat:  41.88, lng:  -87.63, region: "NA",   tier: 2 },
@@ -44,11 +44,11 @@ const NODES = [
 type ArcType = "primary" | "secondary" | "monitor"
 
 const ARCS: { a: number; b: number; type: ArcType }[] = [
-  // Toronto hub — primary backbone
+  // Vancouver hub — primary backbone
   { a:  0, b:  1, type: "primary"   },
   { a:  0, b:  2, type: "primary"   },
   { a:  0, b:  5, type: "primary"   },
-  { a:  0, b: 11, type: "primary"   }, // Toronto → London (transatlantic)
+  { a:  0, b: 11, type: "primary"   }, // Vancouver → London (transatlantic)
   { a:  0, b:  3, type: "secondary" },
   // US domestic
   { a:  2, b:  7, type: "secondary" },
@@ -712,7 +712,7 @@ export function GlobeSection() {
                 uptime:  "99.99%",
                 latency: "4ms",
                 color:   "#60a5fa",
-                cities:  "Toronto · NY · LA · Chicago",
+                cities:  "Vancouver · NY · LA · Chicago",
               },
               {
                 region: "Europe",

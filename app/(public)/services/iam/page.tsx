@@ -53,7 +53,7 @@ const faqs: { q: string; a: string }[] = [
 
 export const metadata: Metadata = {
   title: "Identity & Access Management Canada | Zero Trust IAM | Aethon Core",
-  description: "Enterprise IAM services in Canada. SSO, MFA, PAM, Zero Trust identity architecture, and directory services for organizations where access control is mission-critical. Toronto & national.",
+  description: "Enterprise IAM services in Canada. SSO, MFA, PAM, Zero Trust identity architecture, and directory services for organizations where access control is mission-critical. British Columbia & national.",
   keywords: [
     "identity access management Canada",
     "IAM services Canada",
@@ -63,14 +63,14 @@ export const metadata: Metadata = {
     "SSO implementation Canada",
     "MFA deployment Canada",
     "identity security Canada",
-    "enterprise IAM Toronto",
+    "enterprise IAM British Columbia",
   ],
   alternates: { canonical: "https://aethoncore.com/services/iam" },
   openGraph: {
     type: "website", locale: "en_CA", url: "https://aethoncore.com/services/iam",
     siteName: "Aethon Core",
     title: "Identity & Access Management Canada | Zero Trust IAM | Aethon Core",
-    description: "Enterprise IAM services in Canada. SSO, MFA, PAM, Zero Trust identity architecture, and directory services for organizations where access control is mission-critical. Toronto & national.",
+    description: "Enterprise IAM services in Canada. SSO, MFA, PAM, Zero Trust identity architecture, and directory services for organizations where access control is mission-critical. British Columbia & national.",
   },
 }
 

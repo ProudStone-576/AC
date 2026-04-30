@@ -22,7 +22,6 @@ import {
   Layout,
   Network,
   RefreshCw,
-  Search,
   Server,
   Shield,
   Star,
@@ -33,6 +32,7 @@ import { cn } from "@/lib/utils"
 import { navigation } from "@/lib/constants/navigation"
 import { Logo } from "@/components/ui/Logo"
 import { ThemeToggle } from "@/components/ui/ThemeToggle"
+import { SearchTrigger } from "@/components/ui/SearchModal"
 import type { NavGroup } from "@/types"
 
 /* ─── Icon registry ────────────────────────────────────────────────────────── */
@@ -51,7 +51,6 @@ const iconMap: Record<string, React.ComponentType<{ className?: string }>> = {
   server: Server,
   database: Database,
   network: Network,
-  search: Search,
   key: Key,
   "refresh-cw": RefreshCw,
   "code-2": Code2,
@@ -325,6 +324,7 @@ export function Navbar() {
             </nav>
 
             <div className="flex items-center gap-2">
+              <SearchTrigger />
               <ThemeToggle className="hidden lg:flex" />
               <Link href="/contact" className="hidden items-center gap-1.5 rounded-md px-4 py-2 text-sm font-semibold bg-blue text-blue-foreground hover:bg-blue-hover transition-colors glow-blue lg:flex">
                 Talk to us

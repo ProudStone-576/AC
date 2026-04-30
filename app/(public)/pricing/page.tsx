@@ -10,7 +10,7 @@ import { FaqAccordion } from "./_components/FaqAccordion"
 
 export const metadata: Metadata = {
   title: "IT Services Pricing Canada | Managed IT, Cloud & Security Plans | Aethon Core",
-  description: "Transparent pricing for managed IT services. Monthly plans from $799/mo, one-time projects from $1,500, ongoing management from $449/mo. No hidden fees. Toronto & national.",
+  description: "Transparent pricing for managed IT services. Monthly plans from $799/mo, one-time projects from $1,500, ongoing management from $449/mo. No hidden fees. British Columbia & national.",
   keywords: [
     "IT services pricing Canada",
     "managed IT services cost Canada",
@@ -25,7 +25,7 @@ export const metadata: Metadata = {
     type: "website", locale: "en_CA", url: "https://aethoncore.com/pricing",
     siteName: "Aethon Core",
     title: "IT Services Pricing Canada | Managed IT, Cloud & Security Plans | Aethon Core",
-    description: "Transparent pricing for managed IT services. Monthly plans from $799/mo, one-time projects from $1,500, ongoing management from $449/mo. No hidden fees. Toronto & national.",
+    description: "Transparent pricing for managed IT services. Monthly plans from $799/mo, one-time projects from $1,500, ongoing management from $449/mo. No hidden fees. British Columbia & national.",
   },
 }
 

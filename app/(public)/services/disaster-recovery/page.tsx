@@ -53,12 +53,12 @@ const faqs: { q: string; a: string }[] = [
 
 export const metadata: Metadata = {
   title: "Disaster Recovery Services Canada | DRaaS & Business Continuity | Aethon Core",
-  description: "Disaster recovery and business continuity for Canadian enterprises. DRaaS, tested RTO/RPO commitments, failover infrastructure, and DR runbooks. Toronto & national coverage.",
+  description: "Disaster recovery and business continuity for Canadian enterprises. DRaaS, tested RTO/RPO commitments, failover infrastructure, and DR runbooks. British Columbia & national coverage.",
   keywords: [
     "disaster recovery services Canada",
     "DRaaS Canada",
     "business continuity planning Canada",
-    "disaster recovery Toronto",
+    "disaster recovery British Columbia",
     "IT disaster recovery Canada",
     "RTO RPO Canada",
     "failover services Canada",
@@ -70,7 +70,7 @@ export const metadata: Metadata = {
     type: "website", locale: "en_CA", url: "https://aethoncore.com/services/disaster-recovery",
     siteName: "Aethon Core",
     title: "Disaster Recovery Services Canada | DRaaS & Business Continuity | Aethon Core",
-    description: "Disaster recovery and business continuity for Canadian enterprises. DRaaS, tested RTO/RPO commitments, failover infrastructure, and DR runbooks. Toronto & national coverage.",
+    description: "Disaster recovery and business continuity for Canadian enterprises. DRaaS, tested RTO/RPO commitments, failover infrastructure, and DR runbooks. British Columbia & national coverage.",
   },
 }
 

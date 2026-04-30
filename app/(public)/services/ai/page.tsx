@@ -64,7 +64,7 @@ export const metadata: Metadata = {
     "LLM deployment Canada",
     "generative AI enterprise Canada",
     "AI governance Canada",
-    "enterprise AI Toronto",
+    "enterprise AI British Columbia",
   ],
   alternates: { canonical: "https://aethoncore.com/services/ai" },
   openGraph: {

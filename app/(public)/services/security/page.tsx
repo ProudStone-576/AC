@@ -47,12 +47,12 @@ const faqs = [
 
 export const metadata: Metadata = {
   title: "Managed Cybersecurity Services Canada | MDR & Zero Trust | Aethon Core",
-  description: "Enterprise cybersecurity and managed detection & response for Canadian organizations. Zero Trust architecture, 24/7 SOC, threat intelligence, and compliance-grade security controls. Toronto & national.",
+  description: "Enterprise cybersecurity and managed detection & response for Canadian organizations. Zero Trust architecture, 24/7 SOC, threat intelligence, and compliance-grade security controls. British Columbia & national.",
   keywords: [
     "managed cybersecurity services Canada",
     "MDR Canada",
     "managed detection response Canada",
-    "cybersecurity company Toronto",
+    "cybersecurity company British Columbia",
     "SOC as a service Canada",
     "Zero Trust security Canada",
     "cybersecurity services Ontario",
@@ -66,7 +66,7 @@ export const metadata: Metadata = {
     type: "website", locale: "en_CA", url: "https://aethoncore.com/services/security",
     siteName: "Aethon Core",
     title: "Managed Cybersecurity Services Canada | MDR & Zero Trust | Aethon Core",
-    description: "Enterprise cybersecurity and managed detection & response for Canadian organizations. Zero Trust architecture, 24/7 SOC, threat intelligence, and compliance-grade security controls. Toronto & national.",
+    description: "Enterprise cybersecurity and managed detection & response for Canadian organizations. Zero Trust architecture, 24/7 SOC, threat intelligence, and compliance-grade security controls. British Columbia & national.",
   },
 }
 

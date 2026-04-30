@@ -24,12 +24,12 @@ import {
 
 export const metadata: Metadata = {
   title: "Managed IT Services Canada | 24/7 NOC, Cloud & Security | Aethon Core",
-  description: "Canada's managed IT services provider. Cloud, security, network, and data — fully managed with 24/7 NOC/SOC, written SLAs, and real engineers. Toronto-based, serving businesses nationwide.",
+  description: "Canada's managed IT services provider. Cloud, security, network, and data — fully managed with 24/7 NOC/SOC, written SLAs, and real engineers. British Columbia-based, serving businesses nationwide.",
   keywords: [
     "managed IT services Canada",
-    "managed IT services Toronto",
+    "managed IT services British Columbia",
     "managed service provider Canada",
-    "managed service provider Toronto",
+    "managed service provider British Columbia",
     "IT outsourcing Canada",
     "cloud managed services Canada",
     "cybersecurity company Canada",
@@ -38,7 +38,7 @@ export const metadata: Metadata = {
     "24/7 IT support Canada",
     "enterprise IT services Canada",
     "Zero Trust security Canada",
-    "IT company Toronto Ontario",
+    "IT company British Columbia Canada",
     "managed IT services Ontario",
     "IT support for businesses Canada",
   ],
@@ -47,7 +47,7 @@ export const metadata: Metadata = {
     type: "website", locale: "en_CA", url: "https://aethoncore.com",
     siteName: "Aethon Core",
     title: "Managed IT Services Canada | 24/7 NOC, Cloud & Security | Aethon Core",
-    description: "Canada's managed IT services provider. Cloud, security, network, and data — fully managed with 24/7 NOC/SOC, written SLAs, and real engineers. Toronto-based, serving businesses nationwide.",
+    description: "Canada's managed IT services provider. Cloud, security, network, and data — fully managed with 24/7 NOC/SOC, written SLAs, and real engineers. British Columbia-based, serving businesses nationwide.",
   },
 }
 
@@ -84,7 +84,7 @@ const homepageFaqSchema = {
     {
       "@type": "Question",
       "name": "Does Aethon Core provide IT services across Canada?",
-      "acceptedAnswer": { "@type": "Answer", "text": "Yes. Aethon Core is based in Toronto, Ontario and provides managed IT services to businesses across Canada and North America, including cloud, security, network, and data services." }
+      "acceptedAnswer": { "@type": "Answer", "text": "Yes. Aethon Core is based in British Columbia, Canada and provides managed IT services to businesses across Canada and North America, including cloud, security, network, and data services." }
     },
     {
       "@type": "Question",

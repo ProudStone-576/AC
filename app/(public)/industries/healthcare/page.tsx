@@ -21,7 +21,7 @@ export const metadata: Metadata = {
     "digital health infrastructure Canada",
     "healthcare managed services Canada",
     "clinical IT Canada",
-    "healthcare IT Toronto",
+    "healthcare IT British Columbia",
   ],
   alternates: { canonical: "https://aethoncore.com/industries/healthcare" },
   openGraph: {

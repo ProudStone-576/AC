@@ -49,14 +49,14 @@ const faqs: { q: string; a: string }[] = [
 
 export const metadata: Metadata = {
   title: "Data Governance Services Canada | Data Management & Quality | Aethon Core",
-  description: "Enterprise data governance and data management for Canadian organizations. Data catalog, lineage, quality, stewardship, and compliance-grade data controls. Toronto & national.",
+  description: "Enterprise data governance and data management for Canadian organizations. Data catalog, lineage, quality, stewardship, and compliance-grade data controls. British Columbia & national.",
   keywords: [
     "data governance services Canada",
     "data management Canada",
     "data quality Canada",
     "data catalog Canada",
     "data stewardship Canada",
-    "enterprise data governance Toronto",
+    "enterprise data governance British Columbia",
     "data lineage Canada",
     "GDPR data governance Canada",
   ],
@@ -65,7 +65,7 @@ export const metadata: Metadata = {
     type: "website", locale: "en_CA", url: "https://aethoncore.com/services/data-governance",
     siteName: "Aethon Core",
     title: "Data Governance Services Canada | Data Management & Quality | Aethon Core",
-    description: "Enterprise data governance and data management for Canadian organizations. Data catalog, lineage, quality, stewardship, and compliance-grade data controls. Toronto & national.",
+    description: "Enterprise data governance and data management for Canadian organizations. Data catalog, lineage, quality, stewardship, and compliance-grade data controls. British Columbia & national.",
   },
 }
 

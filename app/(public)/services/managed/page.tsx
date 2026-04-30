@@ -66,14 +66,14 @@ const faqs = [
 
 export const metadata: Metadata = {
   title: "Managed IT Services Canada | 24/7 NOC & Help Desk | Aethon Core",
-  description: "Enterprise managed IT services across Canada. 24/7 NOC monitoring, help desk, patch management, and incident response under a single contractual SLA. Toronto, Ontario, and across North America.",
+  description: "Enterprise managed IT services across Canada. 24/7 NOC monitoring, help desk, patch management, and incident response under a single contractual SLA. British Columbia and across Canada.",
   keywords: [
     "managed IT services Canada",
-    "managed IT services Toronto",
+    "managed IT services British Columbia",
     "managed service provider Canada",
-    "managed service provider Toronto",
+    "managed service provider British Columbia",
     "outsourced IT Canada",
-    "IT outsourcing Toronto",
+    "IT outsourcing British Columbia",
     "NOC services Canada",
     "24/7 IT support Canada",
     "managed help desk Canada",
@@ -86,7 +86,7 @@ export const metadata: Metadata = {
     type: "website", locale: "en_CA", url: "https://aethoncore.com/services/managed",
     siteName: "Aethon Core",
     title: "Managed IT Services Canada | 24/7 NOC & Help Desk | Aethon Core",
-    description: "Enterprise managed IT services across Canada. 24/7 NOC monitoring, help desk, patch management, and incident response under a single contractual SLA. Toronto, Ontario, and across North America.",
+    description: "Enterprise managed IT services across Canada. 24/7 NOC monitoring, help desk, patch management, and incident response under a single contractual SLA. British Columbia and across Canada.",
   },
 }
 

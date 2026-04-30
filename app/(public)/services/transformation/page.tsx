@@ -56,7 +56,7 @@ export const metadata: Metadata = {
   keywords: [
     "digital transformation Canada",
     "IT modernization Canada",
-    "digital transformation Toronto",
+    "digital transformation British Columbia",
     "legacy system modernization Canada",
     "cloud adoption Canada",
     "enterprise transformation Canada",
