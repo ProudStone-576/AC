@@ -73,9 +73,6 @@ export function Footer() {
           <a href={`mailto:${company.email}`} className="text-sm text-canvas-muted hover:text-canvas-foreground transition-colors">
             {company.email}
           </a>
-          <span className="text-sm text-canvas-muted">
-            {company.address.street}, {company.address.city}, {company.address.state} {company.address.zip}
-          </span>
         </div>
       </div>
 

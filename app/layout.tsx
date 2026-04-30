@@ -104,19 +104,6 @@ export default function RootLayout({
                 "image": "https://aethoncore.com/opengraph-image",
                 "description": "Canadian enterprise infrastructure company. Managed IT services, cloud infrastructure, cybersecurity, and network operations for organizations across Canada and North America. 24/7 NOC/SOC, contractual SLAs, zero vendor lock-in.",
                 "foundingDate": "2024",
-                "address": {
-                  "@type": "PostalAddress",
-                  "streetAddress": "100 King Street West",
-                  "addressLocality": "Toronto",
-                  "addressRegion": "Ontario",
-                  "postalCode": "M5X 1A9",
-                  "addressCountry": "CA"
-                },
-                "geo": {
-                  "@type": "GeoCoordinates",
-                  "latitude": 43.6481,
-                  "longitude": -79.3826
-                },
                 "contactPoint": [
                   {
                     "@type": "ContactPoint",

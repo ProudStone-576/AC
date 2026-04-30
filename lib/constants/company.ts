@@ -8,14 +8,6 @@ export const company = {
     "Aethon Core delivers end-to-end managed IT services, digital transformation, and consulting to enterprises across Canada and North America. We operate, secure, and modernize your technology stack with contractual accountability and 24/7 engineering coverage.",
   founded: "2024",
   email: "hello@aethoncore.com",
-  address: {
-    street: "100 King Street West",
-    city: "Toronto",
-    state: "Ontario",
-    zip: "M5X 1A9",
-    country: "Canada",
-    countryCode: "CA",
-  },
   social: {
     linkedin: "https://linkedin.com/company/aethoncore",
     twitter: "https://twitter.com/aethoncore",
