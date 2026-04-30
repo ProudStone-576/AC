@@ -4,7 +4,7 @@ export default function manifest(): MetadataRoute.Manifest {
   return {
     name: "Aethon Core",
     short_name: "Aethon Core",
-    description: "Enterprise infrastructure management platform",
+    description: "Managed IT, cloud, security, and network services for businesses across Canada.",
     start_url: "/portal",
     display: "standalone",
     orientation: "portrait-primary",

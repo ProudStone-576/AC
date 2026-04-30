@@ -244,6 +244,11 @@ export const footerNavigation = {
     { label: "Documentation", href: "/docs" },
     { label: "Events", href: "/events" },
     { label: "White Papers", href: "/resources/white-papers" },
+    { label: "All Locations", href: "/locations" },
+    { label: "Toronto", href: "/locations/toronto" },
+    { label: "Vancouver", href: "/locations/vancouver" },
+    { label: "Calgary", href: "/locations/calgary" },
+    { label: "Ottawa", href: "/locations/ottawa" },
   ],
   legal: [
     { label: "Legal Center", href: "/legal" },

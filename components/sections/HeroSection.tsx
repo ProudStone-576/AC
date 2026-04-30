@@ -144,7 +144,7 @@ export function HeroSection() {
                   willChange: "filter, transform",
                 }}
               >
-                and we put it in writing.
+                for businesses across Canada.
               </span>
             </h1>
 

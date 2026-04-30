@@ -1,5 +1,6 @@
 import type { Metadata } from "next"
 
+import { JsonLd } from "@/components/ui/JsonLd"
 import { HeroSection }           from "@/components/sections/HeroSection"
 import { MarqueeStrip }          from "@/components/sections/MarqueeStrip"
 import { ProblemSection }        from "@/components/sections/ProblemSection"
@@ -22,30 +23,31 @@ import {
 } from "@/components/ui/SpatialNarrativeEngine"
 
 export const metadata: Metadata = {
-  title: "Managed IT Services Canada | Enterprise Infrastructure | Aethon Core",
-  description: "Aethon Core delivers managed IT services, cloud infrastructure, cybersecurity, and network operations to enterprises across Canada. 24/7 NOC/SOC, contractual SLAs, Zero Trust security. Toronto-based, nationally deployed.",
+  title: "Managed IT Services Canada | 24/7 NOC, Cloud & Security | Aethon Core",
+  description: "Canada's managed IT services provider. Cloud, security, network, and data — fully managed with 24/7 NOC/SOC, written SLAs, and real engineers. Toronto-based, serving businesses nationwide.",
   keywords: [
     "managed IT services Canada",
     "managed IT services Toronto",
-    "enterprise infrastructure Canada",
-    "cloud infrastructure Canada",
-    "cybersecurity company Canada",
     "managed service provider Canada",
-    "IT company Toronto",
-    "enterprise IT services Canada",
-    "managed cloud services Canada",
+    "managed service provider Toronto",
+    "IT outsourcing Canada",
+    "cloud managed services Canada",
+    "cybersecurity company Canada",
     "NOC services Canada",
     "SOC services Canada",
-    "Zero Trust Canada",
-    "IT outsourcing Canada",
-    "managed services provider Ontario",
+    "24/7 IT support Canada",
+    "enterprise IT services Canada",
+    "Zero Trust security Canada",
+    "IT company Toronto Ontario",
+    "managed IT services Ontario",
+    "IT support for businesses Canada",
   ],
   alternates: { canonical: "https://aethoncore.com" },
   openGraph: {
     type: "website", locale: "en_CA", url: "https://aethoncore.com",
     siteName: "Aethon Core",
-    title: "Managed IT Services Canada | Enterprise Infrastructure | Aethon Core",
-    description: "Aethon Core delivers managed IT services, cloud infrastructure, cybersecurity, and network operations to enterprises across Canada. 24/7 NOC/SOC, contractual SLAs, Zero Trust security. Toronto-based, nationally deployed.",
+    title: "Managed IT Services Canada | 24/7 NOC, Cloud & Security | Aethon Core",
+    description: "Canada's managed IT services provider. Cloud, security, network, and data — fully managed with 24/7 NOC/SOC, written SLAs, and real engineers. Toronto-based, serving businesses nationwide.",
   },
 }
 
@@ -65,8 +67,47 @@ const CHAPTERS: NarrativeChapter[] = [
   { id: "ch-cta",          code: "FIN", label: "Contact"     },
 ]
 
+const homepageFaqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What is a managed IT services provider?",
+      "acceptedAnswer": { "@type": "Answer", "text": "A managed IT services provider (MSP) monitors, manages, and maintains your technology on your behalf — covering servers, networks, security, cloud, and support. Aethon Core acts as your dedicated IT operations team with written SLAs and 24/7 coverage." }
+    },
+    {
+      "@type": "Question",
+      "name": "How much do managed IT services cost in Canada?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Aethon Core offers managed IT services starting from $799/month for smaller businesses, with plans scaling based on the number of systems, locations, and level of support required. See our full pricing at aethoncore.com/pricing." }
+    },
+    {
+      "@type": "Question",
+      "name": "Does Aethon Core provide IT services across Canada?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Yes. Aethon Core is based in Toronto, Ontario and provides managed IT services to businesses across Canada and North America, including cloud, security, network, and data services." }
+    },
+    {
+      "@type": "Question",
+      "name": "What industries does Aethon Core serve?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Aethon Core serves financial services, healthcare, manufacturing, retail, government, and energy companies across Canada. Each industry has specific compliance and operational requirements that we build into our service delivery." }
+    },
+    {
+      "@type": "Question",
+      "name": "What is included in managed IT services?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Managed IT services from Aethon Core include 24/7 monitoring and NOC coverage, incident response, patch management, cloud infrastructure management, cybersecurity and SOC services, network operations, help desk support, and monthly reporting — all under a single written contract." }
+    },
+    {
+      "@type": "Question",
+      "name": "What is the difference between NOC and SOC?",
+      "acceptedAnswer": { "@type": "Answer", "text": "A NOC (Network Operations Centre) monitors infrastructure health and availability — servers, networks, and uptime. A SOC (Security Operations Centre) monitors for cyber threats, attacks, and unauthorized access. Aethon Core operates both 24/7 as part of our managed services." }
+    },
+  ]
+}
+
 export default function HomePage() {
   return (
+    <>
+    <JsonLd schema={homepageFaqSchema} />
     <SpatialNarrativeEngine chapters={CHAPTERS}>
 
       {/* 01 — Signal: hero + trust marquee */}
@@ -140,5 +181,6 @@ export default function HomePage() {
       </SpatialChapter>
 
     </SpatialNarrativeEngine>
+    </>
   )
 }
