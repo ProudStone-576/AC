@@ -174,7 +174,7 @@ export default function ProductsPage() {
               </div>
 
               {/* Stats */}
-              <div className={`flex flex-col justify-center ${index % 2 === 1 ? "lg:order-1" : ""}`}>
+              <div className={`hidden md:flex flex-col justify-center ${index % 2 === 1 ? "lg:order-1" : ""}`}>
                 <p className="mb-6 text-xs font-semibold uppercase tracking-widest text-muted-foreground">
                   By the numbers
                 </p>
@@ -207,7 +207,7 @@ export default function ProductsPage() {
       </section>
 
       {/* Full-width photo break */}
-      <div className="relative h-72 overflow-hidden lg:h-96">
+      <div className="relative hidden h-72 overflow-hidden md:block lg:h-96">
         <Image
           src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?w=3840&q=100"
           alt="Enterprise technology platform infrastructure"
@@ -255,7 +255,7 @@ export default function ProductsPage() {
       </section>
 
       {/* Comparison strip */}
-      <section className="bg-canvas py-16 lg:py-20">
+      <section className="hidden bg-canvas py-16 lg:block lg:py-20">
         <div className="container-enterprise">
           <div className="mb-10 max-w-2xl">
             <p className="mb-3 text-xs font-semibold uppercase tracking-widest text-blue">

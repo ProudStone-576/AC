@@ -9,44 +9,56 @@ import { CTASection } from "@/components/sections/CTASection"
 export const metadata: Metadata = {
   title: "Leadership",
   description:
-    "Meet the founding team and executive leadership of Aethon Core Inc. — experienced operators and technologists building the infrastructure platform for enterprises that cannot afford failure.",
+    "Meet the founding team and leadership of Aethon Core Inc. — operators and technologists building a managed IT platform for businesses that cannot afford to have their technology fail.",
 }
 
 const executives = [
   {
+    name: "Taran Matharu",
+    initials: "TM",
     role: "Chief Executive Officer",
-    tenure: "Co-founder",
-    bio: "Our CEO comes from 20+ years of enterprise infrastructure leadership — including running infrastructure programs for large financial institutions. Aethon Core was founded because the problems she kept encountering in the field had no adequate solutions on the market.",
-    focus: ["Company strategy", "Enterprise relationships", "Capital allocation"],
+    tenure: "Founder",
+    bio: "Taran founded Aethon Core after watching businesses repeatedly fail at the same IT problems — too many vendors, no real accountability, and technology that was supposed to work but didn't. He built Aethon Core to be the company he wished existed: one team, one contract, one outcome. He leads company strategy, client relationships, and the overall direction of the business.",
+    focus: ["Company strategy", "Enterprise relationships", "Product direction"],
   },
   {
+    name: null,
+    initials: "AC",
     role: "Chief Technology Officer",
     tenure: "Co-founder",
-    bio: "Our CTO is the principal architect of the platform. With a background spanning distributed systems research and 15 years building production infrastructure at scale, he approaches every architectural decision from operational first principles — not feature roadmaps.",
+    bio: "Our CTO is the principal architect of the Aethon Core platform. He approaches every technical decision from an operational standpoint — how it performs in production, not just in a demo. He leads platform architecture, the engineering team, and all core infrastructure decisions.",
     focus: ["Platform architecture", "Engineering leadership", "R&D"],
   },
   {
+    name: null,
+    initials: "AC",
     role: "Chief Revenue Officer",
     tenure: "Founding team",
-    bio: "Our CRO has built enterprise sales motions for infrastructure products through multiple company growth stages. Her philosophy — deep qualification, honest discovery, no pressure — is how Aethon Core goes to market. We tell clients honestly if we're not the right fit.",
+    bio: "Our CRO is responsible for how Aethon Core goes to market. The approach is straightforward: honest qualification, real discovery conversations, and telling clients directly if we're not the right fit. No pressure, no inflated promises.",
     focus: ["Enterprise sales", "Revenue strategy", "Customer success"],
   },
   {
+    name: null,
+    initials: "AC",
     role: "Chief Operating Officer",
     tenure: "Founding team",
-    bio: "Our COO is responsible for the operational backbone of the company — professional services, delivery, finance, and the things that make the company work when no one is watching. He previously scaled a managed services firm from founding through growth stage.",
+    bio: "Our COO runs the internal operations — professional services delivery, finance, and the day-to-day infrastructure that makes client work happen on time and on scope. He keeps the business functioning as we scale.",
     focus: ["Operations", "Professional services", "Finance"],
   },
   {
+    name: null,
+    initials: "AC",
     role: "Chief Information Security Officer",
     tenure: "Founding team",
-    bio: "Our CISO holds CISSP, CISM, and CRISC certifications and previously ran the security engineering practice at a major advisory firm. She is overseeing our SOC 2 Type II certification program and the ISO 27001 audit currently underway.",
+    bio: "Our CISO leads the security practice and compliance programs across the company. She oversees our SOC 2 Type II certification, ISO 27001 audit, and the security architecture embedded in every client engagement.",
     focus: ["Security architecture", "Compliance", "Threat intelligence"],
   },
   {
+    name: null,
+    initials: "AC",
     role: "VP, Engineering",
     tenure: "Founding team",
-    bio: "Our VP of Engineering leads the core platform team and is responsible for the reliability, performance, and developer experience of the Aethon Core API surface. His background is building distributed infrastructure at hyperscale — which informs how we think about reliability at the platform level.",
+    bio: "Our VP of Engineering leads the core platform team and owns the reliability, performance, and developer experience of the Aethon Core API and tooling layer. His focus is building infrastructure that holds up under real production conditions.",
     focus: ["Platform engineering", "API design", "Reliability"],
   },
 ]
@@ -76,8 +88,8 @@ export default function LeadershipPage() {
       <PageHero
         breadcrumbs={[{ label: "About", href: "/about" }, { label: "Leadership" }]}
         eyebrow="Leadership"
-        title="The team that runs Aethon Core"
-        subtitle="Founders and operators with deep enterprise backgrounds — people who have lived the problem they're solving."
+        title="The team behind Aethon Core"
+        subtitle="Founded by people who saw the same IT problems repeat themselves across organizations — and decided to build the solution rather than wait for someone else to."
         variant="tinted"
         backgroundImageSrc="https://images.unsplash.com/photo-1486325212027-8081e485255e?w=3840&q=100"
       />
@@ -89,8 +101,8 @@ export default function LeadershipPage() {
             <div className="mb-14">
               <SectionHeader
                 eyebrow="Executive team"
-                title="Leadership with operational depth"
-                subtitle="Every member of our executive team has operated enterprise infrastructure at scale before building it as a product."
+                title="People who run the business"
+                subtitle="A focused team with direct accountability for every part of what we deliver — from the platform to the client relationship."
               />
             </div>
           </FadeIn>
@@ -102,9 +114,12 @@ export default function LeadershipPage() {
                   {/* Avatar + identity */}
                   <div className="flex flex-row items-start gap-5 lg:flex-col lg:gap-4">
                     <div className="flex h-16 w-16 shrink-0 items-center justify-center rounded-xl bg-canvas text-lg font-semibold text-white">
-                      AC
+                      {person.initials}
                     </div>
                     <div>
+                      {person.name && (
+                        <p className="text-sm font-semibold text-foreground">{person.name}</p>
+                      )}
                       <p className="mt-0.5 text-sm text-blue">{person.role}</p>
                       <p className="mt-0.5 text-xs text-muted-foreground">{person.tenure}</p>
                     </div>
@@ -132,7 +147,7 @@ export default function LeadershipPage() {
       </section>
 
       {/* Advisors */}
-      <section className="bg-surface py-20 dark:bg-card lg:py-24">
+      <section className="hidden bg-surface py-20 dark:bg-card md:block lg:py-24">
         <div className="container-enterprise">
           <FadeIn>
             <div className="mb-12">

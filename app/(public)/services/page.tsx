@@ -218,7 +218,7 @@ export default function ServicesPage() {
           </section>
 
           {catIndex === 0 && (
-            <div className="relative h-72 overflow-hidden lg:h-96">
+            <div className="relative hidden h-72 overflow-hidden md:block lg:h-96">
               <Image
                 src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=3840&q=100"
                 alt="Enterprise data center operations"
@@ -236,7 +236,7 @@ export default function ServicesPage() {
           )}
 
           {catIndex === 1 && (
-            <div className="relative h-72 overflow-hidden lg:h-96">
+            <div className="relative hidden h-72 overflow-hidden md:block lg:h-96">
               <Image
                 src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?w=3840&q=100"
                 alt="Cybersecurity and specialized technology services"
@@ -300,7 +300,7 @@ function ServiceRow({
       {/* Description */}
       <div className="lg:col-span-2">
         <p className="mb-6 text-sm leading-relaxed text-muted-foreground">{service.description}</p>
-        <ul className="grid grid-cols-1 gap-2 sm:grid-cols-2">
+        <ul className="hidden grid-cols-1 gap-2 sm:grid sm:grid-cols-2">
           {service.highlights.map((h) => (
             <li key={h} className="flex items-center gap-2 text-sm text-foreground/80">
               <div className="h-1 w-1 rounded-full bg-blue" />

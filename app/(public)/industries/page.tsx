@@ -118,7 +118,7 @@ export default function IndustriesPage() {
       </section>
 
       {/* Full-width photo break */}
-      <div className="relative h-72 overflow-hidden lg:h-96">
+      <div className="relative hidden h-72 overflow-hidden md:block lg:h-96">
         <Image
           src="https://images.unsplash.com/photo-1477959858617-67f85cf4f1df?w=3840&q=100"
           alt="Global cities and industries served by Aethon Core"

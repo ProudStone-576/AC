@@ -16,7 +16,6 @@ import { IndustriesSection }     from "@/components/sections/IndustriesSection"
 import { GlobeSection }          from "@/components/sections/GlobeSection"
 import { InsightsPreview }       from "@/components/sections/InsightsPreview"
 import { FinalCTA }              from "@/components/sections/FinalCTA"
-import { HomepageBackdrop }      from "@/components/sections/HomepageBackdrop"
 import {
   SpatialNarrativeEngine,
   SpatialChapter,
@@ -109,13 +108,14 @@ export default function HomePage() {
   return (
     <>
     <JsonLd schema={homepageFaqSchema} />
-    <HomepageBackdrop />
     <SpatialNarrativeEngine chapters={CHAPTERS}>
 
       {/* 01 — Signal: hero + trust marquee */}
       <SpatialChapter id="ch-hero">
         <HeroSection />
-        <MarqueeStrip />
+        <div className="hidden sm:block">
+          <MarqueeStrip />
+        </div>
       </SpatialChapter>
 
       {/* 02 — Problem: name the real pain */}
@@ -131,7 +131,9 @@ export default function HomePage() {
       {/* 04 — Scale: prove scope right after the problem */}
       <SpatialChapter id="ch-metrics">
         <AnimatedMetrics />
-        <CinemaSection />
+        <div className="hidden md:block">
+          <CinemaSection />
+        </div>
       </SpatialChapter>
 
       {/* 05 — Capability: show the depth of what we do */}
@@ -169,7 +171,9 @@ export default function HomePage() {
 
       {/* 11 — Coverage: interactive globe showing global reach */}
       <SpatialChapter id="ch-globe">
-        <GlobeSection />
+        <div className="hidden md:block">
+          <GlobeSection />
+        </div>
       </SpatialChapter>
 
       {/* 12 — Insight: thought leadership */}
