@@ -272,7 +272,7 @@ function InfraTopologySVG() {
         ))}
         <rect x="320" y="420" width="132" height="32" rx="5" fill="rgba(29,78,216,0.16)" stroke="rgba(59,130,246,0.35)" strokeWidth="1" />
         <circle cx="332" cy="436" r="3" fill="#10b981" opacity="0.9" />
-        <text x="340" y="440" fontSize="8" fill="rgba(255,255,255,0.6)" fontFamily="monospace" fontWeight="600">Security: 0 open P1</text>
+        <text x="340" y="440" fontSize="8" fill="rgba(255,255,255,0.6)" fontFamily="monospace" fontWeight="600">Security: 0 open issues</text>
       </svg>
     </div>
   )

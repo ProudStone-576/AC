@@ -126,24 +126,24 @@ const signals = [
   {
     color: "#22c55e",
     label: "Resolved",
-    title: "Auth token rotation completed",
-    sub: "12 services refreshed · 0 failures",
+    title: "Login security keys rotated",
+    sub: "12 services updated · 0 failures",
     time: "just now",
-    tags: ["#infra", "#auto"],
+    tags: ["#security", "#auto"],
   },
   {
     color: "#a78bfa",
     label: "Running",
-    title: "Dependency graph rebuild triggered",
-    sub: "Staging environment · 3 jobs queued",
+    title: "Software dependency check completed",
+    sub: "Staging environment · 3 tasks queued",
     time: "4 min ago",
     tags: ["#deploy"],
   },
   {
     color: "#facc15",
     label: "Review",
-    title: "Usage threshold: 87% of quota",
-    sub: "Org: Finance-Prod · Enterprise plan",
+    title: "Storage usage at 87% of limit",
+    sub: "Finance team · Enterprise plan",
     time: "11 min ago",
     tags: ["#billing"],
   },
@@ -151,9 +151,9 @@ const signals = [
     color: "#60a5fa",
     label: "Queued",
     title: "Nightly data sync scheduled",
-    sub: "All regions · ETA 02:00 UTC",
+    sub: "All regions · runs at 02:00",
     time: "18 min ago",
-    tags: ["#data", "#cron"],
+    tags: ["#data", "#scheduled"],
   },
 ]
 
@@ -163,8 +163,8 @@ const columns = [
     count: 3,
     dot: "#6b7280",
     cards: [
-      { tag: "Infra", tagColor: "#60a5fa", tagBg: "rgba(96,165,250,0.12)", title: "Cert renewal sweep", assign: ["JK", "TA"] },
-      { tag: "Data", tagColor: "#a78bfa", tagBg: "rgba(167,139,250,0.12)", title: "Archive cold-tier logs", assign: ["MP"] },
+      { tag: "Infra", tagColor: "#60a5fa", tagBg: "rgba(96,165,250,0.12)", title: "SSL certificate renewal", assign: ["JK", "TA"] },
+      { tag: "Data", tagColor: "#a78bfa", tagBg: "rgba(167,139,250,0.12)", title: "Archive old log files", assign: ["MP"] },
     ],
   },
   {
@@ -172,8 +172,8 @@ const columns = [
     count: 4,
     dot: "#a78bfa",
     cards: [
-      { tag: "Live", tagColor: "#22c55e", tagBg: "rgba(34,197,94,0.12)", title: "Incident digest → Slack", assign: ["TA", "JK"] },
-      { tag: "Live", tagColor: "#22c55e", tagBg: "rgba(34,197,94,0.12)", title: "Metric rollup · 1h window", assign: ["SR"] },
+      { tag: "Live", tagColor: "#22c55e", tagBg: "rgba(34,197,94,0.12)", title: "Alert summary sent to team", assign: ["TA", "JK"] },
+      { tag: "Live", tagColor: "#22c55e", tagBg: "rgba(34,197,94,0.12)", title: "Performance report · last hour", assign: ["SR"] },
     ],
   },
   {
@@ -181,8 +181,8 @@ const columns = [
     count: 9,
     dot: "#22c55e",
     cards: [
-      { tag: "Done", tagColor: "#6b7280", tagBg: "rgba(107,114,128,0.10)", title: "SOC2 evidence export", assign: ["MP", "TA"] },
-      { tag: "Done", tagColor: "#6b7280", tagBg: "rgba(107,114,128,0.10)", title: "DR failover test · US-East", assign: ["JK"] },
+      { tag: "Done", tagColor: "#6b7280", tagBg: "rgba(107,114,128,0.10)", title: "Security audit report exported", assign: ["MP", "TA"] },
+      { tag: "Done", tagColor: "#6b7280", tagBg: "rgba(107,114,128,0.10)", title: "Disaster recovery drill completed", assign: ["JK"] },
     ],
   },
 ]
@@ -361,9 +361,9 @@ function DashboardMockup() {
           <div className="mt-auto flex items-center gap-4 border-t px-4 py-2.5"
             style={{ borderColor: "#1a1a1a" }}>
             {[
-              { label: "Avg run", value: "1.4s" },
+              { label: "Avg task time", value: "1.4s" },
               { label: "Success rate", value: "99.7%" },
-              { label: "This week", value: "312 runs" },
+              { label: "This week", value: "312 tasks" },
             ].map((s) => (
               <div key={s.label} className="flex items-center gap-1.5">
                 <span className="text-[9px]" style={{ color: "#444" }}>{s.label}</span>

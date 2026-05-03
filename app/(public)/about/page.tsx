@@ -56,7 +56,7 @@ const values = [
 ]
 
 const timeline = [
-  { year: "2022", event: "Problem identified. Our founding team spent 15+ years in enterprise infrastructure watching the same failures repeat across industries." },
+  { year: "2022", event: "Problem identified. Our founding team spent years managing technology for large organizations and kept seeing the same failures repeat — too many vendors, no accountability, and technology that was supposed to work but didn't." },
   { year: "2023", event: "Design phase. We spent 18 months designing the platform before writing a single line of production code." },
   { year: "Q1 2024", event: "Aethon Core Inc. incorporated. Core platform engineering begins." },
   { year: "Q3 2024", event: "Platform alpha. Internal testing across compute, security, network, and data layers." },
@@ -194,12 +194,12 @@ export default function AboutPage() {
           </FadeIn>
           <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
             {[
-              { role: "Chief Executive Officer", background: "20+ years in enterprise infrastructure. Former SVP of Infrastructure at a major financial institution." },
-              { role: "Chief Technology Officer", background: "15+ years building large-scale production infrastructure. Background in distributed systems and platform architecture." },
-              { role: "Chief Revenue Officer", background: "Led enterprise infrastructure sales through two company exits. Specializes in complex technical solutions for large organizations." },
-              { role: "Chief Operating Officer", background: "Operations and professional services leadership. Scaled a managed services business from founding through growth stage." },
-              { role: "Chief Information Security Officer", background: "CISSP, CISM, CRISC certified. Former security advisory practice lead. Leads our SOC 2 and ISO 27001 programs." },
-              { role: "VP, Engineering", background: "Former principal engineer at a hyperscale cloud provider. Leads core platform reliability and API development." },
+              { role: "Chief Executive Officer", background: "Founded Aethon Core. Leads company strategy, client relationships, and the overall direction of the business." },
+              { role: "Chief Technology Officer", background: "Principal architect of the Aethon Core platform. Leads engineering and all core technical decisions." },
+              { role: "Chief Revenue Officer", background: "Responsible for how we go to market. Leads enterprise sales, revenue strategy, and customer success." },
+              { role: "Chief Operating Officer", background: "Runs internal operations, professional services delivery, and keeps the business running on time and on scope." },
+              { role: "Chief Information Security Officer", background: "Leads our security practice and compliance programs. Oversees our SOC 2 and ISO 27001 certifications." },
+              { role: "VP, Engineering", background: "Leads the core platform team. Owns reliability, performance, and the developer tools we build on." },
             ].map((person, i) => (
               <FadeIn key={person.role} variant="scale-up" delay={i * 70}>
                 <div className="flex flex-col gap-3 rounded-xl border border-border bg-surface p-5 dark:bg-card">

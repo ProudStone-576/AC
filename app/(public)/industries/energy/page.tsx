@@ -34,84 +34,84 @@ export const metadata: Metadata = {
 const challenges = [
   {
     icon: AlertTriangle,
-    title: "OT systems are prime attack targets",
+    title: "Industrial control systems are high-value attack targets",
     description:
-      "Energy infrastructure is among the most consequential targets for nation-state and criminal cyberattacks. A successful attack on grid control systems isn't a data breach — it's a national security event. The security standard has to match the consequence.",
+      "Energy infrastructure is among the most targeted sectors for cyberattacks by criminal groups and nation-states. A successful attack on grid control systems isn't a data breach — it's a national security event. The security standard has to match the consequence.",
   },
   {
     icon: Lock,
-    title: "Legacy OT with no security model",
+    title: "Older industrial systems weren't built with security in mind",
     description:
-      "Much of the operational technology controlling generation, transmission, and distribution was deployed before cybersecurity was a design consideration. These systems can't be patched or replaced quickly — they have to be protected in place.",
+      "Much of the specialized computer equipment controlling power generation, transmission, and distribution was installed before cybersecurity was a design consideration. These systems can't be patched or replaced quickly — they have to be secured without being replaced.",
   },
   {
     icon: Network,
     title: "Too many new connections, not enough security",
     description:
-      "Grid modernization, smart meters, and remote monitoring are connecting industrial systems to standard IP networks. Each new connection is a potential entry point. The number of ways attackers can get in is growing faster than most utility security teams can handle.",
+      "Smart grid upgrades, smart meters, and remote monitoring are connecting industrial equipment to standard internet-connected networks. Each new connection is a potential way in for attackers. The number of entry points is growing faster than most utility security teams can handle.",
   },
   {
     icon: Eye,
-    title: "NERC CIP compliance complexity",
+    title: "Meeting mandatory power grid security rules is demanding",
     description:
-      "NERC CIP standards require extensive documentation, evidence collection, and continuous monitoring across bulk electric system assets. The compliance program is operationally demanding and the penalties for non-compliance are severe.",
+      "NERC CIP (the mandatory cybersecurity rules for power grid operators) requires extensive documentation, evidence collection, and ongoing monitoring across all critical grid equipment. The compliance program is operationally demanding and the penalties for falling short are severe.",
   },
 ]
 
 const capabilities = [
   {
-    title: "NERC CIP compliant OT security",
+    title: "Mandatory power grid security rules (NERC CIP)",
     description:
-      "We implement the full NERC CIP control set — physical security, electronic security perimeters, system security management, incident reporting, and supply chain risk management — as operational architecture, not a documentation program.",
+      "We implement the full set of required NERC CIP controls — physical security, network access boundaries, system management, incident reporting, and supply chain risk management — as real operational security, not just a documentation program.",
     stat: "NERC CIP-002 through CIP-014",
   },
   {
-    title: "IEC 62443 security framework",
+    title: "International industrial security standard (IEC 62443)",
     description:
-      "The international standard for industrial control system security shapes how we design every OT implementation. Systems are separated into distinct zones with clearly monitored connections between them — so a problem in one area can't spread to others.",
+      "The international standard for securing industrial control systems shapes how we design every project. Systems are separated into distinct zones with clearly monitored connections between them — so a problem in one area can't spread to others.",
     stat: "IEC 62443-2-1 · IEC 62443-3-3",
   },
   {
-    title: "Air-gapped and hybrid grid deployments",
+    title: "Physically separated and connected grid environments",
     description:
-      "Where NERC CIP or operational requirements demand physical separation, we design and operate air-gapped environments. Where hybrid connectivity is required, we architect it with the minimum necessary exposure and maximum monitoring.",
-    stat: "Air-gapped · unidirectional gateways · DMZ design",
+      "Where rules or safety requirements demand complete physical separation, we design and operate fully isolated environments. Where some connectivity is needed, we design it with the smallest possible exposure and maximum monitoring.",
+    stat: "Physically isolated · one-way data transfer · network separation",
   },
   {
-    title: "OT monitoring without operational disruption",
+    title: "Monitoring industrial systems without disrupting operations",
     description:
-      "Passive monitoring of OT networks using protocol-aware tools designed for industrial systems. Anomaly detection calibrated to operational baselines — not IT traffic patterns. Zero disruption to operational processes.",
-    stat: "Dragos · Claroty · Nozomi integration",
+      "We monitor industrial networks using tools built specifically for industrial communication protocols. Alert thresholds are set based on how your equipment actually behaves — not generic patterns from office networks. Zero disruption to running equipment.",
+    stat: "Purpose-built industrial monitoring tools",
   },
   {
-    title: "Incident response for OT environments",
+    title: "Emergency response for industrial system attacks",
     description:
-      "Incident response in OT environments requires different playbooks than IT. Our OT-specialized response team knows how to contain threats without taking generation or distribution assets offline unnecessarily.",
-    stat: "OT-specific IR playbooks · 24/7 response",
+      "Responding to attacks on industrial control systems requires different steps than responding to office network attacks. Our specialists know how to contain threats without shutting down generation or distribution equipment unnecessarily.",
+    stat: "Industrial-specific playbooks · 24/7 response",
   },
   {
-    title: "Grid modernization security architecture",
+    title: "Keeping new grid technology secure",
     description:
-      "Smart grid deployments, smart meters, and distributed energy management systems introduce new ways attackers can get in. We build security into these modernization programs from the design phase — not bolted on afterward.",
-    stat: "AMI · DERMS · smart grid security",
+      "Smart grid upgrades, smart meters, and remote energy management systems introduce new ways attackers can get in. We build security into these programs from the design phase — not added on afterward.",
+    stat: "Smart meters · remote energy management · connected grid security",
   },
 ]
 
 const complianceFrameworks = [
-  { name: "NERC CIP", scope: "Bulk electric system cybersecurity" },
-  { name: "IEC 62443", scope: "Industrial control system security" },
-  { name: "NIST SP 800-82", scope: "ICS security guide" },
-  { name: "ISO 27001", scope: "Information security management" },
-  { name: "C2M2", scope: "Cybersecurity capability maturity" },
-  { name: "AWIA 2018", scope: "Water and wastewater security" },
-  { name: "TSA Pipeline Security", scope: "Pipeline cybersecurity directives" },
-  { name: "DOE CESER", scope: "Energy sector cybersecurity" },
+  { name: "NERC CIP", scope: "Mandatory cybersecurity rules for power grid operators" },
+  { name: "IEC 62443", scope: "International standard for securing industrial systems" },
+  { name: "NIST SP 800-82", scope: "US government guidance for securing industrial control systems" },
+  { name: "ISO 27001", scope: "International standard for managing information security" },
+  { name: "C2M2", scope: "Framework for measuring and improving cybersecurity programs" },
+  { name: "AWIA 2018", scope: "US law requiring security assessments for water systems" },
+  { name: "TSA Pipeline Security", scope: "US government-mandated security rules for pipeline operators" },
+  { name: "DOE CESER", scope: "US Department of Energy cybersecurity program for energy companies" },
 ]
 
 const stats = [
-  { value: "NERC CIP", label: "Compliant OT security" },
-  { value: "IEC 62443", label: "Industrial security standard" },
-  { value: "24/7", label: "OT threat monitoring" },
+  { value: "NERC CIP", label: "Mandatory power grid security rules met" },
+  { value: "IEC 62443", label: "International industrial security standard" },
+  { value: "24/7", label: "Industrial system monitoring" },
   { value: "0", label: "Operational disruptions during deployment" },
 ]
 
@@ -122,8 +122,8 @@ export default function EnergyPage() {
       <PageHero
         breadcrumbs={[{ label: "Industries", href: "/industries" }, { label: "Energy & Utilities" }]}
         eyebrow="Energy & Utilities"
-        title="We harden the operational layer, not just the IT perimeter"
-        subtitle="NERC CIP compliant OT security and grid modernization for energy and utility companies where a successful cyberattack is a national security event, not just a data breach."
+        title="Security for the systems that actually control the power — not just the office network"
+        subtitle="Security for power generation and distribution control systems, built to meet the mandatory rules for grid operators. A successful attack on these systems isn't a data breach — it's a national security event."
         variant="dark"
         backgroundImageSrc="https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?w=3840&q=100"
       />
@@ -174,10 +174,10 @@ export default function EnergyPage() {
           <div className="mb-12 max-w-2xl">
             <p className="mb-3 text-xs font-semibold uppercase tracking-widest text-blue">Our approach</p>
             <h2 className="text-3xl font-semibold tracking-tight text-foreground sm:text-4xl">
-              OT security built by people who understand industrial systems
+              Industrial security built by people who understand how power systems work
             </h2>
             <p className="mt-4 text-base text-muted-foreground">
-              Applying IT security thinking to OT environments creates false confidence. We approach industrial control system security as a distinct discipline.
+              Treating industrial security the same as office IT security creates a false sense of safety. We treat industrial system security as a distinct and specialized discipline.
             </p>
           </div>
           <div className="grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-3">
@@ -225,7 +225,7 @@ export default function EnergyPage() {
                 Securing operational technology during a live grid modernization
               </h2>
               <p className="mb-6 text-sm leading-relaxed text-muted-foreground">
-                A regional utility undergoing a smart grid modernization program needed to add security controls to OT systems while keeping generation and distribution assets live. A standard change-freeze approach wasn't operationally viable.
+                A regional utility upgrading to a smart grid needed to add security controls to their industrial control systems while keeping generation and distribution equipment running. Taking the systems offline to add security wasn't an option.
               </p>
               <Link
                 href="/case-studies/energy-grid-security"
@@ -238,11 +238,11 @@ export default function EnergyPage() {
             <div className="flex flex-col justify-center rounded-xl bg-brand p-6 text-white lg:col-span-2">
               <p className="mb-3 text-xs font-semibold uppercase tracking-wider text-white/50">Our approach</p>
               <p className="text-sm leading-relaxed text-white/90">
-                We apply NERC CIP controls to OT systems without halting operations. Security is implemented in stages, with each phase verified before the next begins.
+                We add the required power grid security controls without stopping operations. Security is implemented in stages, with each phase verified before the next begins.
               </p>
               <div className="mt-6 flex items-center gap-2 border-t border-white/10 pt-4 text-xs text-white/50">
                 <Zap className="h-3.5 w-3.5" />
-                Energy & Utilities · OT Security
+                Energy & Utilities · Industrial Security
               </div>
             </div>
           </div>
@@ -251,7 +251,7 @@ export default function EnergyPage() {
 
       <CTASection
         title="Operating grid infrastructure or critical energy assets?"
-        subtitle="Our OT security team has specific experience with NERC CIP, ICS environments, and grid modernization programs that can't pause for security retrofits."
+        subtitle="Our industrial security team has hands-on experience with mandatory power grid security rules, protecting live industrial systems, and securing grid modernization programs while they're running."
         primaryLabel="Talk to an OT security specialist"
         primaryHref="/contact"
         secondaryLabel="See all use cases"

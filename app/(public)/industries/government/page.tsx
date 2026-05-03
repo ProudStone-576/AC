@@ -48,70 +48,70 @@ const challenges = [
     icon: FileText,
     title: "Procurement and compliance documentation",
     description:
-      "Government procurement requires documentation that most commercial vendors don't maintain: System Security Plans, Security Assessment Reports, Authority to Operate packages, POA&M management. The paperwork is as important as the technology.",
+      "Government procurement requires documentation that most commercial vendors don't maintain: security planning documents, assessment reports, and formal authorization packages. The paperwork is as important as the technology itself.",
   },
   {
     icon: Eye,
     title: "Continuous monitoring requirements",
     description:
-      "FedRAMP requires continuous monitoring with monthly reporting to ISSM and AO. Most agencies don't have the internal staffing to run ConMon at scale. It has to be managed by the provider.",
+      "FedRAMP (the US federal cloud certification) requires ongoing security monitoring with monthly reports to your designated security officials. Most agencies don't have the internal staff to run this program at scale — it has to be managed by the provider.",
   },
 ]
 
 const capabilities = [
   {
-    title: "FedRAMP High authorized infrastructure",
+    title: "Top-tier US government cloud certification (FedRAMP High)",
     description:
-      "Our government cloud operates at FedRAMP High authorization level — the highest available for non-classified workloads. FISMA High controls implemented and continuously monitored. ATO packages maintained.",
+      "Our government cloud meets the highest security certification level available for non-classified government workloads. All required security controls are active and continuously checked. Authorization documentation is maintained year-round.",
     stat: "FedRAMP High · FISMA High",
   },
   {
-    title: "StateRAMP compliant deployment",
+    title: "State and local government compliant deployment",
     description:
-      "State and local government agencies have the same security requirements as federal — with the added complexity of varying state-specific regulations. We maintain StateRAMP-compliant deployment models across multiple states.",
+      "State and local government agencies face the same security requirements as federal agencies — with the added complexity of varying state-specific rules. We maintain compliant deployment models that meet these requirements across multiple states.",
     stat: "StateRAMP authorized",
   },
   {
-    title: "Air-gapped and isolated environments",
+    title: "Physically separated environments",
     description:
-      "For workloads requiring physical separation from commercial cloud infrastructure, we offer fully air-gapped deployment in US government-controlled facilities. Network connectivity is explicit, logged, and controlled.",
-    stat: "Air-gapped · physically isolated · US-only staff",
+      "For workloads that must be completely separate from commercial cloud infrastructure, we offer fully isolated deployment in US government-controlled facilities. Every network connection is explicit, logged, and controlled.",
+    stat: "Physically isolated · US-only staff",
   },
   {
-    title: "ITAR and EAR compliance",
+    title: "US export control compliance (ITAR and EAR)",
     description:
-      "Defense contractors and agencies handling controlled unclassified information need ITAR and EAR-compliant infrastructure. We maintain the required personnel controls, access restrictions, and export control documentation.",
-    stat: "ITAR · EAR · CUI handling",
+      "Defense contractors and agencies handling sensitive information under US export control regulations need compliant infrastructure. We maintain the required personnel controls, access restrictions, and documentation.",
+    stat: "ITAR · EAR · restricted data handling",
   },
   {
-    title: "CMMC Level 3 support",
+    title: "Defense contractor certification support (CMMC)",
     description:
-      "Defense Industrial Base contractors requiring CMMC certification need a cloud infrastructure that satisfies the technical controls. We provide CMMC-aligned environments with assessment support.",
-    stat: "CMMC Level 3 · NIST SP 800-171",
+      "Defense contractors who need to meet the government's security certification requirements need cloud infrastructure that satisfies the technical controls. We provide compliant environments and support the certification process.",
+    stat: "CMMC Level 3 · NIST security controls",
   },
   {
     title: "Continuous monitoring as a service",
     description:
-      "FedRAMP continuous monitoring requirements — monthly vulnerability scanning, ongoing security event monitoring, and regular reporting to your authorizing official — are all handled by our GovCloud operations team. Agencies get the reports; we run the program.",
+      "The required ongoing security monitoring — monthly vulnerability scanning, continuous security event tracking, and regular reports to your designated security officials — is handled by our government operations team. Your agency gets the reports; we run the program.",
     stat: "Continuous monitoring · monthly reporting",
   },
 ]
 
 const complianceFrameworks = [
-  { name: "FedRAMP High", scope: "Federal cloud service authorization" },
-  { name: "StateRAMP", scope: "State and local government" },
-  { name: "FISMA High", scope: "Federal information security" },
-  { name: "ITAR", scope: "International arms regulations" },
-  { name: "EAR", scope: "Export administration regulations" },
-  { name: "CMMC Level 3", scope: "Defense industrial base" },
-  { name: "NIST SP 800-171", scope: "CUI handling requirements" },
-  { name: "IL4 / IL5", scope: "DoD impact level data" },
+  { name: "FedRAMP High", scope: "Required certification to operate cloud services for US federal agencies" },
+  { name: "StateRAMP", scope: "Security certification for state and local government technology providers" },
+  { name: "FISMA High", scope: "US federal government information security requirements — highest level" },
+  { name: "ITAR", scope: "US rules governing technology that could be used in weapons systems" },
+  { name: "EAR", scope: "US rules governing controlled technology exports" },
+  { name: "CMMC Level 3", scope: "Security certification required to work on US defense contracts" },
+  { name: "NIST SP 800-171", scope: "Standards for handling sensitive government information" },
+  { name: "IL4 / IL5", scope: "US Department of Defense data security levels" },
 ]
 
 const stats = [
-  { value: "FedRAMP", label: "High authorized" },
-  { value: "ITAR", label: "Capable environments" },
-  { value: "CMMC", label: "Level 3 support" },
+  { value: "FedRAMP High", label: "Top US government cloud certification" },
+  { value: "Export ctrl", label: "Compliant environments (ITAR)" },
+  { value: "Defense", label: "Contractor certification support" },
   { value: "US-only", label: "Data residency, enforced" },
 ]
 
@@ -122,8 +122,8 @@ export default function GovernmentPage() {
       <PageHero
         breadcrumbs={[{ label: "Industries", href: "/industries" }, { label: "Government & Public Sector" }]}
         eyebrow="Government & Public Sector"
-        title="Government technology designed to those standards from day one"
-        subtitle="FedRAMP Authorized, StateRAMP compliant, and ITAR-capable infrastructure for federal, state, and local agencies where the security and auditability requirements would stress most commercial platforms."
+        title="Government technology built to the rules your agency has to follow"
+        subtitle="Infrastructure designed for the security, documentation, and reliability standards that government agencies are required to meet — built to those rules from the start, not adapted to them later."
         variant="dark"
         backgroundImageSrc="https://images.unsplash.com/photo-1477959858617-67f85cf4f1df?w=3840&q=100"
       />
@@ -240,7 +240,7 @@ export default function GovernmentPage() {
 
       <CTASection
         title="A federal, state, or local government agency?"
-        subtitle="Our GovCloud team includes personnel with active clearances and deep experience with FedRAMP, FISMA, and DoD authorization processes."
+        subtitle="Our government team includes people with active security clearances and direct experience getting government systems certified, authorized, and operational."
         primaryLabel="Talk to our government team"
         primaryHref="/contact"
         secondaryLabel="View all use cases"
