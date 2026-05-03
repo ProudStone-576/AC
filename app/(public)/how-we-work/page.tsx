@@ -57,10 +57,10 @@ const stages = [
   {
     step: "03",
     icon: Settings,
-    title: "Scoping and SOW",
+    title: "Scoping and Contract",
     duration: "5–7 business days",
     description:
-      "Based on the assessment findings, we scope an engagement. You get a Statement of Work with defined deliverables, a timeline, acceptance criteria, and a fixed price. We don't start work without a signed SOW. Changes to scope are handled through a formal change request — no scope creep, no surprise invoices.",
+      "Based on the assessment findings, we scope an engagement. You get a Statement of Work (SOW) — a formal document listing exactly what we deliver, the timeline, what success looks like, and the fixed price. We don't start work without a signed SOW. Changes to scope go through a formal change request — no scope creep, no surprise invoices.",
     weAsk: [
       "Review of the draft SOW with your team",
       "Sign-off from the right stakeholders before we proceed",
@@ -89,7 +89,7 @@ const stages = [
     youGet: [
       "Platform deployed and integrated in your environment",
       "Your team trained on day-to-day operations and escalation procedures",
-      "Written runbooks for common operations and incident response",
+      "Step-by-step guides for common operations and incident response",
       "Access to the client portal for request tracking and reporting",
     ],
     href: null,
@@ -103,15 +103,15 @@ const stages = [
     description:
       "For managed services clients: 24/7 monitoring, incident response, and a structured reporting cadence. You get a named service delivery manager, defined SLAs written into the contract, and a monthly business review. We don't disappear between incidents.",
     weAsk: [
-      "A 24/7 escalation contact on your side for P1 incidents",
+      "A 24/7 emergency contact on your side for critical incidents",
       "Attendance at monthly and quarterly business reviews",
       "Advance notice of major planned changes to your environment",
     ],
     youGet: [
       "Weekly infrastructure health summaries",
-      "Monthly SLA scorecard, capacity report, and cost optimization recommendations",
-      "Quarterly executive business review with roadmap planning",
-      "Written post-incident review within 48 hours of any P1/P2 incident",
+      "Monthly report showing whether we met our guarantees, plus cost optimization recommendations",
+      "Quarterly executive review with roadmap planning",
+      "Written post-incident review within 48 hours of any critical or major incident",
     ],
     href: "/services/managed",
     cta: "Managed services details",
@@ -153,7 +153,7 @@ const contractFacts = [
   },
   {
     label: "SLA remedies",
-    value: "SLA misses result in service credits written into the contract, not goodwill gestures",
+    value: "If we miss a guarantee, service credits are written into the contract — not goodwill gestures",
   },
   {
     label: "Exit",
@@ -320,7 +320,7 @@ export default function HowWeWorkPage() {
                 When things go wrong
               </p>
               <h2 className="text-2xl font-semibold tracking-tight text-foreground sm:text-3xl">
-                How we handle incidents and SLA misses
+                How we handle incidents and missed guarantees
               </h2>
             </div>
           </FadeIn>
@@ -329,15 +329,15 @@ export default function HowWeWorkPage() {
               {[
                 {
                   title: "Incident response",
-                  body: "P1 incidents are responded to within 15 minutes (Enterprise Plus) or 1–8 hours depending on tier. A named engineer works the problem. You get status updates every 30 minutes until resolved, without having to ask.",
+                  body: "Critical incidents are responded to within 15 minutes (Enterprise Plus) or 1–8 hours depending on your plan. A named engineer works the problem. You get status updates every 30 minutes until resolved, without having to ask.",
                 },
                 {
                   title: "Post-incident review",
-                  body: "Every P1 and P2 incident results in a written post-incident review delivered within 48 hours. It covers what happened, why it happened, what we changed, and what prevents recurrence. This is contractual, not optional.",
+                  body: "Every critical or major incident results in a written review delivered within 48 hours. It covers what happened, why it happened, what we changed, and what prevents recurrence. This is contractual, not optional.",
                 },
                 {
-                  title: "SLA misses",
-                  body: "SLA credits are written into the contract with defined multipliers based on severity. They're applied automatically to your next invoice — you don't have to request them. Repeated misses against the same SLA trigger an escalation review.",
+                  title: "When we miss a guarantee",
+                  body: "Service credits are written into the contract with defined amounts based on severity. They're applied automatically to your next invoice — you don't have to ask. Repeated misses against the same guarantee trigger an escalation review.",
                 },
               ].map((item) => (
                 <div key={item.title} className="rounded-xl border border-border bg-white p-6 dark:bg-card">

@@ -33,7 +33,7 @@ const tabs = [
     description:
       "We protect organizations that are actively targeted — not just ones trying to pass an audit. Real engineers watch your systems 24/7 and respond to threats the moment they appear.",
     capabilities: [
-      "Zero Trust security design and setup",
+      "Zero Trust security setup (nothing gets automatic access)",
       "24/7 Security Operations Center (SOC)",
       "Penetration testing and attack simulations",
       "Identity and access management",
@@ -75,7 +75,7 @@ const tabs = [
       "DDoS protection at the network level",
       "Network monitoring and traffic analysis",
     ],
-    stat: { value: "< 8ms", label: "P99 connection speed across our network" },
+    stat: { value: "< 8ms", label: "Connection speed across our network" },
     href: "/services/network",
     visual: "network",
   },
@@ -441,7 +441,7 @@ function NetworkVisual() {
       {/* Stats */}
       <div className="grid grid-cols-3 gap-2 text-center">
         {[
-          { label: "Latency P99", value: "< 8ms" },
+          { label: "Connection speed", value: "< 8ms" },
           { label: "Packet loss", value: "0.001%" },
           { label: "Uptime",      value: "99.999%" },
         ].map((s) => (

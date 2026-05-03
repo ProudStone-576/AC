@@ -19,7 +19,7 @@ const CELLS: BentoCell[] = [
     photo: "photo-1451187580459-43490279c0fa",
     alt: "Earth at night from space showing global connectivity",
     metric: "99.99%",
-    label: "Contractual uptime SLA",
+    label: "Uptime guarantee, written in your contract",
     accent: "from-blue/60 to-blue/5",
     colSpan: "col-span-2",
   },

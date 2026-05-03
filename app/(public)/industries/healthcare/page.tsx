@@ -43,7 +43,7 @@ const challenges = [
     icon: Clock,
     title: "Clinical system availability",
     description:
-      "EHR downtime during a clinical shift directly impacts patient care. Infrastructure SLAs in healthcare aren't about revenue — they're about outcomes. The reliability standard has to reflect that.",
+      "When your electronic health record (EHR) system goes down during a clinical shift, it directly impacts patient care. Reliability in healthcare isn't about revenue — it's about outcomes. The standard has to reflect that.",
   },
   {
     icon: AlertTriangle,
@@ -67,10 +67,10 @@ const capabilities = [
     stat: "HIPAA · HITRUST CSF · SOC 2 Type II",
   },
   {
-    title: "Zero Trust for clinical networks",
+    title: "Zero Trust security for clinical networks",
     description:
       "We rebuild your security from the ground up. No system automatically trusts another — not clinical systems, not admin systems, not vendor connections. Every connection is continuously checked and verified.",
-    stat: "NIST SP 800-207 · isolated by workload type",
+    stat: "Meets NIST SP 800-207 (US government security standard) · isolated by workload type",
   },
   {
     title: "Zero unencrypted data paths",
@@ -82,7 +82,7 @@ const capabilities = [
     title: "High-availability EHR infrastructure",
     description:
       "Multi-zone active-active architectures for EHR and clinical imaging workloads. Failover occurs automatically without clinical workflow interruption. RPO and RTO are contractually defined.",
-    stat: "99.99% uptime SLA · recovery point under 15 min",
+    stat: "99.99% uptime guarantee · max 15 minutes of data loss if disaster strikes",
   },
   {
     title: "Legacy system modernization",
@@ -110,9 +110,9 @@ const complianceFrameworks = [
 ]
 
 const stats = [
-  { value: "99.99%", label: "Uptime SLA for clinical systems" },
-  { value: "0", label: "Unencrypted data paths by architecture" },
-  { value: "< 15min", label: "Recovery point objective" },
+  { value: "99.99%", label: "Uptime guarantee for clinical systems" },
+  { value: "0", label: "Unencrypted data paths — by design" },
+  { value: "< 15min", label: "Max data loss if disaster strikes" },
   { value: "HITRUST", label: "Certified environments" },
 ]
 

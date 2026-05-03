@@ -1,5 +1,6 @@
 import type { Metadata } from "next"
 import Link from "next/link"
+import Image from "next/image"
 import {
   ArrowRight, BarChart2, Layers, Shield, Workflow,
   CheckCircle2, Zap, Globe, Lock,
@@ -21,7 +22,7 @@ const products = [
     description:
       "Manage your servers, storage, network, and user access from a single dashboard — whether you run on the cloud, in your own data center, or both. Same rules everywhere, one monthly bill.",
     stats: [
-      { value: "99.99%", label: "Uptime SLA" },
+      { value: "99.99%", label: "Uptime guarantee" },
       { value: "< 8ms", label: "Response time" },
       { value: "11×", label: "Tools replaced per customer" },
     ],
@@ -87,7 +88,7 @@ const products = [
     ],
     highlights: [
       "Zero Trust security — verify everyone, trust nothing by default",
-      "Ongoing compliance checks — HIPAA, PCI DSS, FedRAMP, NERC CIP",
+      "Ongoing compliance checks — HIPAA (health data), PCI DSS (credit card payments), FedRAMP (US government), NERC CIP (energy)",
       "24/7 threat detection with automatic response",
       "Tamper-evident audit trail for legal and regulatory requirements",
     ],
@@ -205,6 +206,23 @@ export default function ProductsPage() {
         </div>
       </section>
 
+      {/* Full-width photo break */}
+      <div className="relative h-72 overflow-hidden lg:h-96">
+        <Image
+          src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?w=3840&q=100"
+          alt="Enterprise technology platform infrastructure"
+          fill
+          className="object-cover object-center"
+          sizes="100vw"
+        />
+        <div className="absolute inset-0 bg-canvas/65" />
+        <div className="container-enterprise relative flex h-full flex-col items-start justify-end pb-10">
+          <p className="max-w-xl text-sm leading-relaxed text-white/80">
+            Four products sharing one foundation means one login, one support team, and one contract. Everything works together on day one — no integration project required.
+          </p>
+        </div>
+      </div>
+
       {/* Why one platform */}
       <section className="bg-surface py-16 dark:bg-card lg:py-20">
         <div className="container-enterprise">
@@ -260,7 +278,7 @@ export default function ProductsPage() {
                 {[
                   ["Infrastructure control", "4–6 separate orchestration tools", "One management system"],
                   ["Observability", "Separate logging, metrics, and tracing stacks", "Unified query layer across all signals"],
-                  ["Automation", "Per-tool runbooks, no cross-system triggers", "Event-driven workflows across all systems"],
+                  ["Automation", "Per-tool response scripts, no cross-system triggers", "Event-driven workflows across all systems"],
                   ["Security coverage", "Point scanner per environment", "Continuous assessment — every layer, always on"],
                   ["Compliance reporting", "Manual evidence gathering", "Automated, audit-ready reports on demand"],
                   ["Billing", "Separate invoices per vendor", "One invoice, one SLA"],

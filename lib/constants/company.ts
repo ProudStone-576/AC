@@ -7,7 +7,7 @@ export const company = {
   description:
     "Aethon Core manages IT for businesses across Canada and North America. We run your cloud, protect your security, and keep everything working — with real engineers, written guarantees, and 24/7 coverage.",
   founded: "2024",
-  email: "contact@aethoncore.com",
+  email: "contact@aethoncore.ca",
   social: {
     linkedin: "https://linkedin.com/company/aethoncore",
     twitter: "https://twitter.com/aethoncore",
@@ -16,10 +16,10 @@ export const company = {
 }
 
 export const metrics: MetricItem[] = [
-  { value: "99.99", suffix: "%", label: "Uptime SLA" },
-  { value: "< 10ms", label: "P99 API latency" },
-  { value: "Zero Trust", label: "Security architecture" },
-  { value: "24/7", label: "NOC & SOC coverage" },
+  { value: "99.99", suffix: "%", label: "Uptime guarantee" },
+  { value: "< 10ms", label: "System response speed" },
+  { value: "Zero Trust", label: "Security built in from day one" },
+  { value: "24/7", label: "Monitoring and security" },
 ]
 
 export const services: ServiceItem[] = [
@@ -86,13 +86,13 @@ export const solutions: SolutionItem[] = [
     eyebrow: "Aethon Core Platform",
     title: "One dashboard for all of your IT",
     description:
-      "The Aethon Core Platform gives you a single place to see, manage, and act on everything in your IT environment — cloud, on-premises, and remote systems. Every change is tracked. Every issue is caught. Nothing falls through the gaps.",
+      "The Aethon Core Platform gives you one place to see, manage, and act on everything in your IT — whether it's in the cloud, in your office, or somewhere remote. Every change is recorded. Every problem is caught. Nothing gets missed.",
     features: [
-      "All your systems and settings tracked in one place",
-      "Rules and policies enforced automatically, with a full history of changes",
-      "Automated fixes tied to the guarantees in your contract",
-      "Connects to ServiceNow, Splunk, Microsoft 365, AWS, and Azure",
-      "Dashboards built for operations teams, finance, and leadership",
+      "Every system and setting visible in one place",
+      "Security rules applied automatically, with a full record of every change",
+      "Automated fixes tied to the guarantees written in your contract",
+      "Connects to ServiceNow, Splunk, Microsoft 365, Amazon AWS, and Azure",
+      "Dashboards for IT teams, finance, and leadership",
     ],
     href: "/products/platform",
   },
@@ -100,13 +100,13 @@ export const solutions: SolutionItem[] = [
     eyebrow: "Core Intelligence Suite",
     title: "See problems coming before they affect your business",
     description:
-      "Core Intelligence watches your infrastructure, applications, and business systems around the clock. It spots unusual patterns before they become outages, and surfaces the right information before you have to ask for it.",
+      "Core Intelligence watches your systems, apps, and business tools around the clock. It spots unusual activity before it becomes an outage, and shows you the right information before you even have to ask.",
     features: [
-      "Anomaly detection across 200+ connected data sources",
-      "90-day capacity forecasting to plan ahead, not react",
-      "Automatic root-cause analysis for your most critical issues",
-      "Cloud cost dashboards broken down by team, project, and service",
-      "Executive reports with the numbers that actually matter",
+      "We watch 200+ sources of data and flag anything unusual",
+      "We predict 90 days ahead when you'll need more storage or computing power",
+      "When something breaks, we automatically find out exactly why",
+      "Cloud spending broken down by team, project, and service",
+      "Plain-English reports with the numbers that actually matter",
     ],
     href: "/products/analytics",
   },
@@ -116,42 +116,42 @@ export const industries: IndustryItem[] = [
   {
     title: "Financial Services",
     description:
-      "Secure, compliant IT for banks, insurers, and investment firms. We meet the rules you're held to — SOX, PCI-DSS, OSFI, and DORA — built into how we operate, not added at the end.",
+      "Secure IT for banks, insurers, and investment firms. We already know the rules you're held to — SOX (US public company law), PCI-DSS (credit card security), OSFI (Canadian banking regulator), and DORA (EU financial regulation) — and they're built into how we work.",
     href: "/industries/financial-services",
     icon: "landmark",
   },
   {
     title: "Healthcare",
     description:
-      "IT management for hospitals and health companies that must protect patient data. We meet HIPAA, PIPEDA, and PHIPA requirements and handle both clinical and admin systems securely.",
+      "IT for hospitals and health companies that must protect patient data. We meet HIPAA (US health data law), PIPEDA, and PHIPA (Canadian privacy laws) and handle both clinical and admin systems securely.",
     href: "/industries/healthcare",
     icon: "activity",
   },
   {
     title: "Manufacturing",
     description:
-      "We connect factory systems to business systems — without breaking production. Real-time visibility, predictive maintenance, and supply chain tracking, all managed end-to-end.",
+      "We connect factory systems to your business software — without stopping production. You get real-time visibility into your operations, early warnings before equipment fails, and supply chain tracking, all managed by us.",
     href: "/industries/manufacturing",
     icon: "settings",
   },
   {
     title: "Retail & Commerce",
     description:
-      "Infrastructure that stays up during your busiest days — Black Friday, product launches, international expansion. We keep your stores and your data compliant and always available.",
+      "Technology that stays on during your busiest days — Black Friday, product launches, international expansion. We keep your stores running, your customer data safe, and your systems compliant.",
     href: "/industries/retail",
     icon: "shopping-bag",
   },
   {
     title: "Government & Public Sector",
     description:
-      "Managed IT for federal, provincial, and municipal organizations. We meet the clearance levels and security requirements your mandate demands — FedRAMP, PBMM, Protected B, and more.",
+      "Managed IT for federal, provincial, and municipal organizations. We meet the security clearance levels your work requires — FedRAMP, PBMM, and Protected B (Canadian and US government security standards).",
     href: "/industries/government",
     icon: "building",
   },
   {
     title: "Energy & Utilities",
     description:
-      "We protect and modernize the IT systems that power grids and utilities depend on. NERC CIP compliant, with no disruption to operations during the work.",
+      "We protect and modernize the IT systems that power grids and utilities run on. We meet NERC CIP (the security standard for power infrastructure) and do all the work without disrupting your operations.",
     href: "/industries/energy",
     icon: "zap",
   },
@@ -228,8 +228,8 @@ export const clientLogos = [
 ]
 
 export const platformSpecs = [
-  { label: "Monitored assets per deployment", value: "100,000+" },
-  { label: "P99 query latency", value: "< 8ms" },
-  { label: "Concurrent automated workflows", value: "10,000+" },
-  { label: "Event ingestion throughput", value: "2M events/sec" },
+  { label: "Systems we can watch in one installation", value: "100,000+" },
+  { label: "How fast the dashboard loads", value: "< 8ms" },
+  { label: "Automated tasks running at the same time", value: "10,000+" },
+  { label: "Alerts we can process per second", value: "2M" },
 ]

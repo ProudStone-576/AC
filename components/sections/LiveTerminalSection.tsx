@@ -147,7 +147,7 @@ export function LiveTerminalSection() {
               <span style={{ color: "#60a5fa" }}>before you get paged.</span>
             </h2>
             <p className="mt-5 text-base leading-relaxed" style={{ color: "#666" }}>
-              The platform detects anomalies, matches runbooks, and executes remediation in seconds. Human escalation only when judgment is genuinely required.
+              The platform detects problems, looks up the fix, and resolves them in seconds. A human only gets called when the situation is unusual enough to need real judgement.
             </p>
 
             {/* Stats */}
@@ -155,7 +155,7 @@ export function LiveTerminalSection() {
               {[
                 { val: "11.2s",  label: "Average auto-remediation time"              },
                 { val: "68%",    label: "Incidents resolved without human action"     },
-                { val: "200+",   label: "Pre-built runbooks across all service types" },
+                { val: "200+",   label: "Pre-built response playbooks across all service types" },
               ].map(({ val, label }) => (
                 <div key={val} className="flex items-center gap-4">
                   <span

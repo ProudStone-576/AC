@@ -69,7 +69,7 @@ const capabilities = [
     title: "Sub-100ms storefront response",
     description:
       "Edge caching, globally distributed origin infrastructure, and optimized database query paths deliver sub-100ms response times under peak load. Performance budgets are enforced at the infrastructure layer.",
-    stat: "< 100ms P99 storefront response at peak",
+    stat: "< 100ms storefront response even at peak load",
   },
   {
     title: "Omnichannel data integration",
@@ -110,7 +110,7 @@ const complianceFrameworks = [
 
 const stats = [
   { value: "40x", label: "Peak traffic headroom, tested" },
-  { value: "< 100ms", label: "P99 storefront response at peak" },
+  { value: "< 100ms", label: "Storefront response speed at peak" },
   { value: "< 5s", label: "Cross-channel data latency" },
   { value: "PCI DSS", label: "v4.0 compliant environments" },
 ]

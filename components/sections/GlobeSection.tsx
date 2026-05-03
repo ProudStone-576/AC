@@ -117,7 +117,7 @@ const EVENT_POOL = [
   { region: "us-west-2",    msg: "Snapshot archived · 2.4 TB replicated"      },
   { region: "sa-east-1",    msg: "Network peering established · 99.99%"       },
   { region: "eu-north-1",   msg: "Compliance export ready · SOC 2 evidence"   },
-  { region: "me-south-1",   msg: "Latency P99 improved · route rebalanced"    },
+  { region: "me-south-1",   msg: "Response speed improved · route rebalanced"  },
   { region: "ap-northeast", msg: "DDoS scrubbed · 3.2 Gbps blocked"           },
 ]
 
@@ -685,7 +685,7 @@ export function GlobeSection() {
             { label: "Avg RTT",      val: "< 10ms",  color: "#4ade80" },
             { label: "Packet loss",  val: "0.001%",  color: "#22d3ee" },
             { label: "Throughput",   val: "2.0M/s",  color: "#60a5fa" },
-            { label: "Uptime SLA",   val: "99.99%",  color: "#4ade80" },
+            { label: "Uptime guarantee",   val: "99.99%",  color: "#4ade80" },
           ].map(({ label, val, color }) => (
             <div key={label} className="mb-2 flex items-center justify-between">
               <span className="text-[10px]" style={{ color: "#3a3a3a" }}>{label}</span>
@@ -789,8 +789,8 @@ export function GlobeSection() {
             {[
               { label: "Total regions",          val: "47",        sub: "across 6 continents"        },
               { label: "Points of presence",     val: "14",        sub: "carrier-grade facilities"   },
-              { label: "Network uptime SLA",     val: "99.99%",    sub: "contractual, with remedies" },
-              { label: "P99 inter-region RTT",   val: "< 10ms",    sub: "on all primary routes"      },
+              { label: "Network uptime guarantee", val: "99.99%",    sub: "contractual, with remedies" },
+              { label: "Speed between regions",  val: "< 10ms",    sub: "on all primary routes"      },
             ].map(({ label, val, sub }) => (
               <div key={label} className="px-6 py-5" style={{ background: "rgba(3,8,20,0.6)" }}>
                 <p className="text-[10px] uppercase tracking-widest text-canvas-muted">{label}</p>

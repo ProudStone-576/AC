@@ -23,9 +23,9 @@ const pillars = [
   },
   {
     icon: Lock,
-    title: "Zero Trust security model",
+    title: "Zero Trust — nothing gets automatic access",
     description:
-      "Every user, device, and service is verified continuously — nothing is automatically trusted. If one system is compromised, it can't access other parts of your network.",
+      "Every user, device, and service is verified continuously — nothing is automatically trusted. If one system is compromised, it can't spread to other parts of your network.",
     metrics: ["Nothing trusted automatically", "Isolated by workload", "Continuous re-verification"],
   },
   {
@@ -44,9 +44,9 @@ const pillars = [
   },
   {
     icon: Users,
-    title: "Identity governance & PAM",
+    title: "Who has access to what — and why",
     description:
-      "Automated access reviews, just-in-time privilege escalation, standing privilege elimination, and session recording for all privileged operations. Integrates with your existing IdP (Okta, Azure AD, Ping).",
+      "We automatically review and tighten who can access what in your organization. Admin access is granted only when needed, then taken away. Every privileged action is recorded. Works with Okta, Azure AD, and other login systems you already use.",
     metrics: ["98% reduction in standing privileges", "All privileged sessions recorded", "Auto-provisioning and de-provisioning"],
   },
   {
@@ -73,26 +73,26 @@ const pillars = [
 ]
 
 const certifications = [
-  { name: "SOC 2 Type II", description: "Annual audit, report available under NDA" },
-  { name: "ISO 27001", description: "Certified since 2008, annual recertification" },
-  { name: "ISO 27017", description: "Cloud-specific security controls" },
-  { name: "ISO 27018", description: "PII in cloud environments" },
-  { name: "FedRAMP High", description: "Authorized for federal workloads" },
-  { name: "HIPAA", description: "BAA available, HITRUST certified" },
-  { name: "PCI DSS Level 1", description: "Merchant and service provider" },
-  { name: "GDPR", description: "DPA available, EU data residency enforced" },
-  { name: "CCPA", description: "California privacy compliance" },
-  { name: "NIST CSF", description: "Full framework implementation" },
-  { name: "CIS Controls v8", description: "All 18 control groups implemented" },
-  { name: "CMMC Level 3", description: "Defense contractor compliance" },
+  { name: "SOC 2 Type II", description: "Security audit standard for software companies — annual audit, report available on request" },
+  { name: "ISO 27001", description: "International security management standard — certified and recertified annually" },
+  { name: "ISO 27017", description: "Additional security standard specifically for cloud services" },
+  { name: "ISO 27018", description: "Protection of personal information stored in the cloud" },
+  { name: "FedRAMP High", description: "Required to work with US government agencies — highest authorization level" },
+  { name: "HIPAA", description: "US health data privacy law — required for healthcare organizations" },
+  { name: "PCI DSS Level 1", description: "Payment card security standard — required to process credit cards" },
+  { name: "GDPR", description: "EU privacy regulation — required if you have European customers" },
+  { name: "CCPA", description: "California privacy law — required for businesses with California customers" },
+  { name: "NIST CSF", description: "US government security framework — fully implemented" },
+  { name: "CIS Controls v8", description: "Industry best-practice security controls — all 18 groups implemented" },
+  { name: "CMMC Level 3", description: "US defense contractor security requirement — required for DoD contracts" },
 ]
 
 const incidentPhases = [
   { phase: "Detect", sla: "≤ 4 min", description: "Automated correlation identifies anomaly and creates incident", color: "border-blue/30 bg-blue/[0.05]" },
   { phase: "Triage", sla: "≤ 8 min", description: "Analyst reviews context, confirms severity, assigns response team", color: "border-blue/20 bg-blue/[0.03]" },
   { phase: "Contain", sla: "≤ 18 min", description: "Affected systems isolated, spread to other systems blocked, credentials rotated", color: "border-white/12 bg-white/[0.03]" },
-  { phase: "Eradicate", sla: "≤ 2 hr (P1)", description: "Root cause identified, threat actor evicted, entry point closed", color: "border-white/10 bg-white/[0.02]" },
-  { phase: "Recover", sla: "≤ 4 hr (P1)", description: "Services restored, integrity verified, monitoring heightened", color: "border-white/8 bg-white/[0.02]" },
+  { phase: "Eradicate", sla: "≤ 2 hr (critical)", description: "Root cause identified, threat actor evicted, entry point closed", color: "border-white/10 bg-white/[0.02]" },
+  { phase: "Recover", sla: "≤ 4 hr (critical)", description: "Services restored, integrity verified, monitoring heightened", color: "border-white/8 bg-white/[0.02]" },
   { phase: "Report", sla: "≤ 24 hr", description: "Board-ready incident report with timeline, impact, and lessons learned", color: "border-white/6 bg-transparent" },
 ]
 
@@ -139,9 +139,9 @@ export default function SecurityPage() {
         <div className="container-enterprise">
           <div className="grid grid-cols-2 divide-x divide-border sm:grid-cols-4">
             {[
-              { value: "99.99%", label: "Uptime SLA for managed security environments" },
+              { value: "99.99%", label: "Uptime guarantee for your security coverage" },
               { value: "4 min", label: "Average time to detect a threat" },
-              { value: "68%", label: "Incidents auto-remediated by SOAR" },
+              { value: "68%", label: "Security incidents fixed automatically" },
               { value: "12", label: "Compliance frameworks supported" },
             ].map((s) => (
               <div key={s.label} className="px-6 py-5">
@@ -252,7 +252,7 @@ export default function SecurityPage() {
 
           <div className="mt-10 mx-auto max-w-3xl grid grid-cols-1 gap-4 sm:grid-cols-3">
             {[
-              { label: "Dedicated incident commander", sub: "Assigned immediately on P1 declaration" },
+              { label: "Dedicated incident commander", sub: "Assigned immediately when a critical emergency is called" },
               { label: "Board-ready report in 24 hours", sub: "Timeline, impact, root cause, remediation" },
               { label: "Post-incident review", sub: "30-day follow-up on systemic fixes" },
             ].map((item) => (

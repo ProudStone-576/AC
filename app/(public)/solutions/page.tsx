@@ -19,8 +19,8 @@ const solutions = [
       "Replace 8–12 separate tools with one system. Every part of your infrastructure — servers, network, storage, security — visible and manageable from one place.",
     outcomes: [
       "75% reduction in infrastructure tool sprawl",
-      "< 8ms P99 latency globally",
-      "99.99% uptime SLA, contractually enforced",
+      "< 8ms response speed globally",
+      "99.99% uptime guarantee, written in your contract",
     ],
     href: "/products/platform",
     cta: "Explore the platform",
@@ -46,7 +46,7 @@ const solutions = [
     description:
       "Ingest, transform, and query billions of events. Business analysts get self-service access. Engineers get a full-featured query engine. Executives get dashboards that are never stale.",
     outcomes: [
-      "< 200ms P99 query on 12-month history",
+      "< 200ms search speed on year-old data",
       "2M events/sec sustained ingestion",
       "80+ native connectors",
     ],
@@ -75,7 +75,7 @@ const solutions = [
       "24/7/365 management by certified Aethon Core engineers. Dedicated service delivery manager. Defined escalation paths. We act as an extension of your team, not a call center.",
     outcomes: [
       "24/7 monitoring with dedicated engineers",
-      "Incident response SLA in your contract",
+      "Response-time guarantees written into your contract",
       "Monthly business reviews with your team",
     ],
     href: "/services/managed",
@@ -191,12 +191,12 @@ export default function SolutionsPage() {
               <p className="mb-5 text-sm leading-relaxed text-muted-foreground">
                 Most engineering organizations run 8–12 separate infrastructure tools that don&apos;t talk to each
                 other. Incidents span multiple systems. Context switches between dashboards cost time. Aethon Core
-                consolidates these into one control plane — without replacing the underlying infrastructure.
+                consolidates everything into one system — without replacing the infrastructure you already have.
               </p>
               <ul className="mb-5 space-y-2">
                 {[
                   { label: "Platform consolidation", href: "/products/platform" },
-                  { label: "DevOps & platform engineering", href: "/services/devops" },
+                  { label: "Software delivery & DevOps", href: "/services/devops" },
                   { label: "Architecture review", href: "/services/architecture" },
                   { label: "Infrastructure assessment", href: "/services/assessment" },
                 ].map((link) => (
@@ -232,7 +232,7 @@ export default function SolutionsPage() {
               <ul className="mb-5 space-y-2">
                 {[
                   { label: "Cybersecurity service", href: "/services/security" },
-                  { label: "Identity & access management", href: "/services/iam" },
+                  { label: "Login & access control", href: "/services/iam" },
                   { label: "Compliance & audit readiness", href: "/services/compliance" },
                   { label: "Core Security product", href: "/products/security" },
                 ].map((link) => (
@@ -267,7 +267,7 @@ export default function SolutionsPage() {
               </p>
               <ul className="mb-5 space-y-2">
                 {[
-                  { label: "FinOps & cloud cost management", href: "/services/finops" },
+                  { label: "Cloud cost management", href: "/services/finops" },
                   { label: "Platform pricing", href: "/pricing" },
                   { label: "ROI estimator", href: "/roi" },
                   { label: "Strategy consulting", href: "/services/consulting" },
@@ -299,13 +299,13 @@ export default function SolutionsPage() {
               <p className="mb-5 text-sm leading-relaxed text-muted-foreground">
                 Unplanned downtime has a direct cost — and so does a support provider who treats your critical
                 incidents as tickets in a queue. Aethon Core Managed Services provides 24/7 coverage by named
-                engineers, contractual response SLAs, and a dedicated client portal for full visibility into
+                engineers, written response-time guarantees, and a dedicated client portal for full visibility into
                 what&apos;s happening in your environment at all times.
               </p>
               <ul className="mb-5 space-y-2">
                 {[
                   { label: "Managed services", href: "/services/managed" },
-                  { label: "Disaster recovery & BCP", href: "/services/disaster-recovery" },
+                  { label: "Backup & disaster recovery", href: "/services/disaster-recovery" },
                   { label: "Network & connectivity", href: "/services/network" },
                   { label: "How we work", href: "/how-we-work" },
                 ].map((link) => (

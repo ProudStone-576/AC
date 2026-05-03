@@ -242,6 +242,11 @@
 /* ═══════════════════════════════════════════════════════════════════════════
    KEYFRAMES
    ═══════════════════════════════════════════════════════════════════════════ */
+@keyframes ken-burns {
+  from { transform: scale(1.0) translate(0%, 0%); }
+  to   { transform: scale(1.08) translate(-1%, -0.5%); }
+}
+
 @keyframes marquee         { from{transform:translateX(0)} to{transform:translateX(-50%)} }
 @keyframes marquee-reverse { from{transform:translateX(-50%)} to{transform:translateX(0)} }
 @keyframes pulse-dot       { 0%,100%{opacity:1} 50%{opacity:0.3} }
@@ -512,6 +517,13 @@
   .animate-marquee-reverse:hover { animation-play-state: paused; }
 
   .animate-pulse-dot { animation: pulse-dot 1.8s ease-in-out infinite; }
+
+  .animate-kenburns {
+    animation: ken-burns 12s ease-in-out infinite alternate;
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .animate-kenburns { animation: none; }
+  }
 
   /* ── Grid overlays ── */
   /* Dark canvas: blue-threaded grid */

@@ -76,7 +76,7 @@ export async function POST(request: NextRequest) {
     })
 
     // Fire-and-forget — never block the response waiting for email
-    const notifyTo = process.env.CONTACT_NOTIFY_EMAIL ?? "contact@aethoncore.com"
+    const notifyTo = process.env.CONTACT_NOTIFY_EMAIL ?? "contact@aethoncore.ca"
     sendMail({
       to: notifyTo,
       subject: `New inquiry: ${inquiry_type || "General"} — ${first_name.trim()} ${last_name.trim()}${company?.trim() ? ` (${company.trim()})` : ""}`,

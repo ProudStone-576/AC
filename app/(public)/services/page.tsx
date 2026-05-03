@@ -1,5 +1,7 @@
 import type { Metadata } from "next"
+import { Fragment } from "react"
 import Link from "next/link"
+import Image from "next/image"
 import { ArrowRight, BarChart2, Cloud, Compass, Cpu, Database, GitMerge, Headphones, Key, Layout, Layers, Network, RefreshCw, Search, Shield, Users } from "lucide-react"
 import { PageHero } from "@/components/ui/PageHero"
 import { CTASection } from "@/components/sections/CTASection"
@@ -60,10 +62,10 @@ const serviceCategories = [
       {
         title: "Compliance & Audit Readiness",
         description:
-          "We help you meet security and regulatory standards — SOC 2, ISO 27001, FedRAMP, HIPAA, PCI DSS, and more. Built to pass audits every year, not just once.",
+          "We get your company ready to pass security certifications — SOC 2 (the standard for software companies), ISO 27001 (international security standard), FedRAMP (required to sell to US government), HIPAA (health data), PCI DSS (credit cards), and more. Built to pass every year, not just once.",
         icon: Shield,
         href: "/services/compliance",
-        highlights: ["SOC 2 Type II readiness", "ISO 27001 certification", "FedRAMP authorization support", "Multi-framework compliance"],
+        highlights: ["SOC 2 Type II readiness", "ISO 27001 certification", "FedRAMP authorization support", "Multiple certifications managed together"],
       },
     ],
   },
@@ -96,7 +98,7 @@ const serviceCategories = [
         highlights: ["Technical certification programs", "Executive leadership workshops", "Custom curriculum development", "Ongoing competency assessment"],
       },
       {
-        title: "DevOps & Platform Engineering",
+        title: "Software Delivery & DevOps",
         description:
           "We set up the systems your developers use to build and release software. The goal: cut the time it takes to ship code from weeks to minutes.",
         icon: Layers,
@@ -112,7 +114,7 @@ const serviceCategories = [
         highlights: ["Private WAN and managed network connections", "Secure remote access", "Data center connectivity", "Cloud network connections"],
       },
       {
-        title: "Disaster Recovery & BCP",
+        title: "Backup & Disaster Recovery",
         description:
           "We build and regularly test your disaster recovery plan. How fast you can recover — and how much data you can afford to lose — is written into your contract.",
         icon: RefreshCw,
@@ -126,7 +128,7 @@ const serviceCategories = [
     description: "Deep expertise for your most complex technology challenges.",
     services: [
       {
-        title: "Identity & Access Management",
+        title: "Login & Access Control",
         description:
           "We control who has access to what — and make sure it's the right people. Single sign-on, multi-factor authentication, and strict controls on sensitive accounts.",
         icon: Key,
@@ -142,7 +144,7 @@ const serviceCategories = [
         highlights: ["Automated data discovery", "Data flow tracking", "Privacy law compliance", "Data retention and deletion programs"],
       },
       {
-        title: "FinOps & Cloud Cost Management",
+        title: "Cloud Cost Management",
         description:
           "We show you exactly where your cloud money is going and what you can cut. Most organizations reduce their cloud bill by 25–40% after working with us.",
         icon: BarChart2,
@@ -163,7 +165,7 @@ const serviceCategories = [
           "We protect your whole organization — accounts, devices, networks, and cloud systems. From an initial assessment through to 24/7 security monitoring.",
         icon: Shield,
         href: "/services/security",
-        highlights: ["Zero Trust security model", "24/7 Security Operations Center", "Penetration testing", "Compliance readiness"],
+        highlights: ["Zero Trust model (nothing gets automatic access — every device and person must prove they belong)", "24/7 security monitoring team (SOC)", "Penetration testing", "Compliance readiness"],
       },
       {
         title: "Enterprise AI",
@@ -191,29 +193,66 @@ export default function ServicesPage() {
 
       {/* Services by category */}
       {serviceCategories.map((category, catIndex) => (
-        <section
-          key={category.category}
-          className={cn(
-            "py-20 lg:py-24",
-            catIndex % 2 === 0 ? "bg-white dark:bg-background" : "bg-surface dark:bg-card",
-          )}
-        >
-          <div className="container-enterprise">
-            {/* Category header */}
-            <div className="mb-12 border-b border-border pb-8">
-              <p className="text-xs font-semibold uppercase tracking-widest text-blue">
-                {category.category}
-              </p>
-              <p className="mt-1 text-sm text-muted-foreground">{category.description}</p>
-            </div>
+        <Fragment key={category.category}>
+          <section
+            className={cn(
+              "py-20 lg:py-24",
+              catIndex % 2 === 0 ? "bg-white dark:bg-background" : "bg-surface dark:bg-card",
+            )}
+          >
+            <div className="container-enterprise">
+              {/* Category header */}
+              <div className="mb-12 border-b border-border pb-8">
+                <p className="text-xs font-semibold uppercase tracking-widest text-blue">
+                  {category.category}
+                </p>
+                <p className="mt-1 text-sm text-muted-foreground">{category.description}</p>
+              </div>
 
-            <div className="space-y-10">
-              {category.services.map((service) => (
-                <ServiceRow key={service.href} service={service} />
-              ))}
+              <div className="space-y-10">
+                {category.services.map((service) => (
+                  <ServiceRow key={service.href} service={service} />
+                ))}
+              </div>
             </div>
-          </div>
-        </section>
+          </section>
+
+          {catIndex === 0 && (
+            <div className="relative h-72 overflow-hidden lg:h-96">
+              <Image
+                src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=3840&q=100"
+                alt="Enterprise data center operations"
+                fill
+                className="object-cover object-center"
+                sizes="100vw"
+              />
+              <div className="absolute inset-0 bg-canvas/65" />
+              <div className="container-enterprise relative flex h-full flex-col items-start justify-end pb-10">
+                <p className="max-w-xl text-sm leading-relaxed text-white/80">
+                  Every service is delivered by the same team, under the same contract. No hand-offs between vendors, no gaps in accountability.
+                </p>
+              </div>
+            </div>
+          )}
+
+          {catIndex === 1 && (
+            <div className="relative h-72 overflow-hidden lg:h-96">
+              <Image
+                src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?w=3840&q=100"
+                alt="Cybersecurity and specialized technology services"
+                fill
+                className="object-cover object-center"
+                sizes="100vw"
+              />
+              <div className="absolute inset-0 bg-canvas/65" />
+              <div className="container-enterprise relative flex h-full flex-col items-start justify-end pb-10">
+                <p className="max-w-xl text-sm leading-relaxed text-white/80">
+                  Specialized services go beyond standard IT management. We bring deep expertise to the areas where mistakes are most costly.
+                </p>
+              </div>
+            </div>
+          )}
+        </Fragment>
       ))}
 
       <CTASection

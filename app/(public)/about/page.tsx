@@ -31,27 +31,27 @@ export const metadata: Metadata = {
 const values = [
   {
     icon: Globe,
-    title: "A single control plane across your entire IT estate",
+    title: "One team watching everything — cloud, office, and remote",
     description:
-      "Cloud, on-premise, and edge — all managed with unified governance, unified visibility, and unified accountability. No blind spots. No separate vendors pointing fingers at each other.",
+      "Everything you have, managed together. No separate vendors pointing fingers at each other. No blind spots. One team, one contract, full responsibility.",
   },
   {
     icon: Award,
-    title: "Contractual accountability, not aspirational targets",
+    title: "We put every promise in writing — with money back if we miss",
     description:
-      "Every SLA we publish is written into the contract with defined remedies if we miss it. We don't report on outcomes — we are accountable for them.",
+      "Every guarantee we make is written into your contract with specific consequences if we don't deliver. Not a goal. Not a target. A written commitment with real remedies.",
   },
   {
     icon: Users,
-    title: "Named engineers, not anonymous queues",
+    title: "Real engineers who know your business, not a call centre",
     description:
-      "Your account is staffed by engineers who know your environment. When something goes wrong at 2am, you're talking to the person who knows your stack — not a generic help desk.",
+      "When something goes wrong at 2am, you're talking to the person who knows your systems — not someone reading from a script. The same engineers are assigned to your account.",
   },
   {
     icon: Building2,
-    title: "Regulatory-grade operations by design",
+    title: "We already know the rules your industry has to follow",
     description:
-      "We serve regulated industries — financial services, healthcare, government, and energy. Compliance isn't a bolt-on. It is built into how we operate every engagement.",
+      "We work with banks, hospitals, government, and energy companies. All the security and privacy rules they're required to meet are already built into how we work — not added at the end.",
   },
 ]
 
@@ -72,8 +72,8 @@ export default function AboutPage() {
       <PageHero
         breadcrumbs={[{ label: "About" }]}
         eyebrow="Company"
-        title="Enterprise IT managed end-to-end, with contractual accountability"
-        subtitle="Aethon Core was founded to close the persistent gap between what enterprises expect from managed IT and what they actually receive. We operate, secure, and modernize your technology stack — with named engineers and SLAs that have real consequences."
+        title="Your technology, fully managed — with everything written in your contract"
+        subtitle="We started Aethon Core because too many businesses were paying for IT support that didn't actually fix things. We do IT differently — real engineers who know your systems, and a written contract that holds us accountable for every outcome."
         backgroundImageSrc="https://images.unsplash.com/photo-1486325212027-8081e485255e?w=3840&q=100"
         variant="tinted"
       />
@@ -85,8 +85,8 @@ export default function AboutPage() {
             <FadeIn variant="slide-left">
               <SectionHeader
                 eyebrow="Our mission"
-                title="Technology managed end-to-end — so your organization can focus on what matters"
-                subtitle="Enterprises don't fail because they lack technology. They fail because the technology they have isn't operated with enough discipline. We provide the discipline — delivered as a contractually accountable managed service."
+                title="Your technology, taken care of — so your team can focus on your business"
+                subtitle="Most businesses don't fail because they have bad technology. They fail because nobody is properly running what they already have. We run it right — and we put that in writing."
                 subtitleWidth="full"
               />
               <Link
@@ -127,7 +127,7 @@ export default function AboutPage() {
         <div className="absolute inset-0 bg-canvas/60" />
         <div className="container-enterprise relative flex h-full flex-col items-start justify-end pb-10">
           <p className="max-w-xl text-sm leading-relaxed text-white/80">
-            Built by engineers who&apos;ve run large-scale infrastructure. Every decision at Aethon Core comes from operational experience, not theory.
+            Built by engineers who have personally managed large, complex IT environments. Every decision we make comes from real experience — not theory.
           </p>
         </div>
       </div>
@@ -187,8 +187,8 @@ export default function AboutPage() {
             <div className="mb-12">
               <SectionHeader
                 eyebrow="Leadership"
-                title="Built by people who've done this work"
-                subtitle="Our founding team comes from running large-scale technology, security, and managed services. We build solutions to problems we've personally dealt with."
+                title="Built by people who have actually done this work"
+                subtitle="Our founding team spent years running technology for large companies before starting Aethon Core. We build solutions to problems we have personally dealt with — not problems we read about."
               />
             </div>
           </FadeIn>
@@ -225,9 +225,9 @@ export default function AboutPage() {
       </section>
 
       <CTASection
-        title="Want to learn more about how we work?"
-        subtitle="Schedule a call with one of our specialists. No pitch — just a straightforward conversation about your needs."
-        primaryLabel="Schedule a conversation"
+        title="Want to see if we're the right fit for your business?"
+        subtitle="Book a call with our team. No sales pitch — just an honest conversation about your situation, what you need, and whether we can help."
+        primaryLabel="Book a conversation"
         primaryHref="/contact"
         secondaryLabel="View open roles"
         secondaryHref="/careers"

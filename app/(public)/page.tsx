@@ -16,6 +16,7 @@ import { IndustriesSection }     from "@/components/sections/IndustriesSection"
 import { GlobeSection }          from "@/components/sections/GlobeSection"
 import { InsightsPreview }       from "@/components/sections/InsightsPreview"
 import { FinalCTA }              from "@/components/sections/FinalCTA"
+import { HomepageBackdrop }      from "@/components/sections/HomepageBackdrop"
 import {
   SpatialNarrativeEngine,
   SpatialChapter,
@@ -108,6 +109,7 @@ export default function HomePage() {
   return (
     <>
     <JsonLd schema={homepageFaqSchema} />
+    <HomepageBackdrop />
     <SpatialNarrativeEngine chapters={CHAPTERS}>
 
       {/* 01 — Signal: hero + trust marquee */}

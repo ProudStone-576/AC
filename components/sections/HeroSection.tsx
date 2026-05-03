@@ -5,11 +5,11 @@ import { HeroSubtitleAnimated } from "@/components/sections/HeroSubtitleAnimated
 import { NetworkBackground } from "@/components/ui/NetworkBackground"
 
 // ─── Word delays ─────────────────────────────────────────────────────────────
-// Line 1: "Managed IT services"        → words 0-2 starting at 60ms
-// Line 2: "delivered end-to-end"       → words 3-5 starting at 240ms
+// Line 1: "We manage your"             → words 0-2 starting at 60ms
+// Line 2: "technology, end-to-end."    → words 3-4 starting at 240ms
 // Line 3: whole line, one unit         → starts at 420ms → glitch at 1100ms
-const LINE1 = ["Managed", "IT", "services"] as const
-const LINE2 = ["delivered", "end-to-end"] as const
+const LINE1 = ["We", "manage", "your"] as const
+const LINE2 = ["technology,", "end-to-end."] as const
 const WORD_STEP = 68 // ms between each word
 
 export function HeroSection() {
@@ -144,7 +144,7 @@ export function HeroSection() {
                   willChange: "filter, transform",
                 }}
               >
-                for businesses across Canada.
+                So you can focus on your business.
               </span>
             </h1>
 
@@ -199,10 +199,10 @@ export function HeroSection() {
           style={{ animation: "word-blur-up 0.7s cubic-bezier(0.16,1,0.3,1) both 780ms" }}
         >
           {[
-            { value: "99.99%", label: "Uptime guarantee", note: "written into your contract" },
-            { value: "≤ 15 min", label: "Response to critical issues", note: "real engineers, any time" },
-            { value: "24/7", label: "Monitoring & security", note: "no gaps, ever" },
-            { value: "Zero Trust", label: "Security architecture", note: "built in, not bolted on" },
+            { value: "99.99%", label: "Uptime guarantee", note: "written into your contract — miss it, you get money back" },
+            { value: "≤ 15 min", label: "Response to emergencies", note: "real engineers, any time of day or night" },
+            { value: "24/7", label: "Monitoring and security", note: "no gaps, no holidays, ever" },
+            { value: "Zero Trust", label: "Security built in", note: "nothing gets in without our approval" },
           ].map((s) => (
             <div key={s.label} className="flex flex-col gap-1 bg-white/[0.03] px-5 py-4">
               <span className="font-mono text-xl font-semibold text-white tabular-num">{s.value}</span>

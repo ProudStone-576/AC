@@ -32,8 +32,30 @@ export const metadata: Metadata = {
 /* ─── Monthly subscription plans ─────────────────────────────────────────── */
 const plans = [
   {
+    name: "Starter",
+    who: "For very small businesses with just a handful of computers to manage",
+    price: "$299",
+    period: "/ month",
+    billing: "billed annually ($3,588/yr)",
+    highlight: false,
+    cta: "Get started",
+    href: "/contact?plan=starter",
+    features: [
+      { label: "Computers and servers we watch", value: "Up to 25" },
+      { label: "Locations (office, cloud, or data centre)", value: "1" },
+      { label: "Software included", value: "Core Platform" },
+      { label: "Uptime guarantee — miss it, you get money back", value: "99.5%" },
+      { label: "When support is available", value: "Email only (Mon–Fri)" },
+      { label: "How fast we respond to emergencies", value: "Next business day" },
+      { label: "Ready-made connections to popular tools", value: "25+" },
+      { label: "Your own account manager", value: false },
+      { label: "Engineer who knows your systems personally", value: false },
+      { label: "Custom reports for your auditors", value: false },
+    ],
+  },
+  {
     name: "Foundation",
-    who: "Good for smaller companies managing one location",
+    who: "Good for small businesses managing one location",
     price: "$799",
     period: "/ month",
     billing: "billed annually ($9,600/yr)",
@@ -41,16 +63,38 @@ const plans = [
     cta: "Get started",
     href: "/contact?plan=foundation",
     features: [
-      { label: "Servers we monitor and manage", value: "Up to 100" },
-      { label: "Locations (data centres, offices, cloud)", value: "1" },
+      { label: "Computers and servers we watch", value: "Up to 100" },
+      { label: "Locations (office, cloud, or data centre)", value: "1" },
       { label: "Software included", value: "Core Platform" },
-      { label: "Uptime guarantee", value: "99.9%" },
-      { label: "Support hours", value: "Business hours (EST)" },
-      { label: "Emergency response time", value: "8 hours" },
-      { label: "Pre-built connections to other tools", value: "50+" },
-      { label: "Dedicated account manager", value: false },
-      { label: "Your own response engineer", value: false },
-      { label: "Custom compliance reports", value: false },
+      { label: "Uptime guarantee — miss it, you get money back", value: "99.9%" },
+      { label: "When support is available", value: "Business hours (Mon–Fri)" },
+      { label: "How fast we respond to emergencies", value: "8 hours" },
+      { label: "Ready-made connections to popular tools", value: "50+" },
+      { label: "Your own account manager", value: false },
+      { label: "Engineer who knows your systems personally", value: false },
+      { label: "Custom reports for your auditors", value: false },
+    ],
+  },
+  {
+    name: "Business",
+    who: "For growing companies with a few locations and more systems to manage",
+    price: "$1,299",
+    period: "/ month",
+    billing: "billed annually ($15,588/yr)",
+    highlight: false,
+    cta: "Get started",
+    href: "/contact?plan=business",
+    features: [
+      { label: "Computers and servers we watch", value: "Up to 250" },
+      { label: "Locations (office, cloud, or data centre)", value: "Up to 3" },
+      { label: "Software included", value: "Core Platform + 1 add-on" },
+      { label: "Uptime guarantee — miss it, you get money back", value: "99.9%" },
+      { label: "When support is available", value: "Business hours + weekend emergencies" },
+      { label: "How fast we respond to emergencies", value: "4 hours" },
+      { label: "Ready-made connections to popular tools", value: "50+" },
+      { label: "Your own account manager", value: true },
+      { label: "Engineer who knows your systems personally", value: false },
+      { label: "Custom reports for your auditors", value: false },
     ],
   },
   {
@@ -58,21 +102,21 @@ const plans = [
     who: "For companies running across multiple offices or cloud regions",
     price: "$2,199",
     period: "/ month",
-    billing: "billed annually ($26,400/yr)",
+    billing: "billed annually ($26,388/yr)",
     highlight: false,
     cta: "Get started",
     href: "/contact?plan=professional",
     features: [
-      { label: "Servers we monitor and manage", value: "Up to 500" },
-      { label: "Locations", value: "Up to 5" },
+      { label: "Computers and servers we watch", value: "Up to 500" },
+      { label: "Locations (office, cloud, or data centre)", value: "Up to 5" },
       { label: "Software included", value: "Core Platform + 1 add-on" },
-      { label: "Uptime guarantee", value: "99.95%" },
-      { label: "Support hours", value: "24/5 (Mon–Fri around the clock)" },
-      { label: "Emergency response time", value: "4 hours" },
-      { label: "Pre-built connections to other tools", value: "50+" },
-      { label: "Dedicated account manager", value: true },
-      { label: "Your own response engineer", value: false },
-      { label: "Custom compliance reports", value: false },
+      { label: "Uptime guarantee — miss it, you get money back", value: "99.95%" },
+      { label: "When support is available", value: "24/5 (Mon–Fri, around the clock)" },
+      { label: "How fast we respond to emergencies", value: "4 hours" },
+      { label: "Ready-made connections to popular tools", value: "50+" },
+      { label: "Your own account manager", value: true },
+      { label: "Engineer who knows your systems personally", value: false },
+      { label: "Custom reports for your auditors", value: false },
     ],
   },
   {
@@ -80,43 +124,43 @@ const plans = [
     who: "For large companies that cannot afford any downtime",
     price: "$5,499",
     period: "/ month",
-    billing: "billed annually ($66,000/yr)",
+    billing: "billed annually ($65,988/yr)",
     highlight: true,
-    cta: "Talk to sales",
+    cta: "Talk to our team",
     href: "/contact?plan=enterprise",
     features: [
-      { label: "Servers we monitor and manage", value: "Up to 2,500" },
-      { label: "Locations", value: "Unlimited" },
-      { label: "Software included", value: "Everything — full suite" },
-      { label: "Uptime guarantee", value: "99.99%" },
-      { label: "Support hours", value: "24/7 — around the clock, every day" },
-      { label: "Emergency response time", value: "1 hour" },
-      { label: "Pre-built connections to other tools", value: "50+" },
-      { label: "Dedicated account manager", value: true },
-      { label: "Your own response engineer", value: false },
-      { label: "Custom compliance reports", value: true },
+      { label: "Computers and servers we watch", value: "Up to 2,500" },
+      { label: "Locations (office, cloud, or data centre)", value: "Unlimited" },
+      { label: "Software included", value: "Everything — full suite, no extras to buy" },
+      { label: "Uptime guarantee — miss it, you get money back", value: "99.99%" },
+      { label: "When support is available", value: "24/7 — around the clock, every day" },
+      { label: "How fast we respond to emergencies", value: "1 hour" },
+      { label: "Ready-made connections to popular tools", value: "50+" },
+      { label: "Your own account manager", value: true },
+      { label: "Engineer who knows your systems personally", value: false },
+      { label: "Custom reports for your auditors", value: true },
     ],
   },
   {
     name: "Enterprise Plus",
-    who: "For global operations where every minute of downtime costs money",
+    who: "For large global companies where every minute of downtime costs real money",
     price: "Custom",
     period: "",
-    billing: "quoted to fit your environment",
+    billing: "quoted to fit your exact environment — no surprises",
     highlight: false,
-    cta: "Contact sales",
+    cta: "Contact our team",
     href: "/contact?plan=enterprise-plus",
     features: [
-      { label: "Servers we monitor and manage", value: "Unlimited" },
-      { label: "Locations", value: "All 47 regions" },
-      { label: "Software included", value: "Everything — full suite" },
-      { label: "Uptime guarantee", value: "99.995%" },
-      { label: "Support hours", value: "24/7 + engineers know your name" },
-      { label: "Emergency response time", value: "15 minutes" },
-      { label: "Pre-built connections to other tools", value: "50+ and custom" },
-      { label: "Dedicated account manager", value: true },
-      { label: "Your own response engineer", value: true },
-      { label: "Custom compliance reports", value: true },
+      { label: "Computers and servers we watch", value: "Unlimited" },
+      { label: "Locations (office, cloud, or data centre)", value: "All 47 regions" },
+      { label: "Software included", value: "Everything — full suite, no extras to buy" },
+      { label: "Uptime guarantee — miss it, you get money back", value: "99.995%" },
+      { label: "When support is available", value: "24/7 + engineers who know your name" },
+      { label: "How fast we respond to emergencies", value: "15 minutes" },
+      { label: "Ready-made connections to popular tools", value: "50+ and custom-built" },
+      { label: "Your own account manager", value: true },
+      { label: "Engineer who knows your systems personally", value: true },
+      { label: "Custom reports for your auditors", value: true },
     ],
   },
 ]
@@ -270,32 +314,32 @@ const managedServices = [
     covers: "Or 15% of the money we save you — whichever is more",
   },
   {
-    name: "Identity & Access Management",
-    what: "We manage who has access to what — onboarding new staff, offboarding departures, running regular access reviews, and keeping admin accounts locked down.",
+    name: "Login & Access Control",
+    what: "We manage who has access to what — setting up new staff, removing access when people leave, running regular checks, and keeping admin accounts locked down tight.",
     price: "from $649/mo",
     covers: "Up to 500 user accounts",
   },
   {
-    name: "Data Governance Operations",
-    what: "We keep your data catalogue up to date, monitor retention rules, generate evidence for privacy audits, and support your compliance reviews.",
+    name: "Data Organisation & Compliance",
+    what: "We keep your data records up to date, make sure data is deleted when it should be, generate evidence when you're audited, and support your compliance reviews.",
     price: "from $749/mo",
     covers: "Up to 20 data sources",
   },
   {
-    name: "Disaster Recovery Management",
-    what: "We run your annual disaster recovery tests, verify your backups actually work, update your recovery procedures, and do quarterly readiness reviews.",
+    name: "Backup & Disaster Recovery",
+    what: "We test your backups to make sure they actually work, run annual recovery tests, update your recovery plans, and do quarterly readiness checks.",
     price: "from $449/mo",
-    covers: "Your critical and important workloads",
+    covers: "Your most important systems and data",
   },
   {
-    name: "DevOps as a Service",
-    what: "A dedicated engineer manages your build and deployment pipelines, developer tools, and automation — including on-call coverage.",
+    name: "Software Delivery Management",
+    what: "A dedicated engineer manages the pipeline that tests and delivers your software updates automatically — including on-call coverage if something breaks.",
     price: "from $1,149/mo",
     covers: "1 dedicated engineer + all tooling",
   },
   {
-    name: "Compliance Operations",
-    what: "We continuously check that your security controls are working, collect audit evidence month by month, review your vendors, and support your annual certification renewal.",
+    name: "Ongoing Compliance Monitoring",
+    what: "We check every month that your security controls are working, collect the evidence auditors need, review your suppliers, and help you renew your certification each year.",
     price: "from $599/mo",
     covers: "One compliance standard · multi-standard packages available",
   },
@@ -304,41 +348,41 @@ const managedServices = [
 /* ─── Plan comparison ─────────────────────────────────────────────────────── */
 const comparisonSections = [
   {
-    section: "How many systems we manage",
+    section: "How big your business can be",
     rows: [
-      { feature: "Servers & systems monitored", foundation: "Up to 100", professional: "Up to 500", enterprise: "Up to 2,500", plus: "Unlimited" },
-      { feature: "Office / cloud locations", foundation: "1", professional: "Up to 5", enterprise: "Unlimited", plus: "All 47" },
-      { feature: "Cloud (AWS, Azure, GCP)", foundation: true, professional: true, enterprise: true, plus: true },
-      { feature: "On-premise servers", foundation: false, professional: true, enterprise: true, plus: true },
-      { feature: "Edge locations", foundation: false, professional: false, enterprise: true, plus: true },
+      { feature: "Computers and servers we watch", starter: "Up to 25", foundation: "Up to 100", business: "Up to 250", professional: "Up to 500", enterprise: "Up to 2,500", plus: "Unlimited" },
+      { feature: "Number of locations", starter: "1", foundation: "1", business: "Up to 3", professional: "Up to 5", enterprise: "Unlimited", plus: "All 47 regions" },
+      { feature: "Cloud services (Amazon, Microsoft, Google)", starter: true, foundation: true, business: true, professional: true, enterprise: true, plus: true },
+      { feature: "Servers in your office or data centre", starter: false, foundation: false, business: true, professional: true, enterprise: true, plus: true },
+      { feature: "Remote and branch sites", starter: false, foundation: false, business: false, professional: false, enterprise: true, plus: true },
     ],
   },
   {
-    section: "Software included",
+    section: "What software is included",
     rows: [
-      { feature: "Core Platform", foundation: true, professional: true, enterprise: true, plus: true },
-      { feature: "Analytics Suite", foundation: "add-on from +$299/mo", professional: "add-on from +$299/mo", enterprise: "Free — included", plus: "Free — included" },
-      { feature: "Security Center", foundation: "add-on from +$249/mo", professional: "add-on from +$249/mo", enterprise: "Free — included", plus: "Free — included" },
-      { feature: "Automation Engine", foundation: "add-on from +$149/mo", professional: "add-on from +$149/mo", enterprise: "Free — included", plus: "Free — included" },
+      { feature: "Core Platform (main management dashboard)", starter: true, foundation: true, business: true, professional: true, enterprise: true, plus: true },
+      { feature: "Analytics Suite (see all your data in one place)", starter: "add-on from +$299/mo", foundation: "add-on from +$299/mo", business: "add-on from +$299/mo", professional: "add-on from +$299/mo", enterprise: "Free — included", plus: "Free — included" },
+      { feature: "Security Center (we watch for threats 24/7)", starter: "add-on from +$249/mo", foundation: "add-on from +$249/mo", business: "add-on from +$249/mo", professional: "add-on from +$249/mo", enterprise: "Free — included", plus: "Free — included" },
+      { feature: "Automation Engine (automated tasks, no coding needed)", starter: "add-on from +$149/mo", foundation: "add-on from +$149/mo", business: "add-on from +$149/mo", professional: "add-on from +$149/mo", enterprise: "Free — included", plus: "Free — included" },
     ],
   },
   {
-    section: "Support & guarantees",
+    section: "How we help and what we guarantee",
     rows: [
-      { feature: "Uptime guarantee", foundation: "99.9%", professional: "99.95%", enterprise: "99.99%", plus: "99.995%" },
-      { feature: "Support availability", foundation: "Business hours", professional: "24/5 (Mon–Fri)", enterprise: "24/7", plus: "24/7 + named engineers" },
-      { feature: "Emergency response time", foundation: "8 hours", professional: "4 hours", enterprise: "1 hour", plus: "15 minutes" },
-      { feature: "Your own account manager", foundation: false, professional: true, enterprise: true, plus: true },
-      { feature: "Dedicated response engineer", foundation: false, professional: false, enterprise: false, plus: true },
-      { feature: "Quarterly business review", foundation: false, professional: true, enterprise: true, plus: true },
+      { feature: "Uptime guarantee (miss it → you get money back)", starter: "99.5%", foundation: "99.9%", business: "99.9%", professional: "99.95%", enterprise: "99.99%", plus: "99.995%" },
+      { feature: "When support is available", starter: "Email (Mon–Fri)", foundation: "Business hours", business: "Business hours + weekends for emergencies", professional: "24/5 (Mon–Fri)", enterprise: "24/7", plus: "24/7 + engineers know you" },
+      { feature: "How fast we respond to emergencies", starter: "Next business day", foundation: "8 hours", business: "4 hours", professional: "4 hours", enterprise: "1 hour", plus: "15 minutes" },
+      { feature: "Your own account manager", starter: false, foundation: false, business: true, professional: true, enterprise: true, plus: true },
+      { feature: "Engineer assigned to your account personally", starter: false, foundation: false, business: false, professional: false, enterprise: false, plus: true },
+      { feature: "Quarterly review call", starter: false, foundation: false, business: false, professional: true, enterprise: true, plus: true },
     ],
   },
   {
-    section: "Compliance & security",
+    section: "Security and audit features",
     rows: [
-      { feature: "Audit log storage", foundation: "90 days", professional: "1 year", enterprise: "3 years", plus: "Unlimited" },
-      { feature: "Custom compliance frameworks", foundation: false, professional: false, enterprise: true, plus: true },
-      { feature: "SOC 2 Type II certified", foundation: true, professional: true, enterprise: true, plus: true },
+      { feature: "How long we keep your security logs", starter: "30 days", foundation: "90 days", business: "6 months", professional: "1 year", enterprise: "3 years", plus: "Unlimited" },
+      { feature: "Custom reports for your auditors", starter: false, foundation: false, business: false, professional: false, enterprise: true, plus: true },
+      { feature: "SOC 2 Type II certified (our systems are independently audited)", starter: true, foundation: true, business: true, professional: true, enterprise: true, plus: true },
     ],
   },
 ]
@@ -384,6 +428,22 @@ const faqs = [
     q: "What does 'uptime guarantee' actually mean?",
     a: "It means if we fail to meet that percentage, you get money back. It is written into your contract with defined remedies — not just a marketing promise. Our contractual remedies are spelled out before you sign.",
   },
+  {
+    q: "Can I cancel anytime?",
+    a: "Annual plans require 60 days written notice. We do not refund prepaid months, but we will not charge you for the remaining time on your contract. Month-to-month plans (available at a 15% premium) require just 30 days notice. 2-year and 3-year plans have an early exit fee of 3 months of your plan price. Management services are month-to-month after the first 3 months, with 30 days notice to cancel.",
+  },
+  {
+    q: "What exactly happens if you miss my uptime guarantee?",
+    a: "If we fall below your plan's uptime in any calendar month, you receive a credit: 10% of that month's fee if uptime drops below your guarantee but stays above 99.5%; 25% if it drops below 99.5%; 50% if it drops below 99.0%. If we miss in three or more months in a rolling 12-month period, you can exit your contract penalty-free. All of this is written in your contract before you sign.",
+  },
+  {
+    q: "What is NOT covered by my plan?",
+    a: "Hardware (computers, servers, cables, switches) — we help you buy it, but it is your purchase. Internet service costs (your ISP bill). Software licenses (Microsoft 365, Google Workspace, Salesforce, and other third-party apps). Data storage beyond your plan's included limit. Emergency dispatch for physical on-site visits — these are quoted separately and billed at cost with no markup. We will always tell you clearly when something is outside your plan.",
+  },
+  {
+    q: "Are there setup fees?",
+    a: "Yes — and we tell you upfront. Starter: $199 one-time. Foundation and Business: $499 one-time. Professional: $499 one-time. Enterprise and Enterprise Plus: no setup fee — onboarding is fully included. The setup fee covers connecting your systems, configuring the platform, and a handover session with your team. Management services include onboarding at no extra charge.",
+  },
 ]
 
 /* ─── Helpers ─────────────────────────────────────────────────────────────── */
@@ -401,7 +461,7 @@ export default function PricingPage() {
         breadcrumbs={[{ label: "Pricing" }]}
         eyebrow="Pricing"
         title="Everything we offer. Every price listed."
-        subtitle="No 'contact us for pricing.' No hidden fees. Software plans from $799/month. One-time projects from $1,500. Ongoing management from $449/month."
+        subtitle="No 'contact us for pricing.' No hidden fees. No surprise charges. Plans start at $299/month. One-time projects from $1,500. Ongoing management from $449/month."
         variant="tinted"
         backgroundImageSrc="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=3840&q=100"
       />
@@ -412,10 +472,10 @@ export default function PricingPage() {
           <FadeIn variant="fade-in">
             <div className="grid grid-cols-2 divide-x divide-border sm:grid-cols-4">
               {[
-                { value: "$799/mo", label: "Cheapest monthly plan (annual billing)" },
-                { value: "No per-user", label: "We don't charge per employee — usage-based" },
-                { value: "Startup pricing", label: "Built to be affordable for growing businesses" },
-                { value: "Annual", label: "Standard contract — multi-year discounts available" },
+                { value: "$299/mo", label: "Starter plan — our most affordable option (annual billing)" },
+                { value: "No per-user fees", label: "We charge by systems managed, not by how many staff you have" },
+                { value: "6 plan tiers", label: "From small business to large enterprise — pick what fits" },
+                { value: "Annual contract", label: "Standard term — 2-year and 3-year discounts available" },
               ].map((s) => (
                 <div key={s.label} className="px-6 py-5">
                   <p className="font-mono text-xl font-semibold text-foreground tabular-nums">{s.value}</p>
@@ -438,6 +498,7 @@ export default function PricingPage() {
               { label: "One-time projects", href: "#projects" },
               { label: "Monthly management", href: "#management" },
               { label: "Compare plans", href: "#compare" },
+              { label: "What's included / not", href: "#transparency" },
               { label: "FAQ", href: "#faq" },
             ].map((l) => (
               <a key={l.href} href={l.href} className="text-sm font-medium text-blue hover:underline">
@@ -455,15 +516,15 @@ export default function PricingPage() {
             <div className="mb-12 max-w-2xl">
               <p className="mb-3 text-xs font-semibold uppercase tracking-widest text-blue">Monthly software plans</p>
               <h2 className="text-3xl font-semibold tracking-tight text-foreground sm:text-4xl">
-                Pick a plan — pay monthly or save with annual billing
+                Six plans — from small business to large enterprise
               </h2>
               <p className="mt-4 text-base text-muted-foreground">
-                Every plan includes the core platform. The main differences are how many systems we manage, how many locations you have, and how fast we respond when something goes wrong.
+                Every plan includes the core platform and a written uptime guarantee. The differences are how many systems we manage, how many locations you have, and how fast we respond when something goes wrong.
               </p>
             </div>
           </FadeIn>
 
-          <div className="grid grid-cols-1 gap-5 lg:grid-cols-4">
+          <div className="grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-3">
             {plans.map((plan, i) => (
               <FadeIn key={plan.name} variant="scale-up" delay={i * 60}>
                 <div className={`flex flex-col rounded-xl border p-7 h-full ${
@@ -531,7 +592,7 @@ export default function PricingPage() {
           </div>
 
           <p className="mt-6 text-center text-xs text-muted-foreground">
-            Discounts: 8% off for 2-year agreements · 14% off for 3-year agreements · 20% off for non-profits and public sector
+            Discounts: 8% off for 2-year agreements · 14% off for 3-year agreements · 20% off for registered non-profits and Canadian public sector organizations
           </p>
         </div>
       </section>
@@ -696,10 +757,10 @@ export default function PricingPage() {
             <div className="mb-12 max-w-2xl">
               <p className="mb-3 text-xs font-semibold uppercase tracking-widest text-blue">Monthly management services</p>
               <h2 className="text-3xl font-semibold tracking-tight text-white sm:text-4xl">
-                We run it for you — ongoing, every month, from $449/mo
+                We run it for you every month — starting at $449/mo
               </h2>
               <p className="mt-4 text-base text-white/60">
-                These are separate from your software plan. You can add any of them to any plan, or use them on their own. Month-to-month after a 3-month start period.
+                These are separate from your software plan. You can add any to an existing plan, or use them on their own. Month-to-month after an initial 3-month commitment. Bundle any of these with a software plan and get 12% off.
               </p>
             </div>
           </FadeIn>
@@ -720,7 +781,7 @@ export default function PricingPage() {
           </div>
 
           <p className="mt-8 text-center text-sm text-white/40">
-            Bundle a software plan + management service together and get 12% off the management rate.
+            All management services are month-to-month after the first 3 months. 30 days notice to cancel.
           </p>
         </div>
       </section>
@@ -739,12 +800,12 @@ export default function PricingPage() {
 
           <FadeIn variant="fade-in">
             <div className="overflow-x-auto rounded-xl border border-border">
-              <table className="w-full min-w-[640px]">
+              <table className="w-full min-w-[900px]">
                 <thead>
                   <tr className="border-b border-border bg-surface dark:bg-muted">
-                    <th className="px-6 py-4 text-left text-xs font-semibold uppercase tracking-widest text-muted-foreground w-[30%]">What you get</th>
-                    {["Foundation", "Professional", "Enterprise", "Enterprise Plus"].map((t) => (
-                      <th key={t} className="px-4 py-4 text-center text-xs font-semibold uppercase tracking-widest text-muted-foreground">
+                    <th className="px-6 py-4 text-left text-xs font-semibold uppercase tracking-widest text-muted-foreground w-[24%]">What you get</th>
+                    {["Starter", "Foundation", "Business", "Professional", "Enterprise", "Enterprise Plus"].map((t) => (
+                      <th key={t} className="px-3 py-4 text-center text-xs font-semibold uppercase tracking-widest text-muted-foreground">
                         {t === "Enterprise" ? <span className="text-blue">{t}</span> : t}
                       </th>
                     ))}
@@ -754,7 +815,7 @@ export default function PricingPage() {
                   {comparisonSections.map((section) => (
                     <React.Fragment key={section.section}>
                       <tr className="bg-blue-light dark:bg-blue/10">
-                        <td colSpan={5} className="px-6 py-2 text-xs font-semibold uppercase tracking-widest text-blue">
+                        <td colSpan={7} className="px-6 py-2 text-xs font-semibold uppercase tracking-widest text-blue">
                           {section.section}
                         </td>
                       </tr>
@@ -764,10 +825,12 @@ export default function PricingPage() {
                           className={`divide-x divide-border/40 ${i % 2 === 0 ? "bg-white dark:bg-card" : "bg-surface/50 dark:bg-background"}`}
                         >
                           <td className="px-6 py-3 text-sm text-foreground/80">{row.feature}</td>
-                          <td className="px-4 py-3 text-center"><Cell value={row.foundation} /></td>
-                          <td className="px-4 py-3 text-center"><Cell value={row.professional} /></td>
-                          <td className="px-4 py-3 text-center bg-blue/[0.03]"><Cell value={row.enterprise} /></td>
-                          <td className="px-4 py-3 text-center"><Cell value={row.plus} /></td>
+                          <td className="px-3 py-3 text-center"><Cell value={(row as Record<string, string | boolean | undefined>).starter} /></td>
+                          <td className="px-3 py-3 text-center"><Cell value={(row as Record<string, string | boolean | undefined>).foundation} /></td>
+                          <td className="px-3 py-3 text-center"><Cell value={(row as Record<string, string | boolean | undefined>).business} /></td>
+                          <td className="px-3 py-3 text-center"><Cell value={(row as Record<string, string | boolean | undefined>).professional} /></td>
+                          <td className="px-3 py-3 text-center bg-blue/[0.03]"><Cell value={(row as Record<string, string | boolean | undefined>).enterprise} /></td>
+                          <td className="px-3 py-3 text-center"><Cell value={(row as Record<string, string | boolean | undefined>).plus} /></td>
                         </tr>
                       ))}
                     </React.Fragment>
@@ -777,12 +840,14 @@ export default function PricingPage() {
                   <tr className="border-t border-border bg-surface dark:bg-muted">
                     <td className="px-6 py-4 text-xs text-muted-foreground">All prices USD · annual billing</td>
                     {[
+                      { price: "$299/mo", href: "/contact?plan=starter" },
                       { price: "$799/mo", href: "/contact?plan=foundation" },
+                      { price: "$1,299/mo", href: "/contact?plan=business" },
                       { price: "$2,199/mo", href: "/contact?plan=professional" },
                       { price: "$5,499/mo", href: "/contact?plan=enterprise" },
                       { price: "Custom", href: "/contact?plan=enterprise-plus" },
                     ].map((t) => (
-                      <td key={t.price} className="px-4 py-4 text-center">
+                      <td key={t.price} className="px-3 py-4 text-center">
                         <Link
                           href={t.href}
                           className="inline-flex items-center gap-1 text-xs font-semibold text-blue hover:underline"
@@ -796,6 +861,124 @@ export default function PricingPage() {
               </table>
             </div>
           </FadeIn>
+        </div>
+      </section>
+
+      {/* ── Transparency section ─────────────────────────────────────────────── */}
+      <section className="py-20 lg:py-24 bg-white dark:bg-background" id="transparency">
+        <div className="container-enterprise">
+          <FadeIn variant="fade-up">
+            <div className="mb-12 max-w-2xl">
+              <p className="mb-3 text-xs font-semibold uppercase tracking-widest text-blue">Full transparency</p>
+              <h2 className="text-3xl font-semibold tracking-tight text-foreground sm:text-4xl">
+                Everything you agree to — spelled out clearly
+              </h2>
+              <p className="mt-4 text-base text-muted-foreground">
+                No small print. Here is exactly what happens with setup fees, what we guarantee, what happens if we miss it, what is not covered, and how to cancel.
+              </p>
+            </div>
+          </FadeIn>
+
+          <div className="grid grid-cols-1 gap-8 lg:grid-cols-2">
+
+            {/* Setup fees */}
+            <FadeIn variant="slide-left">
+              <div className="rounded-xl border border-border bg-surface p-7 dark:bg-card h-full">
+                <h3 className="mb-1 text-base font-semibold text-foreground">One-time setup fees</h3>
+                <p className="mb-5 text-sm text-muted-foreground">Paid once at the start. Covers connecting your systems, configuring the platform, and a handover session with your team.</p>
+                <table className="w-full text-sm">
+                  <tbody className="divide-y divide-border">
+                    {[
+                      { plan: "Starter", fee: "$199" },
+                      { plan: "Foundation", fee: "$499" },
+                      { plan: "Business", fee: "$499" },
+                      { plan: "Professional", fee: "$499" },
+                      { plan: "Enterprise", fee: "No setup fee" },
+                      { plan: "Enterprise Plus", fee: "No setup fee" },
+                    ].map((r) => (
+                      <tr key={r.plan} className="flex items-center justify-between py-2">
+                        <td className="text-foreground/80">{r.plan}</td>
+                        <td className="font-mono font-semibold text-foreground">{r.fee}</td>
+                      </tr>
+                    ))}
+                  </tbody>
+                </table>
+              </div>
+            </FadeIn>
+
+            {/* SLA credits */}
+            <FadeIn variant="slide-right">
+              <div className="rounded-xl border border-border bg-surface p-7 dark:bg-card h-full">
+                <h3 className="mb-1 text-base font-semibold text-foreground">What happens if we miss our uptime guarantee</h3>
+                <p className="mb-5 text-sm text-muted-foreground">This is written in your contract. If we fall short, you get a credit on your next bill — automatically, without having to ask.</p>
+                <table className="w-full text-sm">
+                  <thead>
+                    <tr className="border-b border-border text-left text-xs font-semibold uppercase tracking-widest text-muted-foreground">
+                      <th className="pb-2">If uptime drops to...</th>
+                      <th className="pb-2 text-right">Credit you receive</th>
+                    </tr>
+                  </thead>
+                  <tbody className="divide-y divide-border">
+                    {[
+                      { condition: "Below guarantee, but above 99.5%", credit: "10% of that month" },
+                      { condition: "Below 99.5%", credit: "25% of that month" },
+                      { condition: "Below 99.0%", credit: "50% of that month" },
+                      { condition: "3 misses in 12 months", credit: "Exit contract, no penalty" },
+                    ].map((r) => (
+                      <tr key={r.condition}>
+                        <td className="py-2 pr-4 text-foreground/80">{r.condition}</td>
+                        <td className="py-2 text-right font-semibold text-blue">{r.credit}</td>
+                      </tr>
+                    ))}
+                  </tbody>
+                </table>
+              </div>
+            </FadeIn>
+
+            {/* What's not included */}
+            <FadeIn variant="slide-left">
+              <div className="rounded-xl border border-border bg-surface p-7 dark:bg-card h-full">
+                <h3 className="mb-1 text-base font-semibold text-foreground">What is NOT included in your plan</h3>
+                <p className="mb-5 text-sm text-muted-foreground">We will always tell you before doing anything that falls outside your plan. No surprise invoices.</p>
+                <ul className="space-y-2 text-sm text-foreground/80">
+                  {[
+                    "Hardware — computers, servers, cables, switches (we help you buy them, but they're your purchase)",
+                    "Internet service costs — your ISP bill",
+                    "Third-party software licenses — Microsoft 365, Google Workspace, Salesforce, etc.",
+                    "Data storage beyond your plan's included limit",
+                    "On-site visits — quoted separately, travel billed at cost with no markup",
+                  ].map((item) => (
+                    <li key={item} className="flex items-start gap-2">
+                      <Minus className="mt-0.5 h-3.5 w-3.5 shrink-0 text-muted-foreground/60" />
+                      {item}
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            </FadeIn>
+
+            {/* Cancellation */}
+            <FadeIn variant="slide-right">
+              <div className="rounded-xl border border-border bg-surface p-7 dark:bg-card h-full">
+                <h3 className="mb-1 text-base font-semibold text-foreground">How to cancel</h3>
+                <p className="mb-5 text-sm text-muted-foreground">No traps. Here are the exact terms for every plan type.</p>
+                <ul className="space-y-3 text-sm text-foreground/80">
+                  {[
+                    { label: "Annual plan", detail: "60 days written notice. No refund on prepaid months, but we won't charge you for the remaining contract period." },
+                    { label: "Month-to-month (15% premium)", detail: "30 days written notice. Cancel any time." },
+                    { label: "2-year or 3-year plan", detail: "Early exit costs 3 months of your plan price. We will quote this before you sign." },
+                    { label: "Management services", detail: "Month-to-month after first 3 months. 30 days notice to cancel." },
+                  ].map((item) => (
+                    <li key={item.label}>
+                      <p className="font-semibold text-foreground">{item.label}</p>
+                      <p className="mt-0.5 text-muted-foreground">{item.detail}</p>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            </FadeIn>
+
+          </div>
         </div>
       </section>
 

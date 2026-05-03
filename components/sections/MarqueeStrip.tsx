@@ -6,13 +6,13 @@ const certifications = [
   "HIPAA-compliant environments",
   "FedRAMP — Coming soon",
   "PCI DSS managed operations",
-  "Zero Trust security architecture",
-  "99.99% uptime SLA — contractual",
-  "24/7 NOC & SOC coverage",
+  "Zero Trust security — nothing gets automatic access",
+  "99.99% uptime guarantee — written in your contract",
+  "24/7 monitoring and security operations",
   "Named engineers. No help desks.",
-  "OSFI-aligned governance",
-  "NERC CIP compliant operations",
-  "Written SLAs with real remedies",
+  "OSFI-aligned (Canadian banks & financial institutions)",
+  "NERC CIP compliant (energy grid security)",
+  "Written guarantees with real money-back remedies",
 ]
 
 const logos = [...clientLogos, ...clientLogos]

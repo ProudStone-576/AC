@@ -46,7 +46,7 @@ const METRICS = [
     target: 10,
     suffix: "ms",
     label: "Response speed",
-    descriptor: "across all platform endpoints",
+    descriptor: "how fast our system responds — on every action, every time",
     decimals: 0,
   },
   {
@@ -54,7 +54,7 @@ const METRICS = [
     target: 24,
     suffix: "/7",
     label: "Always on",
-    descriptor: "monitoring and incident response, every hour of the year",
+    descriptor: "we watch your systems and respond to threats every hour of every day",
     decimals: 0,
   },
 ]

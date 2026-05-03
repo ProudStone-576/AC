@@ -1,5 +1,6 @@
 import type { Metadata } from "next"
 import Link from "next/link"
+import Image from "next/image"
 import { ArrowRight, Activity, Building, Landmark, Settings, ShoppingBag, Zap } from "lucide-react"
 import { PageHero } from "@/components/ui/PageHero"
 import { CTASection } from "@/components/sections/CTASection"
@@ -23,7 +24,7 @@ const iconMap: Record<string, React.ComponentType<{ className?: string }>> = {
 const industryDetails = [
   {
     ...industries[0],
-    stats: ["Meets SOX, PCI-DSS, DORA, and GDPR requirements", "99.999% uptime design for financial systems", "Fast infrastructure for trading and payment processing"],
+    stats: ["Meets SOX (financial controls), PCI-DSS (card payments), DORA (EU resilience), and GDPR (EU privacy) requirements", "99.999% uptime design for financial systems", "Fast infrastructure for trading and payment processing"],
     highlight: "In financial services, speed and compliance both matter. We build systems that handle both — without sacrificing one for the other.",
   },
   {
@@ -43,12 +44,12 @@ const industryDetails = [
   },
   {
     ...industries[4],
-    stats: ["FedRAMP High certified architecture", "StateRAMP compliant deployment", "ITAR and CMMC compliance support"],
+    stats: ["FedRAMP High certified (required to work with US federal agencies)", "StateRAMP compliant (required for US state and local government)", "ITAR and CMMC compliance (US export control and defense contracts)"],
     highlight: "Government systems require stronger security, traceability, and reliability than most commercial platforms. We build to those standards from day one.",
   },
   {
     ...industries[5],
-    stats: ["NERC CIP security standards for power grid systems", "Industrial security framework (IEC 62443)", "Air-gapped and hybrid grid deployments"],
+    stats: ["NERC CIP compliant (mandatory security rules for power grid operators)", "IEC 62443 industrial security framework (the standard for factory and energy control systems)", "Air-gapped and hybrid grid deployments"],
     highlight: "Energy infrastructure is a prime target for cyberattacks. We secure both your operational technology and IT systems — not just the outer edge.",
   },
 ]
@@ -115,6 +116,23 @@ export default function IndustriesPage() {
           </div>
         </div>
       </section>
+
+      {/* Full-width photo break */}
+      <div className="relative h-72 overflow-hidden lg:h-96">
+        <Image
+          src="https://images.unsplash.com/photo-1477959858617-67f85cf4f1df?w=3840&q=100"
+          alt="Global cities and industries served by Aethon Core"
+          fill
+          className="object-cover object-center"
+          sizes="100vw"
+        />
+        <div className="absolute inset-0 bg-canvas/65" />
+        <div className="container-enterprise relative flex h-full flex-col items-start justify-end pb-10">
+          <p className="max-w-xl text-sm leading-relaxed text-white/80">
+            Real expertise takes time to build. We focus on six industries because that depth matters more than breadth — your team gets people who already understand your regulations, risks, and workflows.
+          </p>
+        </div>
+      </div>
 
       <CTASection
         title="Operating in a regulated industry?"

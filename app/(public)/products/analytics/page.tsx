@@ -25,7 +25,7 @@ const capabilities = [
     title: "Tiered storage — 2.4 PB active",
     description:
       "Hot, warm, and cold tiers managed automatically based on access frequency and your cost targets. Query data that's 3 years old as fast as data from yesterday. Transparent compression — 8:1 average ratio.",
-    metric: "< 200ms P99 query on 12-month history",
+    metric: "< 200ms query speed on year-old data",
   },
   {
     icon: Filter,
@@ -157,8 +157,8 @@ const techSpecs = [
   { spec: "Data retention", value: "Configurable — 90 days to indefinite" },
   { spec: "Query API", value: "REST, GraphQL, JDBC/ODBC, Postgres wire protocol" },
   { spec: "Auth & access control", value: "RBAC + ABAC, row-level + column-level security" },
-  { spec: "Compliance", value: "SOC 2 Type II, HIPAA, GDPR, FINRA, BCBS 239" },
-  { spec: "Uptime SLA", value: "99.99% for query API, 99.95% for streaming ingest" },
+  { spec: "Compliance certifications", value: "SOC 2 Type II, HIPAA (health data), GDPR (EU privacy), FINRA (financial), BCBS 239 (banking)" },
+  { spec: "Uptime guarantee", value: "99.99% for the query system, 99.95% for live data feeds" },
   { spec: "Source connectors", value: "80+ production-certified, custom SDK available" },
   { spec: "Destination connectors", value: "40+ reverse ETL destinations" },
 ]
@@ -208,7 +208,7 @@ export default function AnalyticsPage() {
           <div className="grid grid-cols-2 divide-x divide-border sm:grid-cols-4">
             {[
               { value: "2.4 PB", label: "Active data under management" },
-              { value: "< 200ms", label: "P99 query on 12-month history" },
+              { value: "< 200ms", label: "Search speed on year-old data" },
               { value: "2M/sec", label: "Peak event ingestion" },
               { value: "80+", label: "Production-certified connectors" },
             ].map((s) => (

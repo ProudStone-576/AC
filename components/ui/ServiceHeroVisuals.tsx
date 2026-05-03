@@ -400,7 +400,7 @@ export function ManagedHeroVisual() {
           ))}
         </g>
       </svg>
-      <StatusBar label="6/6 SERVICES OPERATIONAL · 24×7 NOC · SLA 99.95%" color={C.green}/>
+      <StatusBar label="6/6 SERVICES OPERATIONAL · 24×7 MONITORING · 99.95% UPTIME" color={C.green}/>
     </V>
   )
 }

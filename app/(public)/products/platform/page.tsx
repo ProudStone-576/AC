@@ -26,14 +26,14 @@ const capabilities = [
     title: "Multi-region orchestration",
     description:
       "Deploy workloads across cloud, on-premise, and edge with policy-driven placement. Latency thresholds, data residency requirements, and cost targets are enforced automatically — not manually configured per deployment.",
-    stats: "< 8ms P99 latency, global average",
+    stats: "< 8ms response speed, global average",
   },
   {
     icon: RefreshCw,
     title: "Zero-downtime deployments",
     description:
       "Rolling updates with automatic health checks at every stage. Every change is versioned in an immutable log. If something goes wrong, rollback executes in under 60 seconds — not 60 minutes.",
-    stats: "99.99% uptime SLA, contractually enforced",
+    stats: "99.99% uptime guarantee, written into your contract",
   },
   {
     icon: Lock,
@@ -54,7 +54,7 @@ const capabilities = [
     title: "Full API surface",
     description:
       "Every action available in the UI is also available via REST and gRPC API. GitOps workflows, Terraform providers, Kubernetes operators, and Pulumi packages are all maintained and production-tested.",
-    stats: "400+ API endpoints. 99.95% API uptime SLA.",
+    stats: "400+ API endpoints. 99.95% API uptime guarantee.",
   },
   {
     icon: GitBranch,
@@ -87,12 +87,12 @@ const platformTiers = [
       "Up to 5,000 managed nodes",
       "Core Platform + Security Center",
       "24/7 monitoring coverage",
-      "99.99% uptime SLA",
+      "99.99% uptime guarantee",
       "50+ standard integrations",
       "Dedicated account manager",
       "Quarterly business reviews",
-      "24-hr P1 incident response",
-      "SOC 2 Type II report included",
+      "24-hr emergency response",
+      "SOC 2 Type II security audit report included",
     ],
   },
   {
@@ -103,11 +103,11 @@ const platformTiers = [
       "Unlimited managed nodes",
       "Full platform suite, all products",
       "Dedicated SRE team (named engineers)",
-      "99.995% uptime SLA",
+      "99.995% uptime guarantee",
       "All 47 active regions",
       "Custom integrations + SDK access",
       "Monthly executive reviews",
-      "4-hr P1 incident response",
+      "4-hr emergency response",
       "Custom compliance frameworks",
       "Priority roadmap influence",
       "Quarterly security reviews",
@@ -117,14 +117,14 @@ const platformTiers = [
     name: "Government",
     description: "FedRAMP High authorized. Built for public sector requirements.",
     features: [
-      "FedRAMP High authorization",
-      "Air-gapped deployment option",
-      "ITAR and EAR compliance",
+      "FedRAMP High authorization (required to work with US government)",
+      "Air-gapped option (totally isolated, no internet connection)",
+      "ITAR and EAR compliance (US export control rules)",
       "US-only data residency enforced",
-      "Cleared engineering staff",
-      "FISMA-ready documentation",
-      "Dedicated GovCloud NOC",
-      "CMMC Level 3 support",
+      "Staff cleared to handle sensitive government information",
+      "FISMA-ready documentation (US federal security standard)",
+      "Dedicated government operations center",
+      "CMMC Level 3 support (required for US defense contracts)",
     ],
   },
 ]
@@ -163,14 +163,14 @@ const migrationSteps = [
   {
     phase: "Design",
     duration: "Week 3–4",
-    description: "We produce a detailed target architecture, migration runbook, rollback plan, and acceptance criteria. Nothing moves until you've signed off on the plan.",
+    description: "We produce a detailed target architecture, migration runbook (step-by-step instructions for every action), rollback plan, and acceptance criteria. Nothing moves until you've signed off on the plan.",
     deliverable: "Target architecture + phased migration plan",
   },
   {
     phase: "Pilot",
     duration: "Week 5–8",
     description: "A non-production workload migrates first. We validate performance, test runbooks, train your team, and tune the configuration before touching production.",
-    deliverable: "Validated runbooks + trained operations team",
+    deliverable: "Validated step-by-step procedures + trained operations team",
   },
   {
     phase: "Migration",
@@ -220,7 +220,7 @@ export default function PlatformPage() {
         <div className="container-enterprise">
           <div className="grid grid-cols-2 divide-x divide-border sm:grid-cols-4">
             {[
-              { value: "99.99%", label: "Uptime SLA, enforced" },
+              { value: "99.99%", label: "Uptime guarantee, in writing" },
               { value: "11", label: "Avg. tools replaced" },
               { value: "4.2s", label: "Median auto-remediation" },
               { value: "47", label: "Countries active" },
@@ -466,7 +466,7 @@ export default function PlatformPage() {
               Priced for organizations, not individuals
             </h2>
             <p className="mt-4 text-base text-muted-foreground">
-              All editions include 24/7 support, a dedicated account team, and contractual SLAs. No per-seat pricing.
+              All editions include 24/7 support, a dedicated account team, and written guarantees. No per-seat pricing.
             </p>
           </div>
           <div className="grid grid-cols-1 gap-6 lg:grid-cols-3">

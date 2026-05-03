@@ -94,14 +94,16 @@ export function PageHero({
       {/* ── Background image ── */}
       {hasBackgroundImage && (
         <>
-          <Image
-            src={backgroundImageSrc!}
-            alt=""
-            fill
-            className="object-cover object-center"
-            priority
-            sizes="100vw"
-          />
+          <div className="absolute inset-0 animate-kenburns">
+            <Image
+              src={backgroundImageSrc!}
+              alt=""
+              fill
+              className="object-cover object-center"
+              priority
+              sizes="100vw"
+            />
+          </div>
           <div
             aria-hidden="true"
             className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/55 to-black/35"

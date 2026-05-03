@@ -31,7 +31,7 @@ const capabilities = [
     icon: Shield,
     title: "Policy-gated execution",
     description:
-      "Workflows cannot run unless they pass your organization's approval policies. Define who can approve what, under which conditions. All approvals are logged, time-stamped, and immutable. Required for SOX, ITIL, and change management frameworks.",
+      "Workflows cannot run unless they pass your organization's approval policies. Define who can approve what, under which conditions. All approvals are logged, time-stamped, and immutable. Required for SOX (financial controls), ITIL (IT service management), and change management frameworks.",
     metric: "Full approval workflow with immutable audit trail",
   },
   {
@@ -46,7 +46,7 @@ const capabilities = [
     title: "Branching, conditions, and error handling",
     description:
       "Production automation requires conditional logic, parallel execution, human approval gates, and graceful failure handling. All of these are first-class features — not workarounds bolted on after the fact.",
-    metric: "DAG-based execution with full branching support",
+    metric: "Full branching logic with parallel execution support",
   },
   {
     icon: Terminal,
@@ -57,9 +57,9 @@ const capabilities = [
   },
   {
     icon: RefreshCw,
-    title: "Self-healing runbooks",
+    title: "Automated problem-fixing",
     description:
-      "Convert your existing runbooks into automated workflows. The Automation Engine monitors for known failure patterns and triggers remediation before anyone is paged. 68% of incidents across our client base are resolved without a human ever seeing them.",
+      "Convert your existing response procedures into automated workflows. The Automation Engine monitors for known failure patterns and fixes them before anyone gets paged. 68% of incidents across our client base are resolved without a human ever seeing them.",
     metric: "68% of incidents auto-fixed · resolution time: 4.2s",
   },
   {
@@ -105,7 +105,7 @@ const automationLibrary = [
       { name: "Evidence collection", trigger: "Continuous + on-demand", impact: "Audit package auto-assembled" },
       { name: "Policy violation reporting", trigger: "Real-time on violation", impact: "Compliance status always current" },
       { name: "Data retention enforcement", trigger: "Retention policy schedule", impact: "GDPR/CCPA automated" },
-      { name: "SOX control testing", trigger: "Quarterly automated tests", impact: "Full testing evidence generated" },
+      { name: "Financial controls testing (SOX)", trigger: "Quarterly automated tests", impact: "Full testing evidence generated" },
     ],
   },
 ]
@@ -177,7 +177,7 @@ export default function AutomationPage() {
       <PageHero
         breadcrumbs={[{ label: "Products", href: "/products" }, { label: "Automation Engine" }]}
         eyebrow="Product"
-        title="Stop running manual runbooks. Start running infrastructure that manages itself."
+        title="Stop fixing the same problems manually. Start running infrastructure that fixes itself."
         subtitle="Every hour your engineers spend on repetitive operational tasks is an hour not spent on the work that actually moves your business forward."
         backgroundImageSrc="https://images.unsplash.com/photo-1485827404703-89b55fcc595e?w=3840&q=100"
         variant="dark"

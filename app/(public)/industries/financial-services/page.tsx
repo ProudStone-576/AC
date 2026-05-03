@@ -72,10 +72,10 @@ const capabilities = [
     stat: "Under 1ms response time for co-located workloads",
   },
   {
-    title: "Zero Trust security across all systems",
+    title: "Zero Trust security — nothing gets automatic access",
     description:
-      "No system automatically trusts another, regardless of where it sits on the network. Every connection is authenticated, encrypted, and logged. A breach in one system can't spread to others.",
-    stat: "NIST SP 800-207 aligned",
+      "No system automatically trusts another, regardless of where it sits on the network. Every connection is verified, encrypted, and logged. A breach in one system can't spread to others.",
+    stat: "Meets NIST SP 800-207 (US government security standard)",
   },
   {
     title: "Audit-ready evidence, automatically",
@@ -109,8 +109,8 @@ const complianceFrameworks = [
 ]
 
 const stats = [
-  { value: "99.999%", label: "Uptime SLA for financial workloads" },
-  { value: "< 1ms", label: "P99 latency, co-located trading" },
+  { value: "99.999%", label: "Uptime guarantee for financial workloads" },
+  { value: "< 1ms", label: "Response speed for co-located trading" },
   { value: "8", label: "Compliance frameworks, out of the box" },
   { value: "7yr", label: "Immutable audit retention" },
 ]

@@ -111,9 +111,9 @@ const complianceFrameworks = [
 
 const stats = [
   { value: "< 500ms", label: "Sensor-to-dashboard latency" },
-  { value: "99.99%", label: "OT monitoring uptime SLA" },
-  { value: "IEC 62443", label: "Industrial security standard" },
-  { value: "ISO 27001", label: "Aligned ISMS for OT" },
+  { value: "99.99%", label: "Uptime guarantee for factory monitoring" },
+  { value: "IEC 62443", label: "Industrial control system security standard" },
+  { value: "ISO 27001", label: "Information security management — aligned for factories" },
 ]
 
 export default function ManufacturingPage() {

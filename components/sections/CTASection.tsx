@@ -22,8 +22,8 @@ interface CTASectionProps {
  * conversion moment; the surface variant is a softer mid-page nudge.
  */
 export function CTASection({
-  title = "Ready to build infrastructure that lasts?",
-  subtitle = "Talk to one of our enterprise specialists. We'll help you scope the right solution for your organization.",
+  title = "Ready to hand your IT to people who take full responsibility?",
+  subtitle = "Talk to our team. We'll be honest about whether we're the right fit — and give you a real price with no surprises.",
   primaryLabel = "Talk to an expert",
   primaryHref = "/contact",
   secondaryLabel = "Explore case studies",

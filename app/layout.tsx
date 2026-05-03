@@ -107,14 +107,14 @@ export default function RootLayout({
                 "contactPoint": [
                   {
                     "@type": "ContactPoint",
-                    "email": "contact@aethoncore.com",
+                    "email": "contact@aethoncore.ca",
                     "contactType": "customer service",
                     "areaServed": ["CA", "US"],
                     "availableLanguage": "English"
                   },
                   {
                     "@type": "ContactPoint",
-                    "email": "contact@aethoncore.com",
+                    "email": "contact@aethoncore.ca",
                     "contactType": "sales",
                     "areaServed": ["CA", "US"],
                     "availableLanguage": "English"
